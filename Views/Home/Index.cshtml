@@ -19,7 +19,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="lft_hd">
-                    <a href="index.html"><img src="img/logo.png" alt="" /></a>
+                    <a asp-area="" asp-action="Index"><img src="img/logo.png" alt="" /></a>
                 </div>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-12">
@@ -33,8 +33,9 @@
                             </button>
                             <div id="navbar">
                                 <ul>
-                                    <li><a class="page-scroll" href="index.html">Home</a></li>
-                                    <li>
+                                    <li><a class="page-scroll" asp-area="" asp-action="Index">Home</a></li>
+                                    <li><a class="page-scroll" asp-area="" asp-action="About">About</a></li>
+                                   @* <li>
                                         <a href="#">Our Another Page <i class="fa fa-angle-down"></i></a>
                                         <ul>
                                             <li><a class="page-scroll" href="#tm_sec">Our Team</a></li>
@@ -44,18 +45,22 @@
                                             <li><a class="page-scroll" href="#clt_sec">Our Happy Client</a></li>
                                         </ul>
                                     </li>
+                                   *@
                                     <li>
-                                        <a href="#">Static Page<i class="fa fa-angle-down"></i></a>
+                                        <a href="#">Our Services<i class="fa fa-angle-down"></i></a>
                                         <ul>
-                                            <li><a class="page-scroll" href="blog.html">Blog Page</a></li>
-                                            <li><a class="page-scroll" href="single.html">Single Blog Page</a></li>
+                                            <li><a class="page-scroll" href="#pr_sec">SMS Sending</a></li>
+                                            <li><a class="page-scroll" href="#pr_sec">Automonitoring</a></li>
+                                            <li><a class="page-scroll" href="#pr_sec">Selling Software</a></li>
                                         </ul>
                                     </li>
-                                    <li><a class="page-scroll" href="#abt_sec">About</a></li>
-                                    <li><a class="page-scroll" href="#skill_sec">Our Skill</a></li>
-                                    <li><a class="page-scroll" href="#pr_sec">Our Service</a></li>
-                                    <li><a class="page-scroll" href="#protfolio_sec">Our Portfolio</a></li>
+
+                                    @*<li><a class="page-scroll" href="#skill_sec">Our Skill</a></li>*@
+                                    @*<li><a class="page-scroll" href="#pr_sec">Our Service</a></li>*@
+                                    @*<li><a class="page-scroll" href="#protfolio_sec">Our Portfolio</a></li>*@
+                                    <li><a class="page-scroll" href="#ctn_sec">Career</a></li>
                                     <li><a class="page-scroll" href="#ctn_sec">Contact Us</a></li>
+
                                 </ul>
                             </div>
                         </nav>

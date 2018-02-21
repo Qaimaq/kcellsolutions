@@ -15,13 +15,6 @@ namespace KCell_Solutions.Controllers
             return View();
         }
 
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
@@ -32,6 +25,20 @@ namespace KCell_Solutions.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+
+        public IActionResult About()
+        {
+            ViewData["Message"] = "Your application description page.";
+
+            return View();
+        }
+        public IActionResult Contacts()
+        {
+            ViewData["Message"] = "Your application description page.";
+
+            return View();
         }
     }
 }

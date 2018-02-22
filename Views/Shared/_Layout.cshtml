@@ -35,132 +35,142 @@
     </environment>
 </head>
 <body>
-    
-        
-            @* <nav class="navbar navbar-inverse navbar-fixed-top">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">KCell_Solutions</a>
-                        </div>
-                        <div class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav">
-                                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                                <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                                <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                            </ul>
-                        </div>
+
+
+    @* <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">KCell_Solutions</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    *@
+    @*<div class="container body-content"> *@
+    @*</div>*@
+
+    <!-- start preloader -->
+    <div id="loader-wrapper">
+        <div class="logo"></div>
+        <div id="loader">
+        </div>
+    </div>
+    <!-- end preloader -->
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Start Header Section -->
+    <header class="main_menu_sec navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div class="lft_hd">
+                        <a asp-area="" asp-action="Index"><img src="~/img/logo.png" alt="" /></a>
                     </div>
-                </nav>
-            *@
-            @*<div class="container body-content"> *@
-            @*</div>*@
-        <br>
-            <!-- Start Header Section -->
-            <header class="main_menu_sec navbar navbar-default navbar-fixed-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-12">
-                            <div class="lft_hd">
-                                <a asp-area="" asp-action="Index"><img src="~/img/logo.png" alt="" /></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-sm-12">
-                            <div class="rgt_hd">
-                                <div class="main_menu">
-                                    <nav id="nav_menu">
-                                        <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
-                                        <div id="navbar">
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-12">
+                    <div class="rgt_hd">
+                        <div class="main_menu">
+                            <nav id="nav_menu">
+                                <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div id="navbar">
+                                    <ul>
+                                        <li><a class="page-scroll" asp-area="" asp-action="Index">Home</a></li>
+                                        <li><a asp-area="" asp-action="About">About</a></li>
+                                        @* <li>
+                                                <a href="#">Our Another Page <i class="fa fa-angle-down"></i></a>
+                                                <ul>
+                                                    <li><a class="page-scroll" href="#tm_sec">Our Team</a></li>
+                                                    <li><a class="page-scroll" href="#tstm_sec">Our Testimonial</a></li>
+                                                    <li><a class="page-scroll" href="#lts_sec">Our Latest Blog</a></li>
+                                                    <li><a class="page-scroll" href="#pricing_sec">Pricing</a></li>
+                                                    <li><a class="page-scroll" href="#clt_sec">Our Happy Client</a></li>
+                                                </ul>
+                                            </li>
+                                        *@
+                                        <li>
+                                            <a href="#">Our Services<i class="fa fa-angle-down"></i></a>
                                             <ul>
-                                                <li><a class="page-scroll" asp-area="" asp-action="Index">Home</a></li>
-                                                <li><a asp-area="" asp-action="About">About</a></li>
-                                                @* <li>
-                                                        <a href="#">Our Another Page <i class="fa fa-angle-down"></i></a>
-                                                        <ul>
-                                                            <li><a class="page-scroll" href="#tm_sec">Our Team</a></li>
-                                                            <li><a class="page-scroll" href="#tstm_sec">Our Testimonial</a></li>
-                                                            <li><a class="page-scroll" href="#lts_sec">Our Latest Blog</a></li>
-                                                            <li><a class="page-scroll" href="#pricing_sec">Pricing</a></li>
-                                                            <li><a class="page-scroll" href="#clt_sec">Our Happy Client</a></li>
-                                                        </ul>
-                                                    </li>
-                                                *@
-                                                <li>
-                                                    <a href="#">Our Services<i class="fa fa-angle-down"></i></a>
-                                                    <ul>
-                                                        <li><a class="page-scroll" href="#pr_sec">SMS Dispatching</a></li>
-                                                        <li><a class="page-scroll" href="#pr_sec">Car Tracking</a></li>
-                                                        <li><a class="page-scroll" href="#pr_sec">Software</a></li>
-                                                    </ul>
-                                                </li>
-
-                                                @*<li><a class="page-scroll" href="#skill_sec">Our Skill</a></li>*@
-                                                @*<li><a class="page-scroll" href="#pr_sec">Our Service</a></li>*@
-                                                @*<li><a class="page-scroll" href="#protfolio_sec">Our Portfolio</a></li>*@
-                                                <li><a class="page-scroll" asp-area="" asp-action="Career">Career</a></li>
-                                                <li><a asp-area="" asp-action="Contacts">Contact Us</a></li>
-
+                                                <li><a class="page-scroll" href="#pr_sec">SMS Dispatching</a></li>
+                                                <li><a class="page-scroll" href="#pr_sec">Car Tracking</a></li>
+                                                <li><a class="page-scroll" href="#pr_sec">Software</a></li>
                                             </ul>
-                                        </div>
-                                    </nav>
+                                        </li>
+
+                                        @*<li><a class="page-scroll" href="#skill_sec">Our Skill</a></li>*@
+                                        @*<li><a class="page-scroll" href="#pr_sec">Our Service</a></li>*@
+                                        @*<li><a class="page-scroll" href="#protfolio_sec">Our Portfolio</a></li>*@
+                                        <li><a class="page-scroll" asp-area="" asp-action="Career">Career</a></li>
+                                        <li><a asp-area="" asp-action="Contacts">Contact Us</a></li>
+
+                                    </ul>
                                 </div>
-                            </div>
+                            </nav>
                         </div>
                     </div>
                 </div>
-            </header>
-            <!-- End Header Section -->
+            </div>
+        </div>
+    </header>
+    <!-- End Header Section -->
 
 
 
 
 
-            @RenderBody()
-            <!-- start footer Section -->
-            <footer id="ft_sec">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="ft">
-                                <ul>
-                                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href=""><i class="fa fa-dribbble"></i></a></li>
-                                    <li><a href=""><i class="fa fa-rss"></i></a></li>
-                                    <li><a href=""><i class="fa fa-flickr"></i></a></li>
-                                    <li><a href=""><i class="fa fa-pinterest"></i></a></li>
-                                    <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href=""><i class="fa fa-skype"></i></a></li>
-                                    <li><a href=""><i class="fa fa-google"></i></a></li>
-                                </ul>
-                            </div>
-                            <ul class="copy_right">
-                                <li>&copy;KCell Solutions 2018</li>
-                                <li>developer by <a href="Qaimaq">Qaimaq </a></li>
-                            </ul>
-                        </div>
+    @RenderBody()
+    <!-- start footer Section -->
+    <footer id="ft_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ft">
+                        <ul>
+                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href=""><i class="fa fa-rss"></i></a></li>
+                            <li><a href=""><i class="fa fa-flickr"></i></a></li>
+                            <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href=""><i class="fa fa-skype"></i></a></li>
+                            <li><a href=""><i class="fa fa-google"></i></a></li>
+                        </ul>
                     </div>
+                    <ul class="copy_right">
+                        <li>&copy;KCell Solutions 2018</li>
+                        <li>developer by <a href="Qaimaq">Qaimaq </a></li>
+                    </ul>
                 </div>
-            </footer>
-            <!-- End footer Section -->
+            </div>
+        </div>
+    </footer>
+    <!-- End footer Section -->
 
-        
-    
+
+
 
     <environment include="Development">
         @*<script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-            *@
+            <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+            <script src="~/js/site.js" asp-append-version="true"></script>
+        *@
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="~/js/vendor/jquery-1.11.3.min.js"></script>
         <script src="~/js/isotope.pkgd.min.js"></script>

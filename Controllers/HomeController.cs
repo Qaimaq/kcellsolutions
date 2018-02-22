@@ -41,5 +41,11 @@ namespace KCell_Solutions.Controllers
             return View();
         }
 
+        public IActionResult Career()
+        {
+            ViewData["Message"] = "Your application description page.";
+
+            return View();
+        }
     }
 }

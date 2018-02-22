@@ -106,7 +106,7 @@
                                                 @*<li><a class="page-scroll" href="#skill_sec">Our Skill</a></li>*@
                                                 @*<li><a class="page-scroll" href="#pr_sec">Our Service</a></li>*@
                                                 @*<li><a class="page-scroll" href="#protfolio_sec">Our Portfolio</a></li>*@
-                                                <li><a class="page-scroll" href="#ctn_sec">Career</a></li>
+                                                <li><a class="page-scroll" asp-area="" asp-action="Career">Career</a></li>
                                                 <li><a asp-area="" asp-action="Contacts">Contact Us</a></li>
 
                                             </ul>
@@ -165,7 +165,7 @@
         <script src="~/js/vendor/jquery-1.11.3.min.js"></script>
         <script src="~/js/isotope.pkgd.min.js"></script>
         <script src="~/js/bootstrap.min.js"></script>
-        @*<script src="~/js/jquery-ui.js"></script>*@
+        <script src="~/js/jquery-ui.js"></script>
         <script src="~/js/appear.js"></script>
         <script src="~/js/jquery.counterup.min.js"></script>
         <script src="~/js/waypoints.min.js"></script>
@@ -176,20 +176,20 @@
         <script src="~/js/scrolling-nav.js"></script>
         <script src="~/js/plugins.js"></script>
         <!-- Google Map js -->
-        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDzGrqqKL_1JNPNZNrxYm9NxJrINAoX1J4"></script>
         <script>
             function initialize() {
                 var mapOptions = {
                     zoom: 14,
                     scrollwheel: false,
-                    center: new google.maps.LatLng(41.092586000000000000, -75.592688599999970000)
+                    center: new google.maps.LatLng(43.225854, 76.935170)
                 };
                 var map = new google.maps.Map(document.getElementById('googleMap'),
                     mapOptions);
                 var marker = new google.maps.Marker({
                     position: map.getCenter(),
                     animation: google.maps.Animation.BOUNCE,
-                    icon: 'img/map-marker.png',
+                    icon: '../img/map-marker.png',
                     map: map
                 });
             }

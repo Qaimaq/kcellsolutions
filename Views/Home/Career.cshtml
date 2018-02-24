@@ -3,7 +3,11 @@
     ViewData["Title"] = "Career";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@using Microsoft.AspNetCore.Mvc.Localization
 
+@inject IViewLocalizer Localizer
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
 <!-- start blog Section -->
 <section id="blg_sec">
     <div class="container">

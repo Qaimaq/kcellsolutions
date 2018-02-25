@@ -26,6 +26,8 @@ namespace KCell_Solutions.Controllers
             // получаем ресурс Message
             string message = _sharedLocalizer["Message"];
             return message;
+
+
         }
         // остальное содержимое контроллера
         public IActionResult Index()

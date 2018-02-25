@@ -141,4 +141,7 @@
   <data name="Software" xml:space="preserve">
     <value>Software</value>
   </data>
+  <data name="Message" xml:space="preserve">
+    <value>Test</value>
+  </data>
 </root>

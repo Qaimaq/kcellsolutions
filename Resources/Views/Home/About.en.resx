@@ -118,30 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="About" xml:space="preserve">
-    <value>О нас</value>
+    <value>About</value>
   </data>
-  <data name="Career" xml:space="preserve">
-    <value>Карьера</value>
+  <data name="Our_portfolio" xml:space="preserve">
+    <value>Our portfolio</value>
   </data>
-  <data name="Car_Tracking" xml:space="preserve">
-    <value>Авто Мониторинг</value>
-  </data>
-  <data name="Contact_us" xml:space="preserve">
-    <value>Контакты</value>
-  </data>
-  <data name="Home" xml:space="preserve">
-    <value>Главная</value>
-  </data>
-  <data name="Our_services" xml:space="preserve">
-    <value>Услуги</value>
-  </data>
-  <data name="SMS_Dispatching" xml:space="preserve">
-    <value>СМС рассылка</value>
-  </data>
-  <data name="Software" xml:space="preserve">
-    <value>Программное Обеспечение</value>
-  </data>
-  <data name="Message" xml:space="preserve">
-    <value>Тест</value>
+  <data name="Our_skill_diagram" xml:space="preserve">
+    <value>Our skill diagram</value>
   </data>
 </root>

@@ -1,12 +1,13 @@
 ﻿
 @using Microsoft.AspNetCore.Mvc.Localization
-
+@using Microsoft.Extensions.Localization
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer 
 @inject IViewLocalizer Localizer
 
-@inject IHtmlLocalizer<SharedResource> SharedLocalizer
 <!DOCTYPE html>
 <html class="no-js">
 <head>
+
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
@@ -97,7 +98,7 @@
                                 </button>
                                 <div id="navbar">
                                     <ul>
-                                        <li><a class="page-scroll" asp-area="" asp-action="Index">@SharedLocalizer["Message"]</a></li>
+                                        <li><a class="page-scroll" asp-area="" asp-action="Index">@Localizer["Home"]</a></li>
                                         <li><a asp-area="" asp-action="About">@Localizer["About"]</a></li>
                                         @* <li>
                                                 <a href="#">Our Another Page <i class="fa fa-angle-down"></i></a>
@@ -111,11 +112,11 @@
                                             </li>
                                         *@
                                         <li>
-                                            <a href="#">Our Services<i class="fa fa-angle-down"></i></a>
+                                            <a href="#">@Localizer["Our_services"]<i class="fa fa-angle-down"></i></a>
                                             <ul>
-                                                <li><a class="page-scroll" href="#pr_sec">SMS Dispatching</a></li>
-                                                <li><a class="page-scroll" href="#pr_sec">Car Tracking</a></li>
-                                                <li><a class="page-scroll" href="#pr_sec">Software</a></li>
+                                                <li><a class="page-scroll" href="#pr_sec">@Localizer["SMS_Dispatching"]</a></li>
+                                                <li><a class="page-scroll" href="#pr_sec">@Localizer["Car_Tracking"]</a></li>
+                                                <li><a class="page-scroll" href="#pr_sec">@Localizer["Software"]</a></li>
                                             </ul>
                                         </li>
 
@@ -123,7 +124,7 @@
                                         @*<li><a class="page-scroll" href="#pr_sec">Our Service</a></li>*@
                                         @*<li><a class="page-scroll" href="#protfolio_sec">Our Portfolio</a></li>*@
                                         <li><a class="page-scroll" asp-area="" asp-action="Career">@Localizer["Career"]</a></li>
-                                        <li><a asp-area="" asp-action="Contacts">@Localizer["Contact us"]</a></li>
+                                        <li><a asp-area="" asp-action="Contacts">@Localizer["Contact_us"]</a></li>
 
                                     </ul>
                                 </div>

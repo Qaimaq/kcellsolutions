@@ -117,25 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Address" xml:space="preserve">
-    <value>Республика Казахстан, Алматы, улица Нахимова,10</value>
+  <data name="About" xml:space="preserve">
+    <value>О нас</value>
+  </data>
+  <data name="Career" xml:space="preserve">
+    <value>Карьера</value>
+  </data>
+  <data name="Car_Tracking" xml:space="preserve">
+    <value>Авто Мониторинг</value>
   </data>
   <data name="Contact_us" xml:space="preserve">
-    <value>Связаться с нами</value>
+    <value>Контакты</value>
   </data>
-  <data name="Located_the_map" xml:space="preserve">
-    <value>Расположение на карте</value>
+  <data name="Home" xml:space="preserve">
+    <value>Главная</value>
   </data>
-  <data name="Message" xml:space="preserve">
-    <value>Ваше сообщение</value>
+  <data name="Our_services" xml:space="preserve">
+    <value>Услуги</value>
   </data>
-  <data name="Send" xml:space="preserve">
-    <value>Отправить</value>
+  <data name="SMS_Dispatching" xml:space="preserve">
+    <value>СМС рассылка</value>
   </data>
-  <data name="Your_email" xml:space="preserve">
-    <value>Ваш email</value>
-  </data>
-  <data name="Your_name" xml:space="preserve">
-    <value>Ваше имя</value>
+  <data name="Software" xml:space="preserve">
+    <value>Программное Обеспечение</value>
   </data>
 </root>

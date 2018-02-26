@@ -37,7 +37,6 @@ namespace KCell_Solutions
                 var supportedCultures = new[]
                 {
                     new CultureInfo("en"),
-                    new CultureInfo("de"),
                     new CultureInfo("ru")
                 };
 
@@ -67,15 +66,15 @@ namespace KCell_Solutions
                 SupportedCultures = supportedCultures,
                 SupportedUICultures = supportedCultures
             });
-          //  if (env.IsDevelopment())
-            //{
-              //  app.UseBrowserLink();
-                //app.UseDeveloperExceptionPage();
-            //}
-            //else
-            //{
-             //   app.UseExceptionHandler("/Home/Error");
-            //}
+           if (env.IsDevelopment())
+            {
+                app.UseBrowserLink();
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Home/Error");
+            }
             
             app.UseStaticFiles();
 

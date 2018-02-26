@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+<!DOCTYPE html>
 <html class="no-js">
 <head>
     <meta charset="utf-8" />
@@ -91,8 +97,8 @@
                                 </button>
                                 <div id="navbar">
                                     <ul>
-                                        <li><a class="page-scroll" asp-area="" asp-action="Index">Home</a></li>
-                                        <li><a asp-area="" asp-action="About">About</a></li>
+                                        <li><a class="page-scroll" asp-area="" asp-action="Index">@SharedLocalizer["Message"]</a></li>
+                                        <li><a asp-area="" asp-action="About">@Localizer["About"]</a></li>
                                         @* <li>
                                                 <a href="#">Our Another Page <i class="fa fa-angle-down"></i></a>
                                                 <ul>
@@ -116,8 +122,8 @@
                                         @*<li><a class="page-scroll" href="#skill_sec">Our Skill</a></li>*@
                                         @*<li><a class="page-scroll" href="#pr_sec">Our Service</a></li>*@
                                         @*<li><a class="page-scroll" href="#protfolio_sec">Our Portfolio</a></li>*@
-                                        <li><a class="page-scroll" asp-area="" asp-action="Career">Career</a></li>
-                                        <li><a asp-area="" asp-action="Contacts">Contact Us</a></li>
+                                        <li><a class="page-scroll" asp-area="" asp-action="Career">@Localizer["Career"]</a></li>
+                                        <li><a asp-area="" asp-action="Contacts">@Localizer["Contact us"]</a></li>
 
                                     </ul>
                                 </div>
@@ -163,6 +169,9 @@
     </footer>
     <!-- End footer Section -->
 
+    <div>
+        @await Html.PartialAsync("_SelectLanguagePartial")
+    </div>
 
 
 

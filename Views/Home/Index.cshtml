@@ -1,8 +1,11 @@
 ﻿@{
     ViewData["Title"] = "KCell Solutions";
 }
+@using Microsoft.AspNetCore.Mvc.Localization
 
+@inject IViewLocalizer Localizer
 
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
 <!-- start slider Section -->
 <section id="slider_sec">
     <div class="container">
@@ -58,154 +61,154 @@
 </section>
 <!-- End slider Section -->
 @*
-<!-- start about Section -->
-<section id="abt_sec">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
-                <div class="title_sec">
-                    <h1>ABOUT</h1>
-                    <h2>WE’RE BRANDING & DIGITAL STUDIO FROM VIET NAM</h2>
+    <!-- start about Section -->
+    <section id="abt_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+                    <div class="title_sec">
+                        <h1>ABOUT</h1>
+                        <h2>WE’RE BRANDING & DIGITAL STUDIO FROM VIET NAM</h2>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
-                <div class="abt">
-                    <p>Mauris luctus aliquet nunc quis consectetur. Curabitur elit massa, consequat vel velit sit amet, scelerisque hendrerit mi. Cras pellentesque sem turpis, quis interdum mi sagittis a. Donec mattis porttitor eleifend</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End About Section -->
-
-<!-- start Counting section-->
-<section id="counting_sec">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div class="counting_sl">
-                    <i class="fa fa-user"></i>
-                    <h2 class="counter">43,753</h2>
-                    <h4>Happy Clients</h4>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div class="counting_sl">
-                    <i class="fa fa-desktop"></i>
-                    <h2 class="counter">20,210</h2>
-                    <h4>Complete Project</h4>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div class="counting_sl">
-                    <i class="fa fa-ticket"></i>
-                    <h2 class="counter">43,753</h2>
-                    <h4>Answered Tickets</h4>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div class="counting_sl">
-                    <i class="fa fa-clock-o"></i>
-                    <h2 class="counter">45,105</h2>
-                    <h4>Development Hours</h4>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+                    <div class="abt">
+                        <p>Mauris luctus aliquet nunc quis consectetur. Curabitur elit massa, consequat vel velit sit amet, scelerisque hendrerit mi. Cras pellentesque sem turpis, quis interdum mi sagittis a. Donec mattis porttitor eleifend</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    <!-- End About Section -->
 
-<!-- start progress bar Section -->
-<section id="skill_sec">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
-                <div class="title_sec">
-                    <h1>Our Skill diagram</h1>
-                    <h2>WE’RE BRANDING & DIGITAL STUDIO FROM VIET NAM</h2>
+    <!-- start Counting section-->
+    <section id="counting_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="counting_sl">
+                        <i class="fa fa-user"></i>
+                        <h2 class="counter">43,753</h2>
+                        <h4>Happy Clients</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="counting_sl">
+                        <i class="fa fa-desktop"></i>
+                        <h2 class="counter">20,210</h2>
+                        <h4>Complete Project</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="counting_sl">
+                        <i class="fa fa-ticket"></i>
+                        <h2 class="counter">43,753</h2>
+                        <h4>Answered Tickets</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="counting_sl">
+                        <i class="fa fa-clock-o"></i>
+                        <h2 class="counter">45,105</h2>
+                        <h4>Development Hours</h4>
+                    </div>
                 </div>
             </div>
-            <div class="skills progress-bar1">
-                <ul class="col-md-6 col-sm-12 col-xs-12 wow fadeInLeft">
-                    <li class="progress">
-                        <div class="progress-bar" data-width="85">
-                            Wordpress 85%
-                        </div>
-                    </li>
-                    <li class="progress">
-                        <div class="progress-bar" data-width="65">
-                            Graphic Design 65%
-                        </div>
-                    </li>
-                    <li class="progress">
-                        <div class="progress-bar" data-width="90">
-                            HTML/CSS Design 90%
-                        </div>
-                    </li>
-                    <li class="progress">
-                        <div class="progress-bar" data-width="60">
-                            SEO 60%
-                        </div>
-                    </li>
-                </ul>
-                <ul class="col-md-6 col-sm-12 col-xs-12 wow fadeInRight">
-                    <li class="progress">
-                        <div class="progress-bar" data-width="75">
-                            Agencying 75%
-                        </div>
-                    </li>
-                    <li class="progress">
-                        <div class="progress-bar" data-width="95">
-                            App Development 95%
-                        </div>
-                    </li>
-                    <li class="progress">
-                        <div class="progress-bar" data-width="70">
-                            IT Consultency 70%
-                        </div>
-                    </li>
-                    <li class="progress">
-                        <div class="progress-bar" data-width="90">
-                            Theme Development 90%
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
         </div>
-    </div>
-</section>
-<!-- End progress bar Section -->
-    *@
+    </section>
+
+    <!-- start progress bar Section -->
+    <section id="skill_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+                    <div class="title_sec">
+                        <h1>Our Skill diagram</h1>
+                        <h2>WE’RE BRANDING & DIGITAL STUDIO FROM VIET NAM</h2>
+                    </div>
+                </div>
+                <div class="skills progress-bar1">
+                    <ul class="col-md-6 col-sm-12 col-xs-12 wow fadeInLeft">
+                        <li class="progress">
+                            <div class="progress-bar" data-width="85">
+                                Wordpress 85%
+                            </div>
+                        </li>
+                        <li class="progress">
+                            <div class="progress-bar" data-width="65">
+                                Graphic Design 65%
+                            </div>
+                        </li>
+                        <li class="progress">
+                            <div class="progress-bar" data-width="90">
+                                HTML/CSS Design 90%
+                            </div>
+                        </li>
+                        <li class="progress">
+                            <div class="progress-bar" data-width="60">
+                                SEO 60%
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="col-md-6 col-sm-12 col-xs-12 wow fadeInRight">
+                        <li class="progress">
+                            <div class="progress-bar" data-width="75">
+                                Agencying 75%
+                            </div>
+                        </li>
+                        <li class="progress">
+                            <div class="progress-bar" data-width="95">
+                                App Development 95%
+                            </div>
+                        </li>
+                        <li class="progress">
+                            <div class="progress-bar" data-width="70">
+                                IT Consultency 70%
+                            </div>
+                        </li>
+                        <li class="progress">
+                            <div class="progress-bar" data-width="90">
+                                Theme Development 90%
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End progress bar Section -->
+*@
 <!-- start Service Section -->
 <section id="pr_sec">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
                 <div class="title_sec">
-                    <h1>OUR Service</h1>
+                    <h1>@Localizer["Our_services"]</h1>
                     <h2>WE’RE BRANDING & DIGITAL STUDIO FROM VIET NAM</h2>
                 </div>
             </div>
             @*
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div class="service">
-                    <i class="fa fa-globe"></i>
-                    <h2>web Development</h2>
-                    <div class="service_hoverly">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="service">
                         <i class="fa fa-globe"></i>
                         <h2>web Development</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ab odio quas  , voluptate aspernatur!</p>
+                        <div class="service_hoverly">
+                            <i class="fa fa-globe"></i>
+                            <h2>web Development</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ab odio quas  , voluptate aspernatur!</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             *@
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                 <div class="service">
                     <i class="fa fa-envelope"></i>
-                    <h2>SMS Dispatching</h2>
+                    <h2>@Localizer["SMS_Dispatching"]</h2>
                     <div class="service_hoverly">
                         <i class="fa fa-envelope"></i>
-                        <h2>SMS Dispatching</h2>
+                        <h2>@Localizer["SMS_Dispatching"]</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ab odio quas  , voluptate aspernatur!</p>
                     </div>
                 </div>
@@ -213,10 +216,10 @@
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                 <div class="service">
                     <i class="fa fa-search"></i>
-                    <h2>Car Tracking</h2>
+                    <h2>@Localizer["Car_Tracking"]</h2>
                     <div class="service_hoverly">
                         <i class="fa fa-search"></i>
-                        <h2>Car Tracking</h2>
+                        <h2>@Localizer["Car_Tracking"]</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ab odio quas  , voluptate aspernatur!</p>
                     </div>
                 </div>
@@ -224,10 +227,10 @@
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                 <div class="service">
                     <i class="fa fa-code"></i>
-                    <h2>Software</h2>
+                    <h2>@Localizer["Software"]</h2>
                     <div class="service_hoverly">
                         <i class="fa fa-code"></i>
-                        <h2>Software</h2>
+                        <h2>@Localizer["Software"]</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ab odio quas  , voluptate aspernatur!</p>
                     </div>
                 </div>
@@ -237,100 +240,100 @@
 </section>
 <!-- End Service Section -->
 @*
-<!-- start portfolio Section -->
-<section id="protfolio_sec">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
-                <div class="title_sec">
-                    <h1>Our Portfolio</h1>
-                    <h2>WE’RE BRANDING & DIGITAL STUDIO FROM VIET NAM</h2>
-                </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="portfolio-filter text-uppercase text-center">
-                    <ul class="filter">
-                        <li class="active" data-filter="*">All</li>
-                        <li data-filter=".web-design">Web Design</li>
-                        <li data-filter=".graphic">Graphic</li>
-                        <li data-filter=".photography">Photography</li>
-                        <li data-filter=".motion-video">Motion video</li>
-                    </ul>
-                </div>
-                <div class="all-portfolios">
-                    <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                        <div class="single-portfolio web-design">
-                            <img class="img-responsive" src="http://showwp.com/demos/porton/default/upload/p_06.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                        <div class="single-portfolio web-design">
-                            <img class="img-responsive" src="http://showwp.com/demos/porton/default/upload/p_01.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                        <div class="single-portfolio web-design">
-                            <img class="img-responsive" src="http://showwp.com/demos/porton/default/upload/p_02.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                        <div class="single-portfolio graphic">
-                            <img class="img-responsive" src="http://showwp.com/demos/porton/default/upload/p_03.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                        <div class="single-portfolio web-design">
-                            <img class="img-responsive" src="http://showwp.com/demos/porton/default/upload/p_04.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                        <div class="single-portfolio photography">
-                            <img class="img-responsive" src="http://showwp.com/demos/porton/default/upload/p_05.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                        <div class="single-portfolio web-design">
-                            <img class="img-responsive" src="http://showwp.com/demos/porton/default/upload/p_07.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                        <div class="single-portfolio web-design">
-                            <img class="img-responsive" src="http://showwp.com/demos/porton/default/upload/p_08.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                        <div class="single-portfolio photography">
-                            <img class="img-responsive" src="http://showwp.com/demos/porton/default/upload/p_08.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                        <div class="single-portfolio web-design">
-                            <img class="img-responsive" src="http://showwp.com/demos/porton/default/upload/p_08.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                        <div class="single-portfolio web-design">
-                            <img class="img-responsive" src="http://showwp.com/demos/porton/default/upload/p_09.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                        <div class="single-portfolio photography">
-                            <img class="img-responsive" src="http://showwp.com/demos/porton/default/upload/p_08.jpg" alt="">
-                        </div>
+    <!-- start portfolio Section -->
+    <section id="protfolio_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+                    <div class="title_sec">
+                        <h1>Our Portfolio</h1>
+                        <h2>WE’RE BRANDING & DIGITAL STUDIO FROM VIET NAM</h2>
                     </div>
                 </div>
+                <div class="col-lg-12">
+                    <div class="portfolio-filter text-uppercase text-center">
+                        <ul class="filter">
+                            <li class="active" data-filter="*">All</li>
+                            <li data-filter=".web-design">Web Design</li>
+                            <li data-filter=".graphic">Graphic</li>
+                            <li data-filter=".photography">Photography</li>
+                            <li data-filter=".motion-video">Motion video</li>
+                        </ul>
+                    </div>
+                    <div class="all-portfolios">
+                        <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+                            <div class="single-portfolio web-design">
+                                <img class="img-responsive" src="http://showwp.com/demos/porton/default/upload/p_06.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+                            <div class="single-portfolio web-design">
+                                <img class="img-responsive" src="http://showwp.com/demos/porton/default/upload/p_01.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+                            <div class="single-portfolio web-design">
+                                <img class="img-responsive" src="http://showwp.com/demos/porton/default/upload/p_02.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+                            <div class="single-portfolio graphic">
+                                <img class="img-responsive" src="http://showwp.com/demos/porton/default/upload/p_03.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+                            <div class="single-portfolio web-design">
+                                <img class="img-responsive" src="http://showwp.com/demos/porton/default/upload/p_04.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+                            <div class="single-portfolio photography">
+                                <img class="img-responsive" src="http://showwp.com/demos/porton/default/upload/p_05.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+                            <div class="single-portfolio web-design">
+                                <img class="img-responsive" src="http://showwp.com/demos/porton/default/upload/p_07.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+                            <div class="single-portfolio web-design">
+                                <img class="img-responsive" src="http://showwp.com/demos/porton/default/upload/p_08.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+                            <div class="single-portfolio photography">
+                                <img class="img-responsive" src="http://showwp.com/demos/porton/default/upload/p_08.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+                            <div class="single-portfolio web-design">
+                                <img class="img-responsive" src="http://showwp.com/demos/porton/default/upload/p_08.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+                            <div class="single-portfolio web-design">
+                                <img class="img-responsive" src="http://showwp.com/demos/porton/default/upload/p_09.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+                            <div class="single-portfolio photography">
+                                <img class="img-responsive" src="http://showwp.com/demos/porton/default/upload/p_08.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
 
-            </div>
-            <div class="post_btn">
-                <div class="hover_effect_btn" id="hover_effect_btn">
-                    <a href="#hover_effect_btn" data-hover="view more post"><span>view more post</span></a>
+                </div>
+                <div class="post_btn">
+                    <div class="hover_effect_btn" id="hover_effect_btn">
+                        <a href="#hover_effect_btn" data-hover="view more post"><span>view more post</span></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- End Portfolio Section -->
-    *@
+    </section>
+    <!-- End Portfolio Section -->
+*@
 <!-- start our team Section -->
 <section id="tm_sec">
     <div class="container">
@@ -603,48 +606,48 @@
 </section>
 <!-- End Happy Client  Section -->
 @*
-<!-- start contact us Section -->
-<section id="ctn_sec">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
-                <div class="title_sec">
-                    <h1>Contact Info</h1>
-                    <h2>WE’RE BRANDING & DIGITAL STUDIO FROM VIET NAM</h2>
+    <!-- start contact us Section -->
+    <section id="ctn_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+                    <div class="title_sec">
+                        <h1>Contact Info</h1>
+                        <h2>WE’RE BRANDING & DIGITAL STUDIO FROM VIET NAM</h2>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-6">
-                <div id="cnt_form">
-                    <form id="contact-form" class="contact" name="contact-form" method="post" action="send-mail.php">
-                        <div class="form-group">
-                            <input type="text" name="name" class="form-control name-field" required="required" placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" class="form-control mail-field" required="required" placeholder="Your Email">
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Message"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-primary">Send</button>
-                        </div>
-                    </form>
+                <div class="col-sm-6">
+                    <div id="cnt_form">
+                        <form id="contact-form" class="contact" name="contact-form" method="post" action="send-mail.php">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control name-field" required="required" placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control mail-field" required="required" placeholder="Your Email">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Send</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <div class="cnt_info">
-                    <ul>
-                        <li><i class="fa fa-facebook"></i><p>121 King Street, Melbourne Victoria 3000 Australia</p></li>
-                        <li><i class="fa fa-envelope"></i><p>contact@info.com</p></li>
-                        <li><i class="fa fa-phone"></i><p>+0987654321 (+012345678)</p></li>
-                    </ul>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="cnt_info">
+                        <ul>
+                            <li><i class="fa fa-facebook"></i><p>121 King Street, Melbourne Victoria 3000 Australia</p></li>
+                            <li><i class="fa fa-envelope"></i><p>contact@info.com</p></li>
+                            <li><i class="fa fa-phone"></i><p>+0987654321 (+012345678)</p></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- End contact us  Section -->
-    *@
+    </section>
+    <!-- End contact us  Section -->
+*@
 <!-- start located map Section -->
 <section id="ltd_map_sec">
     <div class="container">
@@ -663,4 +666,3 @@
     </div>
 </section>
 <!-- End located map  Section -->
-

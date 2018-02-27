@@ -1,9 +1,20 @@
-﻿
+﻿@using Microsoft.AspNetCore.Builder
+@using Microsoft.AspNetCore.Http.Features
+@using Microsoft.AspNetCore.Localization
 @using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Options
 @using Microsoft.Extensions.Localization
-@inject IHtmlLocalizer<SharedResource> SharedLocalizer 
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
 @inject IViewLocalizer Localizer
+@inject IOptions<RequestLocalizationOptions> LocOptions
 
+
+
+@{
+    var culture = Context.Features.Get<IRequestCultureFeature>
+        ().RequestCulture.Culture.TwoLetterISOLanguageName;
+}
+@using Microsoft.AspNetCore.Routing.Constraints;
 <!DOCTYPE html>
 <html class="no-js">
 <head>
@@ -126,7 +137,17 @@
                                         <li><a class="page-scroll" asp-area="" asp-action="Career">@Localizer["Career"]</a></li>
                                         <li><a asp-area="" asp-action="Contacts">@Localizer["Contact_us"]</a></li>
 
+                                        <li>
+                                            <a href="#"><i class="fa fa-globe"></i><i class="fa fa-angle-down"></i></a>
+                                            <ul>
+                                                <li><a class="page-scroll"  asp-area="" asp-route-culture="en">@Localizer["English"]</a></li>
+                                                <li><a class="page-scroll" asp-area="" asp-route-culture="kk">@Localizer["Kazakh"]</a></li>
+                                                <li><a class="page-scroll" asp-area="" asp-route-culture="ru">@Localizer["Russian"]</a></li>
+                                              
+                                            </ul>
+                                        </li>
                                     </ul>
+
                                 </div>
                             </nav>
                         </div>

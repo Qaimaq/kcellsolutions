@@ -141,4 +141,13 @@
   <data name="Software" xml:space="preserve">
     <value>Программное Обеспечение</value>
   </data>
+  <data name="English" xml:space="preserve">
+    <value>Английский</value>
+  </data>
+  <data name="Kazakh" xml:space="preserve">
+    <value>Казахский</value>
+  </data>
+  <data name="Russian" xml:space="preserve">
+    <value>Русский</value>
+  </data>
 </root>

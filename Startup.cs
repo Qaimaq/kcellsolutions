@@ -37,6 +37,7 @@ namespace KCell_Solutions
                 var supportedCultures = new[]
                 {
                     new CultureInfo("en"),
+                    new CultureInfo("kk"),
                     new CultureInfo("ru")
                 };
 
@@ -57,7 +58,7 @@ namespace KCell_Solutions
             var supportedCultures = new[]
             {
                new CultureInfo("en"),
-                new CultureInfo("de"),
+                new CultureInfo("kk"),
                 new CultureInfo("ru")
             };
             app.UseRequestLocalization(new RequestLocalizationOptions

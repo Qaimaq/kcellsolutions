@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewData["Title"] = "Contacts";
+    ViewData["Title"] = @Localizer["Contacts"];
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @using Microsoft.AspNetCore.Mvc.Localization
@@ -10,12 +10,14 @@
 @inject IHtmlLocalizer<SharedResource> SharedLocalizer
 @model KCell_Solutions.ViewModels.ProductViewModel
 <!-- start located map Section -->
-<section id="ltd_map_sec">
+<section id="ltd_map_sec" style="padding:100px 0;">
+    @*
     <style type="text/css">
         #ltd_map_sec {
             padding: 100px 0;
         }
     </style>
+        *@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">

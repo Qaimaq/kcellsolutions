@@ -123,6 +123,9 @@
   <data name="Career" xml:space="preserve">
     <value>Карьера</value>
   </data>
+  <data name="Car_Tracking" xml:space="preserve">
+    <value>Авто Мониторинг</value>
+  </data>
   <data name="Contact_us" xml:space="preserve">
     <value>Контакты</value>
   </data>
@@ -131,5 +134,20 @@
   </data>
   <data name="Our_services" xml:space="preserve">
     <value>Услуги</value>
+  </data>
+  <data name="SMS_Dispatching" xml:space="preserve">
+    <value>СМС рассылка</value>
+  </data>
+  <data name="Software" xml:space="preserve">
+    <value>Программное Обеспечение</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>Английский</value>
+  </data>
+  <data name="Kazakh" xml:space="preserve">
+    <value>Казахский</value>
+  </data>
+  <data name="Russian" xml:space="preserve">
+    <value>Русский</value>
   </data>
 </root>

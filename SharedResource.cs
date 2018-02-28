@@ -1,4 +1,7 @@
 ﻿
-   public class SharedResource
+namespace KCell_Solutions
+{
+    public class SharedResource
     {
     }
+}

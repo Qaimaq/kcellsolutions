@@ -118,27 +118,27 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Address" xml:space="preserve">
-    <value>10 Nakhimova Street, Almaty, Republic of Kazakhstan</value>
+    <value>Қазақстан Республикасы, Алматы, Нахимова көшесі,10</value>
   </data>
   <data name="Contacts" xml:space="preserve">
-    <value>Contacts</value>
+    <value>Байланыс</value>
   </data>
   <data name="Contact_us" xml:space="preserve">
-    <value>Contact us</value>
+    <value>Бізбен байланыс</value>
   </data>
   <data name="Located_the_map" xml:space="preserve">
-    <value>Located the map</value>
+    <value>Біз орналасқан жер</value>
   </data>
   <data name="Message" xml:space="preserve">
-    <value>Message</value>
+    <value>Хабарлама</value>
   </data>
   <data name="Send" xml:space="preserve">
-    <value>Send</value>
+    <value>Жіберу</value>
   </data>
   <data name="Your_email" xml:space="preserve">
-    <value>Your Email</value>
+    <value>Email</value>
   </data>
   <data name="Your_name" xml:space="preserve">
-    <value>Your Name</value>
+    <value>Атауы</value>
   </data>
 </root>

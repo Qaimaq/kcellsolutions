@@ -117,28 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Address" xml:space="preserve">
-    <value>10 Nakhimova Street, Almaty, Republic of Kazakhstan</value>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
   </data>
-  <data name="Contacts" xml:space="preserve">
-    <value>Contacts</value>
+  <data name="Career" xml:space="preserve">
+    <value>Career</value>
+  </data>
+  <data name="Car_Tracking" xml:space="preserve">
+    <value>Car Tracking</value>
   </data>
   <data name="Contact_us" xml:space="preserve">
     <value>Contact us</value>
   </data>
-  <data name="Located_the_map" xml:space="preserve">
-    <value>Located the map</value>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
   </data>
-  <data name="Message" xml:space="preserve">
-    <value>Message</value>
+  <data name="Our_services" xml:space="preserve">
+    <value>Our services</value>
   </data>
-  <data name="Send" xml:space="preserve">
-    <value>Send</value>
+  <data name="SMS_Dispatching" xml:space="preserve">
+    <value>SMS Dispatching</value>
   </data>
-  <data name="Your_email" xml:space="preserve">
-    <value>Your Email</value>
+  <data name="Software" xml:space="preserve">
+    <value>Software</value>
   </data>
-  <data name="Your_name" xml:space="preserve">
-    <value>Your Name</value>
+  <data name="English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="Kazakh" xml:space="preserve">
+    <value>Kazakh</value>
+  </data>
+  <data name="Russian" xml:space="preserve">
+    <value>Russian</value>
   </data>
 </root>

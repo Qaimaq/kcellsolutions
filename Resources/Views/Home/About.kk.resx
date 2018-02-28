@@ -117,28 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Address" xml:space="preserve">
-    <value>10 Nakhimova Street, Almaty, Republic of Kazakhstan</value>
+  <data name="About" xml:space="preserve">
+    <value>Біз туралы</value>
   </data>
-  <data name="Contacts" xml:space="preserve">
-    <value>Contacts</value>
+  <data name="Our_portfolio" xml:space="preserve">
+    <value>Біздің портфолио</value>
   </data>
-  <data name="Contact_us" xml:space="preserve">
-    <value>Contact us</value>
-  </data>
-  <data name="Located_the_map" xml:space="preserve">
-    <value>Located the map</value>
-  </data>
-  <data name="Message" xml:space="preserve">
-    <value>Message</value>
-  </data>
-  <data name="Send" xml:space="preserve">
-    <value>Send</value>
-  </data>
-  <data name="Your_email" xml:space="preserve">
-    <value>Your Email</value>
-  </data>
-  <data name="Your_name" xml:space="preserve">
-    <value>Your Name</value>
+  <data name="Our_skill_diagram" xml:space="preserve">
+    <value>Біздің ептілік</value>
   </data>
 </root>

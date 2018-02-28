@@ -117,28 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Address" xml:space="preserve">
-    <value>10 Nakhimova Street, Almaty, Republic of Kazakhstan</value>
+  <data name="About" xml:space="preserve">
+    <value>Біз туралы</value>
   </data>
-  <data name="Contacts" xml:space="preserve">
-    <value>Contacts</value>
+  <data name="Career" xml:space="preserve">
+    <value>Мансап</value>
+  </data>
+  <data name="Car_Tracking" xml:space="preserve">
+    <value>Көлік мониторингі</value>
   </data>
   <data name="Contact_us" xml:space="preserve">
-    <value>Contact us</value>
+    <value>Байланыс</value>
   </data>
-  <data name="Located_the_map" xml:space="preserve">
-    <value>Located the map</value>
+  <data name="Home" xml:space="preserve">
+    <value>Басты</value>
   </data>
-  <data name="Message" xml:space="preserve">
-    <value>Message</value>
+  <data name="Our_services" xml:space="preserve">
+    <value>Қызметтер</value>
   </data>
-  <data name="Send" xml:space="preserve">
-    <value>Send</value>
+  <data name="SMS_Dispatching" xml:space="preserve">
+    <value>СМС Тарату</value>
   </data>
-  <data name="Your_email" xml:space="preserve">
-    <value>Your Email</value>
+  <data name="Software" xml:space="preserve">
+    <value>Программалық қамтама</value>
   </data>
-  <data name="Your_name" xml:space="preserve">
-    <value>Your Name</value>
+  <data name="English" xml:space="preserve">
+    <value>Ағылшынша</value>
+  </data>
+  <data name="Kazakh" xml:space="preserve">
+    <value>Қазақша</value>
+  </data>
+  <data name="Russian" xml:space="preserve">
+    <value>Орысша</value>
   </data>
 </root>

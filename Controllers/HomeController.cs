@@ -13,6 +13,7 @@ namespace KCell_Solutions.Controllers
 {
     public class HomeController : Controller
     {
+        
         private readonly IStringLocalizer<HomeController> _localizer;
         private readonly IStringLocalizer<SharedResource> _sharedLocalizer;
         public HomeController(IStringLocalizer<HomeController> localizer,
@@ -21,7 +22,7 @@ namespace KCell_Solutions.Controllers
             _localizer = localizer;
             _sharedLocalizer = sharedLocalizer;
         }
-        public string Test()
+       public string Test()
         {
             // получаем ресурс Message
             string message = _sharedLocalizer["Message"];
@@ -29,6 +30,7 @@ namespace KCell_Solutions.Controllers
 
 
         }
+        
         // остальное содержимое контроллера
         public IActionResult Index()
         {

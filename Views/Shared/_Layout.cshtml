@@ -82,6 +82,7 @@
     @*<div class="container body-content"> *@
     @*</div>*@
 
+
     <!-- start preloader -->
     <div id="loader-wrapper">
         <div class="logo"></div>
@@ -123,15 +124,15 @@
                                         <li><a class="page-scroll" asp-area="" asp-action="Index">@Localizer["Home"]</a></li>
                                         <li><a asp-area="" asp-action="About">@Localizer["About"]</a></li>
                                         @* <li>
-                    <a href="#">Our Another Page <i class="fa fa-angle-down"></i></a>
-                    <ul>
-                        <li><a class="page-scroll" href="#tm_sec">Our Team</a></li>
-                        <li><a class="page-scroll" href="#tstm_sec">Our Testimonial</a></li>
-                        <li><a class="page-scroll" href="#lts_sec">Our Latest Blog</a></li>
-                        <li><a class="page-scroll" href="#pricing_sec">Pricing</a></li>
-                        <li><a class="page-scroll" href="#clt_sec">Our Happy Client</a></li>
-                    </ul>
-                </li>
+                                                <a href="#">Our Another Page <i class="fa fa-angle-down"></i></a>
+                                                <ul>
+                                                    <li><a class="page-scroll" href="#tm_sec">Our Team</a></li>
+                                                    <li><a class="page-scroll" href="#tstm_sec">Our Testimonial</a></li>
+                                                    <li><a class="page-scroll" href="#lts_sec">Our Latest Blog</a></li>
+                                                    <li><a class="page-scroll" href="#pricing_sec">Pricing</a></li>
+                                                    <li><a class="page-scroll" href="#clt_sec">Our Happy Client</a></li>
+                                                </ul>
+                                            </li>
                                         *@
                                         <li>
                                             <a href="#">@Localizer["Our_services"]<i class="fa fa-angle-down"></i></a>
@@ -176,6 +177,7 @@
 
 
     @RenderBody()
+
     <!-- start footer Section -->
     <footer id="ft_sec">
         <div class="container">
@@ -203,7 +205,10 @@
         </div>
     </footer>
     <!-- End footer Section -->
-    
+
+    <a id="back-to-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
 
 
 
@@ -235,6 +240,10 @@
         <script>
             new UISearch(document.getElementById('sb-search'));
         </script>
+
+        <script src="~/js/gotop.js"></script>
+
+
 
         <!-- Google Map js -->
         <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDzGrqqKL_1JNPNZNrxYm9NxJrINAoX1J4"></script>
@@ -304,6 +313,8 @@
 
             });
         </script>
+
+
 
     </environment>
     <environment exclude="Development">

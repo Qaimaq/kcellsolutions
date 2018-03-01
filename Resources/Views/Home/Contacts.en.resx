@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Address" xml:space="preserve">
-    <value>10 Nakhimova Street, Almaty, Republic of Kazakhstan</value>
+    <value>Almaty, Republic of Kazakhstan</value>
   </data>
   <data name="Contacts" xml:space="preserve">
     <value>Contacts</value>

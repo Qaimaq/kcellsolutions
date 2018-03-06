@@ -14,6 +14,7 @@
     var culture = Context.Features.Get<IRequestCultureFeature>
         ().RequestCulture.Culture.TwoLetterISOLanguageName;
 }
+    
 @using Microsoft.AspNetCore.Routing.Constraints;
 <!DOCTYPE html>
 <html lang="en">
@@ -99,10 +100,8 @@
     <!-- //PRELOADER -->
     
     <div class="preloader_hide">
-        
         <!-- PAGE -->
         <div id="page">
-
             <!-- HEADER -->
             <header>
                 <!-- MENU BLOCK -->
@@ -126,16 +125,18 @@
                                     <li class="first active scroll_btn"><a href="#home">Главная</a></li>
                                     <li class="scroll_btn"><a href="#about">О компании</a></li>
                                     <li class="scroll_btn"><a href="#projects">Projects</a></li>
-                                    <li class="scroll_btn"><a href="#news">News</a></li>
-                                    <li class="scroll_btn last"><a href="#contacts">Контакты</a></li>
+                                    @*<li class="scroll_btn"><a href="#news">News</a></li>*@
+
                                     <li class="sub-menu">
-                                        <a asp-area="" asp-action="Software">Услуги</a>
+                                        <a href="javascript:void(0);">Услуги</a>
                                         <ul>
-                                            <li><a href="blog.html">Software</a></li>
-                                            <li><a href="blog-post.html">Car Tracking</a></li>
-                                            <li><a href="portfolio-post.html">SMS Dispatching</a></li>
+                                            <li><a asp-area="" asp-action="About">Software</a></li>
+                                            <li><a asp-area="" asp-action="Car_Tracking">Car Tracking</a></li>
+                                            <li><a asp-area="" asp-action="SMS_Dispatching">SMS Dispatching</a></li>
                                         </ul>
                                     </li>
+                                    <li class="scroll_btn last"><a href="#contacts">Контакты</a></li>
+
                                 </ul>
                             </nav>
                         </div><!-- //MENU -->
@@ -143,90 +144,96 @@
                 </div><!-- //CONTAINER -->
             </header><!-- //HEADER -->
 
-            </div>
+
+
+
+
 
 
 
 
             @RenderBody()
-
-            <!-- FOOTER -->
-            <footer>
-                <!-- CONTAINER -->
-                <div class="container">
-                    <!-- ROW -->
-                    <div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
-                        <div class="col-lg-4 col-md-4 col-sm-6 padbot30">
-                            <h4><b>Наши</b> Контакты</h4>
-                            <div class="recent_posts_small clearfix">
-                                <div class="post_item_content_small">
-                                    <a class="title" href="blog.html">As we have developed a unique layout template</a>
-                                    <ul class="post_item_inf_small">
-                                        <li>10 January 2014</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="recent_posts_small clearfix">
-                                <div class="post_item_content_small">
-                                    <a class="title" href="blog.html">How much is to develop a design for the game?</a>
-                                    <ul class="post_item_inf_small">
-                                        <li>14 January 2014</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="recent_posts_small clearfix">
-                                <div class="post_item_content_small">
-                                    <a class="title" href="blog.html">How to pump designer</a>
-                                    <ul class="post_item_inf_small">
-                                        <li>21 December 2013</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 padbot30 foot_about_block">
-                            <h4><b>В кратце</b> о нас</h4>
-                            <p>Мы ценим людей больше, чем прибыль. Стремися качеством, а не количеством достигать результатов. Таким образом, мы обеспечиваем устойчивые рабочие отношения с нашими клиентами.</p>
-                            <p>Наша команда небольшая, эклектичная и квалифицированная; с нашим собственным опытом, мы предоставляем лучшие решения заказчикам</p>
-                            <ul class="social">
-                                <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="javascript:void(0);"><i class="fa fa-pinterest-square"></i></a></li>
-                                <li><a href="javascript:void(0);"><i class="map_show fa fa-map-marker"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="respond_clear"></div>
-                        <div class="col-lg-4 col-md-4 padbot30">
-                            <h4><b>Напишите</b> Нам</h4>
-                            <!-- CONTACT FORM -->
-                            <div class="span9 contact_form">
-                                <div id="note"></div>
-                                <div id="fields">
-                                    <form id="contact-form-face" class="clearfix" action="#">
-                                        <input type="text" name="name" value="Имя" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
-                                        <textarea name="message" onFocus="if (this.value == 'Текст') this.value = '';" onBlur="if (this.value == '') this.value = 'Message';">Message</textarea>
-                                        <input class="contact_btn" type="submit" value="Отправить" />
-                                    </form>
-                                </div>
-                            </div><!-- //CONTACT FORM -->
-                        </div>
-                    </div><!-- //ROW -->
-                    <div class="row copyright">
-                        <div class="col-lg-12 text-center">
-                            <p>Разработано <i class="fa fa-heart"></i>, <a href="https://qaimaq.com">Qaimaq</a></p>
-                        </div>
-                    </div><!-- //ROW -->
-                </div><!-- //CONTAINER -->
-            </footer><!-- //FOOTER -->
-            <!-- MAP -->
-            <div id="map">
-                <a class="map_hide" href="javascript:void(0);"><i class="fa fa-angle-right"></i><i class="fa fa-angle-left"></i></a>
-                <iframe src="http://maps.google.com/maps?f=q&amp;give%20a%20hand=s_q&amp;hl=en&amp;geocode=&amp;q=london&amp;sll=37.0625,-95.677068&amp;sspn=42.631141,90.263672&amp;ie=UTF8&amp;hq=&amp;hnear=London,+United+Kingdom&amp;ll=51.500141,-0.126257&amp;spn=0.026448,0.039396&amp;z=14&amp;output=embed"></iframe>
-            </div><!-- //MAP -->
         </div>
+        
+        <!-- CONTACTS -->
+        <section id="contacts"></section><!-- //CONTACTS -->
+        <!-- FOOTER -->
+        <footer>
+            <!-- CONTAINER -->
+            <div class="container">
+                <!-- ROW -->
+                <div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
+                    <div class="col-lg-4 col-md-4 col-sm-6 padbot30">
+                        <h4><b>Наши</b> Контакты</h4>
+                        <div class="recent_posts_small clearfix">
+                            <div class="post_item_content_small">
+                                <a class="title" href="blog.html">As we have developed a unique layout template</a>
+                                <ul class="post_item_inf_small">
+                                    <li>10 January 2014</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="recent_posts_small clearfix">
+                            <div class="post_item_content_small">
+                                <a class="title" href="blog.html">How much is to develop a design for the game?</a>
+                                <ul class="post_item_inf_small">
+                                    <li>14 January 2014</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="recent_posts_small clearfix">
+                            <div class="post_item_content_small">
+                                <a class="title" href="blog.html">How to pump designer</a>
+                                <ul class="post_item_inf_small">
+                                    <li>21 December 2013</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 padbot30 foot_about_block">
+                        <h4><b>В кратце</b> о нас</h4>
+                        <p>Мы ценим людей больше, чем прибыль. Стремися качеством, а не количеством достигать результатов. Таким образом, мы обеспечиваем устойчивые рабочие отношения с нашими клиентами.</p>
+                        <p>Наша команда небольшая, эклектичная и квалифицированная; с нашим собственным опытом, мы предоставляем лучшие решения заказчикам</p>
+                        <ul class="social">
+                            <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="javascript:void(0);"><i class="fa fa-pinterest-square"></i></a></li>
+                            <li><a href="javascript:void(0);"><i class="map_show fa fa-map-marker"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="respond_clear"></div>
+                    <div class="col-lg-4 col-md-4 padbot30">
+                        <h4><b>Напишите</b> Нам</h4>
+                        <!-- CONTACT FORM -->
+                        <div class="span9 contact_form">
+                            <div id="note"></div>
+                            <div id="fields">
+                                <form id="contact-form-face" class="clearfix" action="#">
+                                    <input type="text" name="name" value="Имя" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
+                                    <textarea name="message" onFocus="if (this.value == 'Текст') this.value = '';" onBlur="if (this.value == '') this.value = 'Message';">Message</textarea>
+                                    <input class="contact_btn" type="submit" value="Отправить" />
+                                </form>
+                            </div>
+                        </div><!-- //CONTACT FORM -->
+                    </div>
+                </div><!-- //ROW -->
+                <div class="row copyright">
+                    <div class="col-lg-12 text-center">
+                        <p>Разработано <i class="fa fa-heart"></i>, <a href="https://qaimaq.com">Qaimaq</a></p>
+                    </div>
+                </div><!-- //ROW -->
+            </div><!-- //CONTAINER -->
+        </footer><!-- //FOOTER -->
+        <!-- MAP -->
+        <div id="map">
+            <a class="map_hide" href="javascript:void(0);"><i class="fa fa-angle-right"></i><i class="fa fa-angle-left"></i></a>
+            <iframe src="http://maps.google.com/maps?f=q&amp;give%20a%20hand=s_q&amp;hl=en&amp;geocode=&amp;q=london&amp;sll=37.0625,-95.677068&amp;sspn=42.631141,90.263672&amp;ie=UTF8&amp;hq=&amp;hnear=London,+United+Kingdom&amp;ll=51.500141,-0.126257&amp;spn=0.026448,0.039396&amp;z=14&amp;output=embed"></iframe>
+        </div><!-- //MAP -->
+            
+    </div>
        
     
-
 
     <environment include="Development">
         @*<script src="~/lib/jquery/dist/jquery.js"></script>
@@ -295,7 +302,7 @@
                 crossorigin="anonymous"
                 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
         </script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
+        <script src="~/js/site.min.js" asp-append-version="false"></script>
 
     </environment>
 

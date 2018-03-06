@@ -69,6 +69,24 @@ namespace KCell_Solutions.Controllers
 
             return View();
         }
+        public IActionResult Software()
+        {
+            ViewData["Message"] = "Your application description page.";
+
+            return View();
+        }
+        public IActionResult SMS_Dispatching()
+        {
+            ViewData["Message"] = "Your application description page.";
+
+            return View();
+        }
+        public IActionResult Car_Tracking()
+        {
+            ViewData["Message"] = "Your application description page.";
+
+            return View();
+        }
         [HttpPost]
         public IActionResult SetLanguage(string culture, string returnUrl)
         {
@@ -80,5 +98,6 @@ namespace KCell_Solutions.Controllers
 
             return LocalRedirect(returnUrl);
         }
+
     }
 }

@@ -126,14 +126,14 @@
   <data name="Car_Tracking" xml:space="preserve">
     <value>Car Tracking</value>
   </data>
-  <data name="Contact_us" xml:space="preserve">
-    <value>Contact us</value>
+  <data name="Contacts" xml:space="preserve">
+    <value>Contacts</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Home</value>
   </data>
-  <data name="Our_services" xml:space="preserve">
-    <value>Our services</value>
+  <data name="Services" xml:space="preserve">
+    <value>Services</value>
   </data>
   <data name="SMS_Dispatching" xml:space="preserve">
     <value>SMS Dispatching</value>

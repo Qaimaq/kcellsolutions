@@ -124,15 +124,15 @@
     <value>Карьера</value>
   </data>
   <data name="Car_Tracking" xml:space="preserve">
-    <value>Авто Мониторинг</value>
+    <value>Трекинг Автотранспорта</value>
   </data>
-  <data name="Contact_us" xml:space="preserve">
+  <data name="Contacts" xml:space="preserve">
     <value>Контакты</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Главная</value>
   </data>
-  <data name="Our_services" xml:space="preserve">
+  <data name="Services" xml:space="preserve">
     <value>Услуги</value>
   </data>
   <data name="SMS_Dispatching" xml:space="preserve">

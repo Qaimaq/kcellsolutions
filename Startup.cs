@@ -36,12 +36,12 @@ namespace KCell_Solutions
             {
                 var supportedCultures = new[]
                 {
-                    new CultureInfo("en"),
+                    new CultureInfo("ru"),
                     new CultureInfo("kk"),
-                    new CultureInfo("ru")
+                    new CultureInfo("en")
                 };
 
-                options.DefaultRequestCulture = new RequestCulture("en");
+                options.DefaultRequestCulture = new RequestCulture("ru");
                 options.SupportedCultures = supportedCultures;
                 options.SupportedUICultures = supportedCultures;
             });
@@ -57,13 +57,13 @@ namespace KCell_Solutions
 
             var supportedCultures = new[]
             {
-               new CultureInfo("en"),
+               new CultureInfo("ru"),
                 new CultureInfo("kk"),
-                new CultureInfo("ru")
+                new CultureInfo("en")
             };
             app.UseRequestLocalization(new RequestLocalizationOptions
             {
-                DefaultRequestCulture = new RequestCulture("en"),
+                DefaultRequestCulture = new RequestCulture("ru"),
                 SupportedCultures = supportedCultures,
                 SupportedUICultures = supportedCultures
             });

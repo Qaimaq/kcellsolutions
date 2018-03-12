@@ -62,3 +62,73 @@
     font-size: 20px;
     color: #666;
 }
+
+.back-to-top2 {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    bottom: 70px;
+    right: 18px;
+}
+
+/*First Icon Effect */
+.icon-effect-1 {
+    background-color: #fff;
+    -webkit-transition: color 0.4s;
+    -moz-transition: color 0.4s;
+    transition: color 0.4s;
+}
+
+.gray-icon.icon-effect-1 {
+    box-shadow: 0 0 0 3px #444;
+    -o-box-shadow: 0 0 0 3px #444;
+    -moz-box-shadow: 0 0 0 3px #444;
+    -webkit-box-shadow: 0 0 0 3px #444;
+}
+
+.icon-effect-1:after {
+    top: -2px;
+    left: -2px;
+    padding: 2px;
+    z-index: -1;
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.4s;
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+.gray-icon.icon-effect-1:after {
+    background: #444;
+}
+
+.icon-effect-1.gray-icon:hover, .service-box:hover .gray-icon.icon-effect-1 {
+    color: #444;
+}
+
+.icon-effect-1:hover:after, .service-box:hover .icon-effect-1:after {
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    opacity: 0;
+}
+
+.icon-medium-effect {
+    position: relative;
+    display: block;
+    z-index: 1;
+    font-size: 2em;
+    color: #fff;
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    margin: 0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}

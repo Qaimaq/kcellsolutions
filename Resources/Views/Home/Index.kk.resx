@@ -150,4 +150,7 @@
   <data name="WHGT" xml:space="preserve">
     <value>Бізде керемет команда</value>
   </data>
+  <data name="Our_clients" xml:space="preserve">
+    <value>Біздің клиенттер</value>
+  </data>
 </root>

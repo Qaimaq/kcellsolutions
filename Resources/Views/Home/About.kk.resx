@@ -120,6 +120,9 @@
   <data name="About" xml:space="preserve">
     <value>Біз туралы</value>
   </data>
+  <data name="Our_clients" xml:space="preserve">
+    <value>Біздің клиенттер</value>
+  </data>
   <data name="Our_portfolio" xml:space="preserve">
     <value>Біздің портфолио</value>
   </data>

@@ -150,4 +150,7 @@
   <data name="Russian" xml:space="preserve">
     <value>Орысша</value>
   </data>
+  <data name="Search" xml:space="preserve">
+    <value>Іздеу</value>
+  </data>
 </root>

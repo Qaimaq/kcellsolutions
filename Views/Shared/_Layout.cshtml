@@ -28,8 +28,8 @@
 
 
     <environment include="Development">
-        @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />*@
+        @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />*@
+        <link rel="stylesheet" href="~/css/site.css" />
 
         <link rel="shortcut icon" href="~/images/favicon.ico">
         <!-- CSS -->
@@ -118,7 +118,7 @@
                         <!-- SEARCH FORM -->
                         <div id="search-form" class="pull-right">
                             <form method="get" action="#">
-                                <input type="text" name="Search" value="Поиск" onFocus="if (this.value == 'Search') this.value = '';" onBlur="if (this.value == '') this.value = 'Search';" />
+                                <input type="text" name="Search" value="@Localizer["Search"]" onFocus="if (this.value == 'Search') this.value = '';" onBlur="if (this.value == '') this.value = 'Search';" />
                             </form>
                         </div><!-- SEARCH FORM -->
                         <!-- MENU -->
@@ -126,7 +126,7 @@
                             <nav class="navmenu center">
                                 <ul>
                                     <li class="first active scroll_btn"><a href="#home">@Localizer["Home"]</a></li>
-                                    <li class="scroll_btn"><a href="#about">@Localizer["About"]</a></li>
+                                    <li class="scroll_btn"><a asp-area="" asp-action="About">@Localizer["About"]</a></li>
 
                                     @*<li class="scroll_btn"><a href="#news">News</a></li>*@
 
@@ -166,8 +166,8 @@
             @RenderBody()
 
             <div id="back-to-top">
-                @*<i class="fa fa-chevron-up"></i>*@
-                <i><img src="~/images/arrow-up.png"></i>
+                <i class="fa fa-chevron-up"></i>
+               @* <i><img src="~/images/arrow-up.png"></i>*@
             </div>
         </div>
 

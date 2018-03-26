@@ -30,12 +30,12 @@
         }
 
 #abt_sec {
-    padding: 70px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 .title_sec {
     margin: 0 auto;
     padding: 0 0 25px 0;
-    text-align: center;
+   text-align: center; 
 }
 
     .title_sec h2 {
@@ -178,10 +178,20 @@
     .map-responsive iframe {
         left: 0;
         top: 0;
-        height:100%;
+        height:50%;
         width: 100%;
         position: absolute;
     }
 #map2 {
     padding-top: 0px;
+}
+
+.name-missing, .email-missing, .message-missing {
+    opacity: 0;
+    color: #ED2C3A;
+    margin-left: 10px;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
 }

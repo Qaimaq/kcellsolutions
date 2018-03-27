@@ -3,7 +3,11 @@
     ViewData["Title"] = "SMS Рассылка";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@using Microsoft.AspNetCore.Mvc.Localization
 
+@inject IViewLocalizer Localizer
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
 <!-- BREADCRUMBS -->
 <section class="breadcrumbs_block clearfix parallax">
     <div class="container center">
@@ -11,101 +15,27 @@
         <p>Прагматичные IT решения для вашего бизнеса</p>
     </div>
 </section><!-- //BREADCRUMBS -->
-<!-- ABOUT -->
-<section id="about">
-    <!-- SERVICES -->
-    <div class="services_block padbot40" data-appear-top-offset="-200" data-animated="fadeInUp">
-        <!-- CONTAINER -->
-        <div class="container">
-            <!-- ROW -->
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
-                    <a class="services_item" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
-                            <img src="~/images/info.png">
-                        </div>
-                        <p><b>Массовая рассылка</b></p>
-                        <span>Информирование об акциях, новостях, мероприятиях, приглашениях, отчетность о готовности работ</span>
-                    </a>
+<!-- start about Section -->
+<section id="abt_sec" style="padding: 30px 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+                <div class="title_sec">
+                    <h1>@Localizer["SMS_Dispatching"]</h1>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
-                    <a class="services_item" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
-                            <img src="~/images/api-code.png">
-                        </div>
-                        <p><b>Шлюз для программ и API</b></p>
-                        <span>Автоматизированная рассылка из ваших программ, сайтов и сервисов с помощью специальных программных протоколов API</span>
-                    </a>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+                <div class="abt">
+                    <p>Безусловно, <b>мобильный маркетинг является</b> одним из самых эффективных каналов коммуникаций с клиентами.</p>
+                    <p><b>В частности один из его способов – SMS рассылка.</b> Рекламные СМС сообщения несущие полезную для получателя информацию - не вызывают раздражения, обеспечивают стабильный контакт с целевой аудиторией и предоставляют самые широкие возможности для информирования клиентов о специальных акциях, мероприятиях и других новостях компании.</p>
+                    <p><b>Но у SMS рассылки по базе контактов есть один главный недостаток</b> перед другими рекламными средствами. SMS рассылка служит для связи с постоянными покупателями/посетителями,<b> но не привлекает новых клиентов!</b> </p>
+                    <p>Данный способ совершенно аналогичен размещению рекламы в эфире теле- и радиоканалов, и точно также гармонично сочетает в себе массовость и легальность.</p>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
-                    <a class="services_item" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
-                            <img src="~/images/check.png">
-                        </div>
-                        <p><b>Проверка доступности номеров</b></p>
-                        <span>Проверка списков и одиночных номеров на доступность абонентов и чистка баз данных от неактуальных номеров</span>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
-                    <a class="services_item" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
-                            <img src="~/images/voice-reply.png">
-                        </div>
-                        <p><b>Голосовые рассылки</b></p>
-                        <span>Рассылка голосовых сообщений в виде входящих звонков вашим партнерам, клиентам и работникам с помощью специального веб-интерфейса</span>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
-                    <a class="services_item" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
-                            <img src="~/images/phone-confirm.png">
-                        </div>
-                        <p><b>Отправка кодов</b></p>
-                        <span>Рассылка цифровых кодов для подтверждения определенных операций с помощью телефонного номера во входящем звонке</span>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
-                    <a class="services_item" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
-                            <img src="~/images/subscribe.png">
-                        </div>
-                        <p><b>Автоподписка на рассылки</b></p>
-                        <span>Легкий сбор и пополнение базы абонентов. Клиенты смогут самостоятельно подписываться и отписываться от рассылок</span>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
-                    <a class="services_item" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
-                            <img src="~/images/mail-reply.png">
-                        </div>
-                        <p><b>Получение СМС и звонков</b></p>
-                        <span>Прием и обработка СМС и звонков от абонентов на федеральные номера</span>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
-                    <a class="services_item" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
-                            <img src="~/images/phone-confirm.png">
-                        </div>
-                        <p><b>Виртуальные номера</b></p>
-                        <span>Подключение федерального виртуального номера для приема СМС. Такие номера работают без использования SIM-карт и напрямую. передаются операторами в наш сервис по интернету</span>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
-                    <a class="services_item" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
-                            <img src="~/images/sim-card.png">
-                        </div>
-                        <p><b>SIM-хостинг</b></p>
-                        <span>В отличие от виртуальных номеров можно получать сообщения от интернет-сервисов, банков и платежных систем, которые используют для отправки буквенные имена</span>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
-                </div>
-            </div><!-- //ROW -->
-        </div><!-- //CONTAINER -->
-    </div><!-- //SERVICES -->
-</section><!-- //ABOUT -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End About Section -->
 <!-- CLEAN CODE -->
 <div class="cleancode_block">
     <!-- CONTAINER -->
@@ -142,6 +72,125 @@
         </ul><!-- CASTOM TAB -->
     </div><!-- //CONTAINER -->
 </div><!-- //CLEAN CODE -->
+<!-- start about Section -->
+<section id="abt_sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+                <div class="title_sec">
+                    <h2>Почему Вам стоит заказать SMS рекламу уже сегодня?</h2>
+                    
+                        <ul>
+                            <li>На сегодняшний день SMS рассылка является одним из наиболее эффективных инструментов</li>
+                            <li>СМС реклама обеспечивает высокую частоту прочтения</li>
+                            <li>Доступная стоимость, которая во много раз ниже директ маркетинга</li>
+                            <li>Больший процент откликов по сравнению с онлайновыми и прочими традиционными видами маркетинг
+                            </li>
+                        </ul>
+                   
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</section>
+<!-- End About Section -->
+<!-- ABOUT -->
+<section id="about">
+    <!-- SERVICES -->
+    <div class="services_block padbot40" data-appear-top-offset="-200" data-animated="fadeInUp">
+        <!-- CONTAINER -->
+        <div class="container">
+            <!-- ROW -->
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
+                    <a class="services_item" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            <img src="~/images/mail2.png">
+                        </div>
+                        <p><b>Массовая рассылка</b></p>
+                        <span>Информирование об акциях, новостях, мероприятиях, приглашениях, отчетность о готовности работ</span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
+                    <a class="services_item" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            <img src="~/images/api-page.png">
+                        </div>
+                        <p><b>Шлюз для программ и API</b></p>
+                        <span>Автоматизированная рассылка из ваших программ, сайтов и сервисов с помощью специальных программных протоколов API</span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
+                    <a class="services_item" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            <img src="~/images/check2.png">
+                        </div>
+                        <p><b>Проверка доступности номеров</b></p>
+                        <span>Проверка списков и одиночных номеров на доступность абонентов и чистка баз данных от неактуальных номеров</span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
+                    <a class="services_item" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            <img src="~/images/microphone.png">
+                        </div>
+                        <p><b>Голосовые рассылки</b></p>
+                        <span>Рассылка голосовых сообщений в виде входящих звонков вашим партнерам, клиентам и работникам с помощью специального веб-интерфейса</span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
+                    <a class="services_item" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            <img src="~/images/smartphone.png">
+                        </div>
+                        <p><b>Отправка кодов</b></p>
+                        <span>Рассылка цифровых кодов для подтверждения определенных операций с помощью телефонного номера во входящем звонке</span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
+                    <a class="services_item" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            <img src="~/images/rss-symbol.png">
+                        </div>
+                        <p><b>Автоподписка на рассылки</b></p>
+                        <span>Легкий сбор и пополнение базы абонентов. Клиенты смогут самостоятельно подписываться и отписываться от рассылок</span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
+                    <a class="services_item" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            <img src="~/images/sms-message.png">
+                        </div>
+                        <p><b>Получение СМС и звонков</b></p>
+                        <span>Прием и обработка СМС и звонков от абонентов на федеральные номера</span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
+                    <a class="services_item" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            <img src="~/images/internet.png">
+                        </div>
+                        <p><b>Виртуальные номера</b></p>
+                        <span>Подключение федерального виртуального номера для приема СМС. Такие номера работают без использования SIM-карт и напрямую. передаются операторами в наш сервис по интернету</span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
+                    <a class="services_item" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            <img src="~/images/sim.png">
+                        </div>
+                        <p><b>SIM-хостинг</b></p>
+                        <span>В отличие от виртуальных номеров можно получать сообщения от интернет-сервисов, банков и платежных систем, которые используют для отправки буквенные имена</span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
+                </div>
+            </div><!-- //ROW -->
+        </div><!-- //CONTAINER -->
+    </div><!-- //SERVICES -->
+</section><!-- //ABOUT -->
+
 <!-- ABOUT -->
 <section id="about">
 

@@ -115,7 +115,7 @@
                     <div class="container clearfix">
                         <!-- LOGO -->
                         <div class="logo pull-left">
-                            <a asp-area="" asp-action="Index"><img src="~/images/kcell-logo.png" style="height:60px; padding-top: 10px" /></a>
+                            <a asp-area="" asp-action="Index" asp-route-culture="@culture"><img src="~/images/kcell-logo.png" style="height:60px; padding-top: 10px" /></a>
                         </div><!-- //LOGO -->
                         <!-- SEARCH FORM -->
                         <div id="search-form" class="pull-right">
@@ -127,21 +127,21 @@
                         <div class="pull-right">
                             <nav class="navmenu center">
                                 <ul>
-                                    <li class="first active scroll_btn"><a asp-area="" asp-action="Index">@Localizer["Home"]</a></li>
-                                    <li class="scroll_btn"><a asp-area="" asp-action="About">@Localizer["About"]</a></li>
+                                    <li class="first active scroll_btn"><a asp-area="" asp-action="Index" asp-route-culture="@culture">@Localizer["Home"]</a></li>
+                                    <li class="scroll_btn"><a asp-area="" asp-action="About" asp-route-culture="@culture">@Localizer["About"]</a></li>
 
                                     @*<li class="scroll_btn"><a href="#news">News</a></li>*@
 
                                     <li class="sub-menu">
                                         <a href="javascript:void(0);">@Localizer["Services"]</a>
                                         <ul>
-                                            <li><a asp-area="" asp-action="Software">@Localizer["Software"]</a></li>
-                                            <li><a asp-area="" asp-action="Car_Tracking">@Localizer["Car_Tracking"]</a></li>
-                                            <li><a asp-area="" asp-action="SMS_Dispatching">@Localizer["SMS_Dispatching"]</a></li>
+                                            <li><a asp-area="" asp-action="Software" asp-route-culture="@culture">@Localizer["Software"]</a></li>
+                                            <li><a asp-area="" asp-action="Car_Tracking" asp-route-culture="@culture">@Localizer["Car_Tracking"]</a></li>
+                                            <li><a asp-area="" asp-action="SMS_Dispatching" asp-route-culture="@culture">@Localizer["SMS_Dispatching"]</a></li>
                                         </ul>
                                     </li>
-                                    <li class="scroll_btn"><a asp-area="" asp-action="Career">@Localizer["Career"]</a></li>
-                                    <li class="scroll_btn last"><a asp-area="" asp-action="Contacts">@Localizer["Contacts"]</a></li>
+                                    <li class="scroll_btn"><a asp-area="" asp-action="Career" asp-route-culture="@culture">@Localizer["Career"]</a></li>
+                                    <li class="scroll_btn last"><a asp-area="" asp-action="Contacts" asp-route-culture="@culture">@Localizer["Contacts"]</a></li>
                                     <li class="sub-menu">
                                         <a href="javascript:void(0);"><i class="fa fa-globe"></i><i class="fa fa-angle-down"></i></a>
                                         <ul>

@@ -120,13 +120,13 @@
   <data name="About" xml:space="preserve">
     <value>About</value>
   </data>
-  <data name="Our_clients" xml:space="preserve">
-    <value>Our clients</value>
+  <data name="Car_Tracking" xml:space="preserve">
+    <value>Car Tracking</value>
   </data>
-  <data name="Our_portfolio" xml:space="preserve">
-    <value>Our portfolio</value>
+  <data name="SMS_Dispatching" xml:space="preserve">
+    <value>SMS Dispatching</value>
   </data>
-  <data name="Our_skill_diagram" xml:space="preserve">
-    <value>Our skill diagram</value>
+  <data name="Software" xml:space="preserve">
+    <value>Software</value>
   </data>
 </root>

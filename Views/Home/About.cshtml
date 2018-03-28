@@ -3,14 +3,26 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.AspNetCore.Builder
+@using Microsoft.AspNetCore.Http.Features
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.Extensions.Options
+@using Microsoft.Extensions.Localization
+@inject IOptions<RequestLocalizationOptions> LocOptions
 
 @inject IViewLocalizer Localizer
 
 @inject IHtmlLocalizer<SharedResource> SharedLocalizer
+@{
+    var culture = Context.Features.Get<IRequestCultureFeature>
+        ().RequestCulture.Culture.TwoLetterISOLanguageName;
+}
+
+@using Microsoft.AspNetCore.Routing.Constraints;
 <!-- BREADCRUMBS -->
 <section class="breadcrumbs_block clearfix parallax">
     <div class="container center">
-        <h2><b>О компании</b></h2>
+        <h2><b>@Localizer["About"]</b></h2>
         <p>Прагматичные IT решения для вашего бизнеса</p>
     </div>
 </section><!-- //BREADCRUMBS -->
@@ -23,24 +35,24 @@
             <!-- ROW -->
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
-                    <a class="services_item"  asp-area="" asp-action="Software">
-                        <p><b>Программное</b> Обеспечение</p>
+                    <a class="services_item" asp-area="" asp-action="Software" asp-route-culture="@culture">
+                        <p><b>@Localizer["Software"]</b></p>
                         <span>Мы поставляем ПО от международных лидеров рынка в сегменте продуктивности, а таже защиты данных</span>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat justo in porta auctor. Pellentesque egestas odio et ipsum imperdiet, vitae convallis mauris rhoncus.</span>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat justo in porta auctor.</span>
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
-                    <a class="services_item" asp-area="" asp-action="Car_Tracking">
-                        <p><b>Трекинг </b> Автотранспорта</p>
+                    <a class="services_item" asp-area="" asp-action="Car_Tracking" asp-route-culture="@culture">
+                        <p><b>@Localizer["Car_Tracking"]</b></p>
                         <span>Наши системы трекинга автотранспорта применяют самые высокоточные системы.</span>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat justo in porta auctor. Pellentesque egestas odio et ipsum imperdiet, vitae convallis mauris rhoncus.</span>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat justo in porta auctor.</span>
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
-                    <a class="services_item" asp-area="" asp-action="SMS_Dispatching">
-                        <p><b>SMS</b> Рассылка</p>
+                    <a class="services_item" asp-area="" asp-action="SMS_Dispatching" asp-route-culture="@culture">
+                        <p><b>@Localizer["SMS_Dispatching"]</b></p>
                         <span>Мы предлагаем надежный и быстрый сервис SMS рассылок по самым выгодным условиям</span>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat justo in porta auctor. Pellentesque egestas odio et ipsum imperdiet, vitae convallis mauris rhoncus.</span>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat justo in porta auctor.</span>
@@ -52,35 +64,33 @@
         </div><!-- //CONTAINER -->
     </div><!-- //SERVICES -->
 </section><!-- //ABOUT -->
-
-    <!-- start about Section -->
-    <section id="abt_sec">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
-                    <div class="title_sec">
-                        <h1>@Localizer["About"]</h1>
-                        <h2>Прагматичные IT решения для вашего бизнеса</h2>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
-                    <div class="abt">
-                        <p>Kcell Solutions предлагает прагматичные  IT решения для вашего бизнеса в сфере поставок программного обеспечения, управления транспортными парками, и организации массовых sms рассылок.</p>
-                    </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs12 margbot30 ">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat justo in porta auctor. Pellentesque egestas odio et ipsum imperdiet, vitae convallis mauris rhoncus. Donec vel lectus at felis dignissim bibendum ut a metus. Curabitur ac orci arcu. Maecenas egestas diam ut hendrerit fringilla. Suspendisse rhoncus eget elit et hendrerit. Mauris ultrices scelerisque lectus a facilisis. Etiam justo turpis, interdum vitae tortor sit amet, commodo suscipit sem. Sed efficitur facilisis malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce eget facilisis mauris.</p>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs12 margbot30 ">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat justo in porta auctor. Pellentesque egestas odio et ipsum imperdiet, vitae convallis mauris rhoncus. Donec vel lectus at felis dignissim bibendum ut a metus. Curabitur ac orci arcu. Maecenas egestas diam ut hendrerit fringilla. Suspendisse rhoncus eget elit et hendrerit. Mauris ultrices scelerisque lectus a facilisis. Etiam justo turpis, interdum vitae tortor sit amet, commodo suscipit sem. Sed efficitur facilisis malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce eget facilisis mauris.</p>
-                        </div>
-
-                    
+<!-- start about Section -->
+<section id="abt_sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+                <div class="title_sec">
+                    <h1>@Localizer["About"]</h1>
+                    <h2>Прагматичные IT решения для вашего бизнеса</h2>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- End About Section -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+                <div class="abt">
+                    <p>Kcell Solutions предлагает прагматичные  IT решения для вашего бизнеса в сфере поставок программного обеспечения, управления транспортными парками, и организации массовых sms рассылок.</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs12 margbot30 ">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat justo in porta auctor. Pellentesque egestas odio et ipsum imperdiet, vitae convallis mauris rhoncus. Donec vel lectus at felis dignissim bibendum ut a metus. Curabitur ac orci arcu. Maecenas egestas diam ut hendrerit fringilla. Suspendisse rhoncus eget elit et hendrerit. Mauris ultrices scelerisque lectus a facilisis. Etiam justo turpis, interdum vitae tortor sit amet, commodo suscipit sem. Sed efficitur facilisis malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce eget facilisis mauris.</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs12 margbot30 ">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat justo in porta auctor. Pellentesque egestas odio et ipsum imperdiet, vitae convallis mauris rhoncus. Donec vel lectus at felis dignissim bibendum ut a metus. Curabitur ac orci arcu. Maecenas egestas diam ut hendrerit fringilla. Suspendisse rhoncus eget elit et hendrerit. Mauris ultrices scelerisque lectus a facilisis. Etiam justo turpis, interdum vitae tortor sit amet, commodo suscipit sem. Sed efficitur facilisis malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce eget facilisis mauris.</p>
+                </div>
 
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End About Section -->
 <!-- ABOUT -->
 <section id="about">
 

@@ -117,6 +117,33 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="advantages" xml:space="preserve">
+    <value>advantages</value>
+  </data>
+  <data name="Cloud" xml:space="preserve">
+    <value>Cloud</value>
+  </data>
+  <data name="consultation" xml:space="preserve">
+    <value>consultation</value>
+  </data>
+  <data name="Free" xml:space="preserve">
+    <value>Free</value>
+  </data>
+  <data name="office" xml:space="preserve">
+    <value>office</value>
+  </data>
+  <data name="Our" xml:space="preserve">
+    <value>Our</value>
+  </data>
+  <data name="Ours" xml:space="preserve">
+    <value>Our</value>
+  </data>
+  <data name="Our_projects" xml:space="preserve">
+    <value>Our projects</value>
+  </data>
+  <data name="programs" xml:space="preserve">
+    <value>programs</value>
+  </data>
   <data name="Software" xml:space="preserve">
     <value>Software</value>
   </data>

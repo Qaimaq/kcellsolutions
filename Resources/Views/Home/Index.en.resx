@@ -120,20 +120,8 @@
   <data name="About" xml:space="preserve">
     <value>About</value>
   </data>
-  <data name="Career" xml:space="preserve">
-    <value>Career</value>
-  </data>
-  <data name="Car_Tracking" xml:space="preserve">
-    <value>Car Tracking</value>
-  </data>
-  <data name="Contacts" xml:space="preserve">
-    <value>Contacts</value>
-  </data>
   <data name="Home" xml:space="preserve">
     <value>Home</value>
-  </data>
-  <data name="Services" xml:space="preserve">
-    <value>Services</value>
   </data>
   <data name="SMS_Dispatching" xml:space="preserve">
     <value>SMS Dispatching</value>
@@ -141,16 +129,10 @@
   <data name="Software" xml:space="preserve">
     <value>Software</value>
   </data>
-  <data name="We_are_creative" xml:space="preserve">
-    <value>We Are Creative</value>
+  <data name="Car_Tracking" xml:space="preserve">
+    <value>Car Tracking</value>
   </data>
-  <data name="WAKS" xml:space="preserve">
-    <value>We Are Kcell Solutions</value>
-  </data>
-  <data name="WHGT" xml:space="preserve">
-    <value>We Have Great Team</value>
-  </data>
-  <data name="Our_clients" xml:space="preserve">
-    <value>Our clients</value>
+  <data name="Our_projects" xml:space="preserve">
+    <value>Our projects</value>
   </data>
 </root>

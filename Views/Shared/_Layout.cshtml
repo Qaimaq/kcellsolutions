@@ -143,7 +143,7 @@
                                     <li class="scroll_btn"><a asp-area="" asp-action="Career" asp-route-culture="@culture">@Localizer["Career"]</a></li>
                                     <li class="scroll_btn last"><a asp-area="" asp-action="Contacts" asp-route-culture="@culture">@Localizer["Contacts"]</a></li>
                                     <li class="sub-menu">
-                                        <a href="javascript:void(0);"><i class="fa fa-globe"></i><i class="fa fa-angle-down"></i></a>
+                                        <a href="javascript:void(0);"><i class="fa fa-globe"></i> <i class="fa fa-angle-down"></i></a>
                                         <ul>
                                             <li><a asp-area="" asp-route-culture="en">@Localizer["English"]</a></li>
                                             <li><a asp-area="" asp-route-culture="ru">@Localizer["Russian"]</a></li>
@@ -196,56 +196,65 @@
             <div class="container">
                 <!-- ROW -->
                 <div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
-                    <div class="col-lg-4 col-md-4 col-sm-6 padbot30">
-                        <h4><b>Наши</b> Контакты</h4>
-                        <div class="recent_posts_small clearfix">
-                            <div class="post_item_content_small">
-                                <a class="title" href="blog.html">As we have developed a unique layout template</a>
-                                <ul class="post_item_inf_small">
-                                    <li>10 January 2014</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="recent_posts_small clearfix">
-                            <div class="post_item_content_small">
-                                <a class="title" href="blog.html">How much is to develop a design for the game?</a>
-                                <ul class="post_item_inf_small">
-                                    <li>14 January 2014</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="recent_posts_small clearfix">
-                            <div class="post_item_content_small">
-                                <a class="title" href="blog.html">How to pump designer</a>
-                                <ul class="post_item_inf_small">
-                                    <li>21 December 2013</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="col-lg-4 col-md-4 col-sm-6 padbot30 foot_about_block">
                         <h4><b>В кратце</b> о нас</h4>
-                        <p>Мы ценим людей больше, чем прибыль. Стремися качеством, а не количеством достигать результатов. Таким образом, мы обеспечиваем устойчивые рабочие отношения с нашими клиентами.</p>
-                        <p>Наша команда небольшая, эклектичная и квалифицированная; с нашим собственным опытом, мы предоставляем лучшие решения заказчикам</p>
-                        <ul class="social">
+                        <p>Мы ценим людей больше, чем прибыль. Стремимся качеством, а не количеством достигать результатов. Таким образом, мы обеспечиваем устойчивые рабочие отношения с нашими клиентами.</p>
+                        
+                        
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 padbot30">
+                        <h4 class="margin-left8"><b>Наши</b> Контакты</h4>
+                        <ul class="list-unstyled footer-list fweight-300 margin-left8" style="margin-top:8px;">
+                            <li class="footer-list-item" style="font-size:12px;margin-bottom:4px;color: #ffffff!important;">
+                                <p style="font-weight:300;font-size:14px;color: #ffffff!important;margin-bottom:4px!important;">
+                                    <i class="fa fa-briefcase"></i> &nbsp; Example business centre, 18/10
+                                </p>
+                            </li>
+
+                            <li class="footer-list-item" style="font-size:12px;margin-bottom:4px;"><a href="tel:+0123456789" class="footer-list-link fweight-300" style="font-size:14px;"><i class="fa fa-phone"></i> &nbsp;  +70123456789</a></li>
+                            <li class="footer-list-item" style="font-size:12px;margin-bottom:4px;"><a href="" class="footer-list-link fweight-300" style="font-size:14px;"><i class="fa fa-envelope"></i>&nbsp;  example@info.com</a></li>
+                            <li class="footer-list-item" style="font-size:12px;margin-bottom:4px;"><p style="font-weight:300;font-size:14px;color: #ffffff!important;margin-bottom:4px!important;padding-bottom:10px;"><i class="fa fa-share-square"></i> &nbsp;Almaty, Kazakhstan </li>
+                        </ul>
+                        <ul class="social margin-left8" >
                             <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
                             <li><a href="javascript:void(0);"><i class="fa fa-pinterest-square"></i></a></li>
                             <li><a href="javascript:void(0);"><i class="map_show fa fa-map-marker"></i></a></li>
                         </ul>
+
+                        @*<div class="recent_posts_small clearfix">
+            <div class="post_item_content_small">
+                <a class="title" href="blog.html">As we have developed a unique layout template</a>
+
+            </div>
+        </div>
+        <div class="recent_posts_small clearfix">
+            <div class="post_item_content_small">
+                <a class="title" href="blog.html">How much is to develop a design for the game?</a>
+
+            </div>
+        </div>
+        <div class="recent_posts_small clearfix">
+            <div class="post_item_content_small">
+                <a class="title" href="blog.html">How to pump designer</a>
+
+            </div>
+        </div>
+                        *@
                     </div>
                     <div class="respond_clear"></div>
                     <div class="col-lg-4 col-md-4 padbot30">
-                        <h4><b>Напишите</b> Нам</h4>
+                        <h4><b>Подписка</b></h4>
                         <!-- CONTACT FORM -->
                         <div class="span9 contact_form">
                             <div id="note"></div>
                             <div id="fields">
                                 <form id="contact-form-face" class="clearfix" action="#">
-                                    <input type="text" name="name" value="Имя" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
-                                    <textarea name="message" onFocus="if (this.value == 'Текст') this.value = '';" onBlur="if (this.value == '') this.value = 'Message';">Message</textarea>
-                                    <input class="contact_btn" type="submit" value="Отправить" />
+                                    <input type="text" name="name" value="Email" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
+                                    @*<textarea name="message" onFocus="if (this.value == 'Текст') this.value = '';" onBlur="if (this.value == '') this.value = 'Message';">Message</textarea>*@
+                                    <input class="contact_btn" type="submit" value="Подписаться" />
                                 </form>
                             </div>
                         </div><!-- //CONTACT FORM -->

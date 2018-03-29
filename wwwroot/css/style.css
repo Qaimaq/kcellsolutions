@@ -29,8 +29,8 @@ body {
 }
 #page {overflow-x:hidden; position:relative; z-index:5;}
 
-.preloader_hide {opacity:1;}
-#preloader {position:fixed; left:50%; top:50%; width:32px; height:32px; margin:-16px 0 0 -16px; display:block;filter: hue-rotate(50deg);}
+.preloader_hide {opacity:0;z-index:99999}
+#preloader {position:fixed; left:50%; top:50%; width:32px; height:32px; margin:-16px 0 0 -16px; display:block;z-index:99999}
 
 section {background-color:#fff;}
 
@@ -67,12 +67,15 @@ img {
 }
 
 a {color:#666; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out;}
-a:hover, a:focus {text-decoration:none; color:#2a1938;text-decoration:underline;}
+a:hover, a:focus {text-decoration:none; color:#666;}
+.icon-list li a:focus, .icon-list li a:hover::after {color:#2a1938;text-decoration:underline;}
 
 
 
 
-.margbot0 {margin-bottom:0;}
+.margbot0 {
+    margin-bottom: 0;
+}
 .margbot5 {margin-bottom:5px !important;}
 .margbot10 {margin-bottom:10px;}
 .margbot20 {margin-bottom:20px;}
@@ -117,7 +120,7 @@ a:hover, a:focus {text-decoration:none; color:#2a1938;text-decoration:underline;
 /*-----------------------------------------------------------------------------------*/
 /*	TYPOGRAPHY
 /*-----------------------------------------------------------------------------------*/
-hr {border-color:#6f6f6f;}
+hr {border-color:#eee;}
 
 ul, ol {padding:0; margin:0;}
 li {padding:0; margin:0; list-style:none;}
@@ -129,15 +132,15 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top:0;
 	font-family: 'Roboto', sans-serif;
 	text-transform:none;
-	font-weight:400;
+	font-weight:300;
 	color:#333;
 }
-h1 {margin:0 0 26px; line-height:46px; font-size:46px;}
-h2 {margin:0 0 26px; line-height:40px; font-size:40px;}
+h1 {margin:0 0 10px; line-height:46px; font-size:46px;}
+h2 {margin:0 0 10px; line-height:30px; font-size:30px;}
 h2 b {font-weight:500;}
-h3 {margin:0 0 21px; line-height:25px; font-size:22px;}
+h3 {margin:0 0 15px; line-height:25px; font-size:22px;}
 h3 b {font-weight:900;}
-h4 {margin:0 0 34px; line-height:25px; font-size:20px;}
+h4 {margin:0 0 15px; line-height:25px; font-size:20px;}
 h4 b {font-weight:500;}
 h5 {margin:0 0 15px; line-height:20px; font-size:15px;}
 h6 {margin:0 0 15px; line-height:20px; font-size:12px;}
@@ -296,7 +299,8 @@ header {
 }
 .navmenu li:hover a,
 .navmenu li.active a {
-	color:#333;
+    color: #333;
+    text-decoration: none;
 }
 
 /* Sub menu */
@@ -419,7 +423,7 @@ header {
 /*-----------------------------------------------------------------------------------*/
 /*	ABOUT
 /*-----------------------------------------------------------------------------------*/
-#about {padding-top:40px;}
+#about {padding-top:0px;}
 
 /* __________ Services __________ */
 .services_block {padding:7px 0 0;}
@@ -664,7 +668,10 @@ header {
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 }
-.owl-item:hover .work_item {
+.owl-carousel {
+    padding: 10px 0 0;
+}
+    .owl-item:hover .work_item {
 	transform:scale(0.95);
 	-o-transform:scale(0.95);
 	-ms-transform:scale(0.95);
@@ -714,25 +721,26 @@ header {
 	color:#fff;
 }
 .work_item .work_description span {
-	color:#666;
+	color:#eee;
 }
 
 .work_item a.zoom {
-	position:absolute;
-	z-index:30;
-	left:50%;
-	bottom:0;
-	width:60px;
-	height:36px;
-	margin-left:-30px;
-	opacity:0;
-	background-image:url(../images/zoom.png);
-	background-repeat:no-repeat;
-	background-position:0 0;
-	background-size:100% auto;
-	-webkit-background-size:100% auto;
-	transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
-	-webkit-transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    position: absolute;
+    z-index: 30;
+    left: 50%;
+    bottom: 0;
+    width: 60px;
+    height: 36px;
+    margin-left: -30px;
+    opacity: 0;
+    filter: brightness(4);
+    background-image: url(../images/zoom.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    -webkit-transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 .work_item:hover a.zoom {
 	bottom:56px;
@@ -797,10 +805,10 @@ ul.project_info li span {color:#979797;}
 }
 .project_shared a:hover {border-color:#333; color:#333;}
 
-
+.item {padding-left: 10%;}
 
 /* __________ Our Clients __________ */
-.our_clients {padding:71px 0 78px;}
+.our_clients {padding:0;}
 
 .our_clients .client_img {
 	opacity:0.5;

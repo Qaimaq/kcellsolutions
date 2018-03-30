@@ -123,6 +123,9 @@
   <data name="Car_Tracking" xml:space="preserve">
     <value>Авто Мониторинг</value>
   </data>
+  <data name="Our_partners" xml:space="preserve">
+    <value>Наши партнеры</value>
+  </data>
   <data name="SMS_Dispatching" xml:space="preserve">
     <value>СМС рассылка</value>
   </data>

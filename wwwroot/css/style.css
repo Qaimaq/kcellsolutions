@@ -808,7 +808,11 @@ ul.project_info li span {color:#979797;}
 .item {padding-left: 10%;}
 
 /* __________ Our Clients __________ */
-.our_clients {padding:0;}
+.our_clients {
+    padding:0;
+    padding-top:100px;
+
+}
 
 .our_clients .client_img {
 	opacity:0.5;

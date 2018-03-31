@@ -4,10 +4,22 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.AspNetCore.Builder
+@using Microsoft.AspNetCore.Http.Features
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.Extensions.Options
+@using Microsoft.Extensions.Localization
+@inject IOptions<RequestLocalizationOptions> LocOptions
 
 @inject IViewLocalizer Localizer
 
 @inject IHtmlLocalizer<SharedResource> SharedLocalizer
+@{
+    var culture = Context.Features.Get<IRequestCultureFeature>
+        ().RequestCulture.Culture.TwoLetterISOLanguageName;
+}
+
+@using Microsoft.AspNetCore.Routing.Constraints;
 <!-- BREADCRUMBS -->
 <section class="breadcrumbs_block clearfix parallax">
     <div class="container center">
@@ -132,20 +144,26 @@
     </div><!-- //SERVICES -->
 </section><!-- //ABOUT -->
 <section id="about-banner">
-<div class="cleancode_block">
-    <!-- CONTAINER -->
-    <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
-        <!-- CASTOM TAB -->
-        <div id="myTabContent" class="tab-content">
-            <div class="tab-pane fade in active clearfix" id="tab1">
-                <p class="title"><b>O нас</b></p>
-                <span>Прагматичные IT решения для вашего бизнеса.</span>
-                <a class="slide_btn FromRight" href="javascript:void(0);">Подробнее</a>
-            </div>
-            
+    <div class="cleancode_block">
+        <!-- CONTAINER -->
+        <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+            <!-- CASTOM TAB -->
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active clearfix" id="tab1">
+                    <p class="title"><b>O нас</b></p>
+                    <span>Прагматичные IT решения для вашего бизнеса.</span>
+                    <div class="text-center">
+                        <a asp-area="" asp-action="About" asp-route-culture="@culture">
+                            <div class="btn-theme btn-theme-sm btn-white-brd text-uppercase wow fadeInDown animated text-center" data-animation="fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" style=" ">
+                                About Us
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div><!-- //CONTAINER -->
-</div><!-- //CLEAN CODE -->
+    </div><!-- //CLEAN CODE -->
 </section>
 <!-- ABOUT -->
 <section id="about">

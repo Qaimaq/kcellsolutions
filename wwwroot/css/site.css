@@ -207,7 +207,7 @@
     line-height: 110%;
     font-size: 30px;
     font-weight: 400;
-    color: white;
+    color: #662F84;
 }
 
 .margin-left8{
@@ -427,4 +427,58 @@ button.close {
 .gallery {
     display: inline-block;
     margin-top: 20px;
+}
+.btn-theme-sm {
+    min-width: 120px;
+    height: 55px;
+    width: 150px;
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+.btn-white-brd {
+    color: #fff;
+    background: rgba(53, 53, 53, 0.5);
+    border-color: #7d7d7d;
+    border-width: 2px;
+    text-shadow: 0px 1px 2px 0px rgba(0,0,0,0.5);
+}
+
+.btn-theme-sm {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 17px 19px;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+.btn-red-brd.focus, .btn-red-brd:focus, .btn-red-brd:hover {
+    color: #333333;
+    background: #e8e8e8;
+    border-color: #6b6b6b;
+    text-shadow: 0px 1px 2px 0px rgba(0,0,0,0.5);
+}
+
+.btn-theme:hover, .btn-theme:focus, .btn-theme.focus {
+    text-decoration: none;
+}
+
+.btn-theme:hover {
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+.btn-theme:active, .btn-theme.active {
+    background-image: none;
+    outline: 0;
+}
+.btn-theme:hover, .btn-theme:focus, .btn-theme.focus {
+    text-decoration: none;
+}
+
+.btn-theme:focus, .btn-theme:active:focus, .btn-theme.active:focus, .btn-theme.focus, .btn-theme:active.focus, .btn-theme.active.focus {
+    outline: none;
 }

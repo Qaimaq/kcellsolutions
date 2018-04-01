@@ -263,8 +263,8 @@
 
     <environment include="Development">
         @*<script src="~/lib/jquery/dist/jquery.js"></script>
-            <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-            <script src="~/js/site.js" asp-append-version="true"></script>*@
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>*@
 
 
         <!-- SCRIPTS -->
@@ -283,6 +283,7 @@
         <script src="~/js/myscript.js" type="text/javascript"></script>
 
         <script src="~/js/gotop.js" type="text/javascript"></script>
+       @* <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>*@
         <script>
 
             //PrettyPhoto
@@ -323,17 +324,17 @@
                     closeEffect: "none"
                 });
             });
-         </script>   
-        
-            <script>
-                jQuery(document).ready(function( $ ) {
-                    $('.counter').counterUp({
-                        delay: 1000,
-                        time: 10000
-                    });
-                });
         </script>
-            
+
+        <script>
+            jQuery(document).ready(function ($) {
+                $('.counter').counterUp({
+                    delay: 1000,
+                    time: 10000
+                });
+            });
+        </script>
+
 
 
 

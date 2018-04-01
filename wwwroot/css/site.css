@@ -590,3 +590,49 @@ a {
 .popup ul {
     list-style: none;
 }
+
+.item_car_tracking {
+  
+    display: block;
+    cursor: default;
+    min-height: 378px;
+    padding: 20px 30px;
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.15);
+
+}
+
+    .item_car_tracking p {
+        position: relative;
+        margin-bottom: 15px;
+        padding-bottom: 19px;
+        text-transform: none;
+        font-weight: 300;
+        font-size: 20px;
+        color: #333;
+    }
+
+        .item_car_tracking p b {
+            font-weight: 400;
+        }
+
+.item_car_tracking p:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #ccc;
+}
+
+    .item_car_tracking span {
+        display: block;
+        padding-bottom: 9px;
+        font-weight: 300;
+        font-size: 14px;
+        color: #666;
+    }
+
+    .item_car_tracking:hover {
+        box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.25);
+    }

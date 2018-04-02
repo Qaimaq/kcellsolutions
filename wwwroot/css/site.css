@@ -208,8 +208,9 @@
     line-height: 110%;
     font-size: 30px;
     font-weight: 400;
-    color: #662F84;
+    color: white;
 }
+
 
 .margin-left8{
     margin-left: 8%;
@@ -447,12 +448,19 @@ button.close {
     border-width: 2px;
     text-shadow: 0px 1px 2px 0px rgba(0,0,0,0.5);
 }
-
+.btn-white-brd:hover {
+    color: black;
+    background: white;
+    border-color: #7d7d7d;
+    border-width: 2px;
+    text-shadow: 0px 1px 2px 0px rgba(0,0,0,0.7);
+}
 .btn-theme-sm {
     font-size: 15px;
     font-weight: 600;
     padding: 17px 19px;
     margin: 5px;
+    margin-top: 45px;
     border-radius: 4px;
 }
 

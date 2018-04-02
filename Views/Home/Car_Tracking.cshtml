@@ -147,20 +147,27 @@
     <div class="cleancode_block">
         <!-- CONTAINER -->
         <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
-            <!-- CASTOM TAB -->
-            <div id="myTabContent" class="tab-content">
-                <div class="tab-pane fade in active clearfix" id="tab1">
-                    <p class="title"><b>O нас</b></p>
-                    <span>Прагматичные IT решения для вашего бизнеса.</span>
+            <div class="row">
+                <!-- CASTOM TAB -->
+                <div class="col-md-10 col-lg-10">
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade in active clearfix" id="tab1">
+                            <p class="title"><b>Больше о нас</b></p>
+                            <span>Прагматичные IT решения для вашего бизнеса.</span>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
                     <div class="text-center">
                         <a asp-area="" asp-action="About" asp-route-culture="@culture">
                             <div class="btn-theme btn-theme-sm btn-white-brd text-uppercase wow fadeInDown animated text-center" data-animation="fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" style=" ">
-                                About Us
+                                О нас
                             </div>
                         </a>
                     </div>
                 </div>
-
             </div>
         </div><!-- //CONTAINER -->
     </div><!-- //CLEAN CODE -->

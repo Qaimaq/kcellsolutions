@@ -578,11 +578,12 @@ header {
 	-webkit-transform:translateY(-10px);
 }
 .nav-tabs li.active a i {
-	background-position:0 0;
-	transform:translateY(-16px);
-	-o-transform:translateY(-16px);
-	-ms-transform:translateY(-16px);
-	-webkit-transform:translateY(-16px);
+    background-position: 0 0;
+    color: #652E84;
+    transform: translateY(-16px);
+    -o-transform: translateY(-16px);
+    -ms-transform: translateY(-16px);
+    -webkit-transform: translateY(-16px);
 }
 
 .cleancode_block .nav-tabs li a span {

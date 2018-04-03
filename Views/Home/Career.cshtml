@@ -4,10 +4,22 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.AspNetCore.Builder
+@using Microsoft.AspNetCore.Http.Features
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.Extensions.Options
+@using Microsoft.Extensions.Localization
+@inject IOptions<RequestLocalizationOptions> LocOptions
 
 @inject IViewLocalizer Localizer
 
 @inject IHtmlLocalizer<SharedResource> SharedLocalizer
+@{
+    var culture = Context.Features.Get<IRequestCultureFeature>
+        ().RequestCulture.Culture.TwoLetterISOLanguageName;
+}
+
+@using Microsoft.AspNetCore.Routing.Constraints;
 <!-- BREADCRUMBS -->
 <section class="breadcrumbs_block clearfix parallax">
     <div class="container center">
@@ -15,6 +27,257 @@
         <p>Прагматичные IT решения для вашего бизнеса</p>
     </div>
 </section><!-- //BREADCRUMBS -->
+<div id="content">
+    <!--Popups-->
+    <div class="popup" data-popup="career-1">
+        <div class="popup-inner">
+            <h3>QUALITY ASSURANCE MANAGER</h3>
+            <p>Works with other staff within organizations to determine and establish procedures and quality standards and to monitor these against agreed targets.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+
+                        <ul>
+                            <b class="accent-color">Main duties:</b>
+                            <li>• determining, negotiating and agreeing on in-house quality procedures, standards and specifications</li>
+                            <li>• assessing customer requirements and ensuring that these are met</li>
+                            <li>• specifying quality requirements of raw materials with suppliers</li>
+                            <li>• investigating and setting standards for quality and health and safety</li>
+                            <li>• ensuring that the processes comply with standards at both national and international level</li>
+                            <li>• working with operating staff to establish procedures, standards and systems</li>
+                            <li>• writing management and technical reports </li>
+                            <li>• determining training needs</li>
+                            <li>• acting as a catalyst for change and improvement in performance and quality</li>
+                            <li>• directing objectives to maximize profitability</li>
+                            <li>• recording, analyzing and distributing statistical information</li>
+                            <li>• monitoring performance</li>
+                            <b class="accent-color">Requirements:</b>
+                            <li>•	Proven experience as a Quality Assurance Manager or relevant role</li>
+                            <li>•	Thorough knowledge of methodologies of quality assurance and standards</li>
+                            <li>•	Good knowledge of MS Office and databases</li>
+                            <li>•	Outstanding communication skills</li>
+                            <li>•	Excellent organizational and leadership abilities</li>
+                            <li>•	Reliable and Trustworthy</li>
+                            <li>•	Certification of quality control is a strong advantage (ISO 9000 etc.)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a class="popup-close" data-popup-close="career-1" href="#">x</a>
+        </div>
+    </div>
+    <div class="popup" data-popup="career-2">
+        <div class="popup-inner">
+            <h3>HIGH VOLTAGE TECHNICIAN</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul>
+                            <b class="accent-color">Main duties:</b>
+                            <li>•	install connector and splicing for HV cable and test in compliance with client requirement with Megger and IPOT tester machine</li>
+                            <li>•	test electrical systems for integrity and proper functioning, repair and maintain as needed</li>
+                            <li>•	do repairs when large power interruptions occur; prevent such outages from happening</li>
+                            <li>•	make sure that installed electrical wirings and connections are not damaged and they meet technical and safety standards</li>
+                            <li>•	maintain transformers, motors and electrical controllers when working with bigger power systems</li>
+                            <li>•	understand SAFETY and have in-depth knowledge of state and local building codes, the policies of the environment and other regulations</li>
+                            <b class="accent-color">Requirements:</b>
+                            <li>•	Knowledge of electronics and electrical principles and how to apply them in the tasks they do as electricians. </li>
+                            <li>•	Knowledge of safety standards involving work on electrical power systems of more than 1000 Volt.</li>
+                            <li>•	Background as Electrician Technician </li>
+                            <li>•	Certificate for HV installation above 1000 Volt</li>
+                            <li>•	Proven experience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a class="popup-close" data-popup-close="career-2" href="#">x</a>
+        </div>
+    </div>
+    <div class="popup" data-popup="career-3">
+        <div class="popup-inner">
+            <h3>ROK SPECIALIST</h3>
+            <p>Involved in projects from the concept of ACT preparation and submission to the Client for approval trough the Local Authority.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul>
+                            <b class="accent-color">Main duties:</b>
+                            <li>•	HSE assurance</li>
+                            <li>•	compliance with electrical codes and adherence to safety regulations</li>
+                            <li>•	quality assurance</li>
+                            <li>•	identifying customer requirements;</li>
+                            <li>•	researching suitable solutions</li>
+                            <li>•	communicating with clients and contractors;</li>
+                            <li>•	recording, analyzing and interpreting test data;</li>
+                            <li>•	preparing product documentation “ACT”, writing reports</li>
+                            <b class="accent-color">Requirements:</b>
+                            <li>•	Direct work experience in ROK documents preparation</li>
+                            <li>•	Kazak language written and speaking</li>
+                            <li>•	English language written and speaking (intermediate minimum preferable)</li>
+                            <li>•	Russian language written and speaking</li>
+                            <li>•	Knowledge of MC office (excel, word, outlook)</li>
+                            <li>•	Knowledge of ROK requirement for ACT preparation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a class="popup-close" data-popup-close="career-3" href="#">x</a>
+        </div>
+    </div>
+    <div class="popup" data-popup="career-4">
+        <div class="popup-inner">
+            <h3>CONSTRUCTION COORDINATOR E&I</h3>
+            <p>Responsible for the overall coordination, implementation, execution, control and completion of specific projects ensuring consistency with Project Manager strategy, commitments and goals.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul>
+                            <b class="accent-color">Main duties:</b>
+                            <li>•	HSE assurance </li>
+                            <li>•	quality assurance</li>
+                            <li>•	planning and implementation of project</li>
+                            <li>•	facilitate the definition of project scope, goals and deliverables</li>
+                            <li>•	define project tasks and resource requirements</li>
+                            <li>•	follow full scale project plans</li>
+                            <li>•	coordinate project staff</li>
+                            <li>•	manage project resource allocation</li>
+                            <li>•	follow schedule project timelines</li>
+                            <li>•	track project deliverables using appropriate tools</li>
+                            <li>•	provide direction and support to project team</li>
+                            <li>•	constantly monitor and report on progress of the project to all stakeholders</li>
+                            <li>•	present reports defining project progress, problems and solutions </li>
+                            <li>•	implement project changes and interventions to achieve project outputs</li>
+                            <li>•	evaluation of employees</li>
+
+                            <b class="accent-color">Requirements:</b>
+                            <li>•	knowledge of both theoretical and practical aspects of construction</li>
+                            <li>•	knowledge of project management techniques and tools</li>
+                            <li>•	direct work experience in project construction</li>
+                            <li>•	proven experience in people management, strategic planning, risk management, change management</li>
+                            <li>•	proficient in project management software</li>
+                            <li>•	English language written and speaking (intermediate minimum preferable)</li>
+                            <li>•	Knowledge of MC office (excel, word, outlook)</li>
+                            <li>•	Knowledge of project management software (Microsoft Project, Oracle Primavera)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a class="popup-close" data-popup-close="career-4" href="#">x</a>
+        </div>
+    </div>
+    <div class="popup" data-popup="career-5">
+        <div class="popup-inner">
+            <h3>QUALITY CONTROL COORDINATOR E&I</h3>
+            <p>Responsible for the overall coordination, implementation, execution, control and completion of inspection related to specific projects, ensuring to meet the Client request and specification.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul>
+                            <b class="accent-color">Main duties:</b>
+                            <li>•	HSE assurance</li>
+                            <li>•	quality assurance</li>
+                            <li>•	planning and implementation of project inspection</li>
+                            <li>•	facilitate the definition of project scope, goals and deliverables</li>
+                            <li>•	define project tasks and resource requirements</li>
+                            <li>•	follow full scale project plans</li>
+                            <li>•	coordinate project QC staff</li>
+                            <li>•	manage project resource allocation</li>
+                            <li>•	follow schedule project timelines</li>
+                            <li>•	track project deliverables using appropriate tools</li>
+                            <li>•	provide direction and support to project team</li>
+                            <li>•	constantly monitor and report on progress of the project to all stakeholders</li>
+                            <li>•	present reports defining project progress, problems and solutions </li>
+                            <li>•	implement project changes and interventions to achieve project outputs</li>
+                            <li>•	employees evaluation</li>
+
+                            <b class="accent-color">Requirements:</b>
+                            <li>•	knowledge of both theoretical and practical aspects of QC inspection</li>
+                            <li>•	knowledge of project management techniques and tools</li>
+                            <li>•	direct work experience in QC inspection</li>
+                            <li>•	proven experience in people management, strategic planning, risk management, change management</li>
+                            <li>•	proficient in project management software</li>
+                            <li>•	English language written and speaking (intermediate minimum preferable)</li>
+                            <li>•	Knowledge of MC office (excel, word, outlook)</li>
+                            <li>•	Knowledge of Client “Check List” preparation</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a class="popup-close" data-popup-close="career-5" href="#">x</a>
+        </div>
+    </div>
+    <div class="popup" data-popup="career-6">
+        <div class="popup-inner">
+            <h3>QC INSPECTOR</h3>
+            <p>Involved in projects from the concept of inspection and Client “Check List” report preparation and submission to the Client for approval trough the Local Authority. </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul>
+                            <b class="accent-color">Main duties:</b>
+                            <li>•	HSE assurance</li>
+                            <li>•	compliance with electrical codes and adherence to safety regulations</li>
+                            <li>•	quality assurance thru official inspection with Client representative and/or third party</li>
+                            <li>•	identifying customer requirements;</li>
+                            <li>•	researching suitable solutions</li>
+                            <li>•	communicating with clients and contractors;</li>
+                            <li>•	recording, analyzing and interpreting test data;</li>
+                            <li>•	preparing product documentation Client “Check List” report</li>
+
+                            <b class="accent-color">Requirements:</b>
+                            <li>•	direct work experience in QC inspection</li>
+                            <li>•	English language written and speaking (intermediate minimum preferable)</li>
+                            <li>•	Knowledge of MC office (excel, word, outlook)</li>
+                            <li>•	Knowledge of Client “Check List” preparation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a class="popup-close" data-popup-close="career-6" href="#">x</a>
+        </div>
+    </div>
+    <div class="popup" data-popup="career-7">
+        <div class="popup-inner">
+            <h3>SUPERVISOR E&I </h3>
+            <p>Responsible for the overall coordination, implementation, execution, control and completion of inspection related to specific projects, ensuring to meet the Client request and specification.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul>
+                            <b class="accent-color">Main duties:</b>
+                            <li>•	HSE assurance</li>
+                            <li>•	compliance with electrical codes and adherence to safety regulations</li>
+                            <li>•	quality assurance</li>
+                            <li>•	planning and implementation of project</li>
+                            <li>•	facilitate the definition of project scope, goals and deliverables</li>
+                            <li>•	assigning work and training employees</li>
+                            <li>•	motivate employees to increase their productivity and meet work goals</li>
+                            <li>•	follow full scale project plans</li>
+                            <li>•	ensure the proper maintenance of equipment</li>
+                            <li>•	contribute to improved designs and manufacturing processes are other common job functions</li>
+                            <li>•	provide support to project team</li>
+                            <li>•	constantly monitor and report on progress of the project to all stakeholders</li>
+                            <li>•	present reports defining project progress, problems and solutions</li>
+                            <li>•	implement project changes and interventions to achieve project outputs</li>
+
+                            <b class="accent-color">Requirements:</b>
+                            <li>•	knowledge of both theoretical and practical aspects of construction</li>
+                            <li>•	direct work experience in project construction</li>
+                            <li>•	proven experience in people management, risk management, change management</li>
+                            <li>•	employees evaluation</li>
+                            <li>•	English language written and speaking (intermediate minimum preferable)</li>
+                            <li>•	Knowledge of MC office (excel, word, outlook)</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a class="popup-close" data-popup-close="career-7" href="#">x</a>
+        </div>
+    </div>
+</div>
+
 <!-- ABOUT -->
 <section id="about">
     <!-- Promo Section -->
@@ -27,16 +290,15 @@
                         <hr />
 
                         <p style="text-indent:0;font-size:16px;" class="fweight-400 col-md-10 col-md-offset-1">
-                            Политика DSL Caspian заключается в том, чтобы сфокусироваться на найме местного казахстанского инженерного, управленческого и высоко-профессионального персонала. Наша нацеленность на развитие и рост компании заключается в привлечении, обучении и развитии местного персонала, используя следующие стратегии:
+                            Мы ценим людей больше, чем прибыль. Стремимся качеством, а не количеством достигать результатов.
                         </p>
                     </div>
                     <div class="col-sm-5 col-sm-offset-1 wow fadeInLeft animated" data-wow-duration="1000ms" data-wow-delay="200ms">
 
                         <p style="text-indent:0;">
                             <ul>
-                                <li style="color:red;"><span style="font-size:15px;color: #585858 !important;">Увеличение найма граждан РК в DSL Caspian</span></li>
                                 <li style="color:red;"><span style="font-size:15px;color: #585858 !important;">Активное вовлечение квалифицированных и опытных локальных сотрудников </span></li>
-                                <li style="color:red;"><span style="font-size:15px;color: #585858 !important;">Взращивать собственный персонал посредством непрерывного обучения и наставничества, а также, при необходимости, организуя специальные курсы обучения за рубежом. </span></li>
+                                <li style="color:red;"><span style="font-size:15px;color: #585858 !important;">Взращивать собственный персонал посредством непрерывного обучения и наставничества, а также, при необходимости, организуя специальные курсы обучения. </span></li>
                             </ul>
                         </p>
                     </div>
@@ -48,82 +310,276 @@
                                 <li style="color:red;"><span style="font-size:15px;color: #585858 !important;">Совместно работать с нашими Клиентами, чтобы организовать обучение своих специалистов, уже задействованных на объектах клиентов. </span></li>
                                 <li style="color:red;"><span style="font-size:15px;color: #585858 !important;">Предоставлять средства и ресурсы для обучения и обучения местных кадров </span></li>
                                 <!-- <li style="color:red;"><span style="font-size:15px;color: #585858 !important;">NACE & BGAS Certified QC Inspectors. NACE CIP Level 3 – 1; NACE CIP Level 2 – 3;  NACE CIP Level 1 – 4; BGAS Level 2 – 1; </span></li>
-                                -->
+                            -->
                             </ul>
                         </p>
                     </div>
-
                 </div>
+            </div>
+            <div class="row">
+                <div class="big-title text-center">
+                    <h3>
+                        <span class="accent-color">Станьте частью нашей команды</span>
+                    </h3>
+                    <p class="title-desc">Мы заинтересованы в компетентных, инициативных, амбициозных сотрудниках, верящих в свои силы, которые сами выбирают свое место в жизни!</p>
+                </div>
+                <div class="hr5" style="margin-top: 30px; margin-bottom: 35px;"></div>
+                <div class="col-md-4">
+                    <h4 class="classic-title"><span>Свяжитесь с нами</span></h4>
+                    <div class="row">
+                        <form action="/en/Home/SendCv" enctype="multipart/form-data" method="post">
+                            <input name="__RequestVerificationToken" type="hidden" value="23mal6caFYkVrgykKxGM9GDlZeAPMzd2lh6R5SX9RDT--PoatMHec2O-wMSxl3Awel0kUUQNcnXB7jEn6Y_ExQ_IC_iqe3Hw0AKluVYbaME1" />                <div class="row">
+                                <div class="form-group">
+                                    <label for="name">Ваше имя<span class="required">*</span></label>
+                                    <span class="name-missing"></span>
+                                    <input class="form-control" data-val="true" data-val-required="Please enter your name" id="FromName" name="FromName" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="FromName" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="e-mail">Email<span class="required">*</span></label>
+                                    <input class="form-control" data-val="true" data-val-email="Incorrect format" data-val-required="Please enter a valid e-mail" id="FromEmail" name="FromEmail" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="FromEmail" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group userMessage">
+                                    <label for="name">Сообщение<span class="required">*</span></label>
+                                    <input class="form-control form-control-message" data-val="true" data-val-required="Please enter your message" id="Message" name="Message" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="Message" data-valmsg-replace="true"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name"><span class="required"></span></label>
+                                    <div class="col-md-5">
+                                        <input type="file" name="upload" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 20px">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-default" value="Отправить" />
+                                    </div>
+                                </div>
+                            </div>
+                        </form>                    <div class="g-recaptcha" data-sitekey="6LdYZycUAAAAAItvfYSHPH40D-8bOttJbGNACi_F"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                    <h4 class="modal-title" id="myModalLabel">More About Joe</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <center>
+                                        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+                                        <h3 class="media-heading">Joe Sixpack <small>USA</small></h3>
+                                        <span><strong>Skills: </strong></span>
+                                        <span class="label label-warning">HTML5/CSS</span>
+                                        <span class="label label-info">Adobe CS 5.5</span>
+                                        <span class="label label-info">Microsoft Office</span>
+                                        <span class="label label-success">Windows XP, Vista, 7</span>
+                                    </center>
+                                    <hr>
+                                    <center>
+                                        <p class="text-left">
+                                            <strong>Bio: </strong><br>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus.
+                                        </p>
+                                        <br>
+                                    </center>
+                                </div>
+                                <div class="modal-footer">
+                                    <center>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about Joe</button>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-8">
+                        <h4 class="classic-title"><span>Наши Вакансии</span></h4>
+                        <a href="#aboutModal" data-popup-open="career-1" data-toggle="modal" data-target="#myModal">
+                            <div class="col-md-3" data-animation="fadeIn" data-animation-delay="03">
+                                <div class="team-member modern">
+                                    <div class="member-photo">
+
+                                        <img alt="" src="~/images/img11.jpg" />
+
+                                        <div class="member-name">
+                                            QUALITY ASSURANCE<span>MANAGER</span>
+                                        </div>
+                                    </div>
+                                    <div class="member-info">
+                                        <p>Works with other staff within organizations to determine and establish procedures and quality standards and to monitor these against agreed targets</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" data-popup-open="career-2">
+                            <div class="col-md-3" data-animation="fadeIn" data-animation-delay="04">
+                                <div class="team-member modern">
+                                    <div class="member-photo">
+                                        <img alt="" src="~/images/img11.jpg" />
+                                        <div class="member-name">
+                                            HIGH VOLTAGE <span>TECHNICIAN</span>
+                                        </div>
+                                    </div>
+                                    <div class="member-info">
+                                        <p>Knowledge of electronics and electrical principles and how to apply them in the tasks they do as electricians. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" data-popup-open="career-3">
+                            <div class="col-md-3" data-animation="fadeIn" data-animation-delay="05">
+                                <div class="team-member modern">
+                                    <div class="member-photo">
+                                        <img alt="" src="~/images/img11.jpg" />
+                                        <div class="member-name">
+                                            ROK<span>Specialist</span>
+                                        </div>
+                                    </div>
+                                    <div class="member-info">
+                                        <p>Involved in projects from the concept of ACT preparation and submission to the Client for approval trough the Local Authority</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" data-popup-open="career-4">
+                            <div class="col-md-3" data-animation="fadeIn" data-animation-delay="06">
+                                <div class="team-member modern">
+                                    <div class="member-photo">
+                                        <img alt="" src="~/images/img11.jpg" />
+                                        <div class="member-name">
+                                            CONSTRUCTION COORDINATOR <span>E&I</span>
+                                        </div>
+                                    </div>
+                                    <div class="member-info">
+                                        <p>Responsible for the overall coordination, implementation, execution, control and completion of specific projects ensuring consistency with Project Manager strategy, commitments and goals.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
             </div>
         </div>
-        <div class="content-lg container">
-            <div class="row margin-b-40">
-                <div class="col-sm-12">
-                    <h3 class="color-red text-center">Вакансии </h3>
-                    <hr />
-                </div>
-            </div>
-            <!--// end row -->
+    </div>
 
-            <div class="row">
-                <!-- vacancy 1 -->
-                <div class="col-sm-4 sm-margin-b-50 wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="200ms">
-                    <div class="margin-b-20">
+            @**
+                    <div class="content-lg container">
+                        <div class="row margin-b-40">
+                            <div class="col-sm-12">
+                                <h3 class="color-red text-center">Вакансии </h3>
+                                <hr />
+                            </div>
+                        </div>
+                        <!--// end row -->
 
-                        <!-- Latest Products -->
-                        <!-- Trigger the modal with a button -->
-                        <a href="*" data-toggle="modal" data-target="#vac1" style="display:inline-flex">
-                            <img src="~/images/avatar1.jpg" class="img-responsive" style="float:left" alt="..." />
-                            <h3 class="color-red" style="margin-top:10px;margin-left:20px;float:left">
-                                Старший инженер<br />
-                                <span class="text-uppercase span-fx margin-l-20 color-blue" style="font-size:13px;float:left;margin-left:20px">Строительные леса </span>
-                            </h3>
+                        <div class="row">
+                            <!-- vacancy 1 -->
+                            <div class="col-sm-4 sm-margin-b-50 wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="200ms">
+                                <div class="margin-b-20">
 
-                        </a><hr style="float:left;width:100%" />
+                                    <!-- Latest Products -->
+                                    <!-- Trigger the modal with a button -->
+                                    <a href="*" data-toggle="modal" data-target="#vac1" style="display:inline-flex">
+                                        <img src="~/images/avatar1.jpg" class="img-responsive" style="float:left" alt="..." />
+                                        <h3 class="color-red" style="margin-top:10px;margin-left:20px;float:left">
+                                            Старший инженер эксплуатации сервисов<br />
+
+                                        </h3>
+
+                                    </a><hr style="float:left;width:100%" />
+                                </div>
+                            </div>
+                            <!-- End vacancy1 -->
+                            <!-- vacancy2 -->
+                            <div class="col-sm-4 sm-margin-b-50 wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="600ms">
+                                <div class="margin-b-20">
+
+                                    <!-- Latest Products -->
+                                    <!-- Trigger the modal with a button -->
+                                    <a href="*" data-toggle="modal" data-target="#vac2" style="display:inline-flex">
+                                        <img src="~/images/avatar2.jpg" class="img-responsive" style="float:left" alt="..." />
+                                        <h3 class="color-red" style="margin-top:10px;margin-left:20px;float:left">
+                                            Оператор по работе с клиентами<br />
+
+                                        </h3>
+                                    </a><hr style="float:left;width:100%" />
+                                </div>
+                            </div>
+                            <!-- End Latest Products -->
+                            <!-- End vacancy2 -->
+                            <!-- vacancy3 -->
+                            <div class="col-sm-4 sm-margin-b-50 wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="1000ms">
+                                <div class="margin-b-20">
+
+                                    <!-- Latest Products -->
+                                    <!-- Trigger the modal with a button -->
+                                    <a href="*" data-toggle="modal" data-target="#vac3" style="display:inline-flex">
+                                        <img src="~/images/avatar1.jpg" class="img-responsive" style="float:left" alt="..." />
+                                        <h3 class="color-red" style="margin-top:10px;margin-left:20px;margin-bottom:0;float:left">
+                                            Менеджер по работе с корпоративными клиентами<br />
+
+                                        </h3>
+
+
+                                        <!-- Modal -->
+                                    </a><hr style="float:left;width:100%" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!-- End vacancy1 -->
-                <!-- vacancy2 -->
-                <div class="col-sm-4 sm-margin-b-50 wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="600ms">
-                    <div class="margin-b-20">
-
-                        <!-- Latest Products -->
-                        <!-- Trigger the modal with a button -->
-                        <a href="*" data-toggle="modal" data-target="#vac2" style="display:inline-flex">
-                            <img src="~/images/avatar2.jpg" class="img-responsive" style="float:left" alt="..." />
-                            <h3 class="color-red" style="margin-top:10px;margin-left:20px;float:left">
-                                Специалист по изоляции<br />
-                                <span class="text-uppercase span-fx margin-l-20 color-blue" style="font-size:13px;float:left;margin-left:20px">Изоляция</span>
-                            </h3>
-                        </a><hr style="float:left;width:100%" />
-                    </div>
-                </div>
-                <!-- End Latest Products -->
-                <!-- End vacancy2 -->
-                <!-- vacancy3 -->
-                <div class="col-sm-4 sm-margin-b-50 wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="1000ms">
-                    <div class="margin-b-20" >
-
-                        <!-- Latest Products -->
-                        <!-- Trigger the modal with a button -->
-                        <a href="*" data-toggle="modal" data-target="#vac3" style="display:inline-flex">
-                            <img src="~/images/avatar1.jpg" class="img-responsive" style="float:left" alt="..." />
-                            <h3 class="color-red" style="margin-top:10px;margin-left:20px;margin-bottom:0;float:left">промышленный альпинист<br />
-                            <span class="text-uppercase span-fx margin-l-20 color-blue" style="font-size:13px;float:left;margin-left:20px">Промышленный Альпинизм</span>
-                            </h3>
-                            
-                            
-                            <!-- Modal -->
-                        </a><hr style="float:left;width:100%" />
-                    </div>
-                </div>
-            </div>
-            </div>
                     <!-- End Latest Products -->
                     <!-- End vacancy3 -->
-                    </div>
-</section><!-- //ABOUT -->
+                </div>
+            *@
+           
+        
+    
 
+
+</section><!-- //ABOUT -->
+<section id="about-banner">
+    <div class="cleancode_block">
+        <!-- CONTAINER -->
+        <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+            <div class="row">
+                <!-- CASTOM TAB -->
+                <div class="col-md-10 col-lg-10">
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade in active clearfix" id="tab1">
+                            <p class="title"><b>Связаться с нами</b></p>
+                            <span>Прагматичные IT решения для вашего бизнеса.</span>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                    <div class="text-center">
+                        <a asp-area="" asp-action="Contacts" asp-route-culture="@culture">
+                            <div class="btn-theme btn-theme-sm btn-white-brd text-uppercase wow fadeInDown animated text-center" data-animation="fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" style=" ">
+                                Contact Us
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- //CONTAINER -->
+    </div><!-- //CLEAN CODE -->
+</section>
 <!-- ABOUT -->
 <section id="about">
 
@@ -249,6 +705,7 @@
         <div class="our_clients">
             <!-- CONTAINER -->
             <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+                <h2><b>@Localizer["Our_partners"]</b></h2>
                 <!-- ROW -->
                 <div class="row">
                     <div class="col-lg-2 col-md-2 col-sm-2 client_img">

@@ -423,7 +423,7 @@ header {
 /*-----------------------------------------------------------------------------------*/
 /*	ABOUT
 /*-----------------------------------------------------------------------------------*/
-#about {padding-top:0px;}
+#about {padding-top:40px;}
 
 /* __________ Services __________ */
 .services_block {padding:7px 0 0;}
@@ -489,7 +489,7 @@ header {
 	margin:0 0 17px;
 	font-weight:100;
 	line-height:80px;
-	font-size:80px;
+	font-size:34px;
 	color:#fff;
 }
 .cleancode_block p.title b {font-weight:500;}
@@ -578,11 +578,12 @@ header {
 	-webkit-transform:translateY(-10px);
 }
 .nav-tabs li.active a i {
-	background-position:0 0;
-	transform:translateY(-16px);
-	-o-transform:translateY(-16px);
-	-ms-transform:translateY(-16px);
-	-webkit-transform:translateY(-16px);
+    background-position: 0 0;
+    color: #652E84;
+    transform: translateY(-16px);
+    -o-transform: translateY(-16px);
+    -ms-transform: translateY(-16px);
+    -webkit-transform: translateY(-16px);
 }
 
 .cleancode_block .nav-tabs li a span {
@@ -601,11 +602,11 @@ header {
 	-webkit-transition: all 0.5s ease-in-out;
 }
 .nav-tabs li.active a span {
-	opacity:1;
-	transform:translateY(-6px);
-	-o-transform:translateY(-6px);
-	-ms-transform:translateY(-6px);
-	-webkit-transform:translateY(-6px);
+    opacity: 1;
+    transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
 }
 
 
@@ -808,7 +809,11 @@ ul.project_info li span {color:#979797;}
 .item {padding-left: 10%;}
 
 /* __________ Our Clients __________ */
-.our_clients {padding:0;}
+.our_clients {
+    padding:0;
+    padding-top:100px;
+
+}
 
 .our_clients .client_img {
 	opacity:0.5;

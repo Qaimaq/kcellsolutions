@@ -120,4 +120,7 @@
   <data name="Car_Tracking" xml:space="preserve">
     <value>Car Tracking</value>
   </data>
+  <data name="Our_partners" xml:space="preserve">
+    <value>Our partners</value>
+  </data>
 </root>

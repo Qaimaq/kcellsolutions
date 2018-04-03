@@ -12,6 +12,13 @@
 @inject IOptions<RequestLocalizationOptions> LocOptions
 @using Microsoft.AspNetCore.Mvc.Localization
 
+@{
+    var culture = Context.Features.Get<IRequestCultureFeature>
+        ().RequestCulture.Culture.TwoLetterISOLanguageName;
+}
+
+@using Microsoft.AspNetCore.Routing.Constraints;
+
 @inject IViewLocalizer Localizer
 <!-- HOME -->
 <section id="home" class="padbot0">
@@ -43,34 +50,40 @@
 </section><!-- //HOME -->
 <!-- ABOUT -->
 <section id="about">
+    <div class="row row-space-1 margin-b-2 wow fadeInDown animated" style="visibility:visible; animation-name: fadeInDown;">
+        <h3 class="color-red" style="text-align: center;">Добро пожаловать в KCell Solutions</h3>
+        <hr style="margin-top:0;" />
+        <div class="col-sm-10 col-sm-offset-1">
+            <p class="margin-b-40 text-center wow fadeInDown animated fweight-400" style="visibility:visible; animation-name: fadeInDown;text-align:center;font-size:16px;">
+                Kcell Solutions предлагает прагматичные  IT решения для вашего бизнеса в сфере поставок программного обеспечения, управления транспортными парками, и организации массовых sms рассылкок.
+            </p>
+        </div>
+    </div>
+</section><!-- //ABOUT -->
+<!-- ABOUT -->
+<section id="about">
     <!-- SERVICES -->
     <div class="services_block padbot40" data-appear-top-offset="-200" data-animated="fadeInUp">
         <!-- CONTAINER -->
         <div class="container">
             <!-- ROW -->
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
-                    <a class="services_item" href="javascript:void(0);">
-                        <p><b>@Localizer["Software"]</b></p>
-                        <span>Мы поставляем ПО от международных лидеров рынка в сегменте продуктивности, а таже защиты данных</span>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat justo in porta auctor. Pellentesque egestas odio et ipsum imperdiet, vitae convallis mauris rhoncus.</span>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat justo in porta auctor.</span>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30" style="text-align: center;">
+                    <a asp-area="" asp-action="Software" asp-route-culture="@culture">
+                        <i class="fa fa-laptop fa-2x service-icon-home"></i><h3>@Localizer["Software"]</h3>
+                        <p>Мы поставляем ПО от международных лидеров рынка в сегменте продуктивности, а таже защиты данных</p>
                     </a>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
-                    <a class="services_item" href="javascript:void(0);">
-                        <p><b>@Localizer["Car_Tracking"]</b></p>
-                        <span>Наши системы трекинга автотранспорта применяют самые высокоточные системы.</span>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat justo in porta auctor. Pellentesque egestas odio et ipsum imperdiet, vitae convallis mauris rhoncus.</span>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat justo in porta auctor.</span>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30" style="text-align: center;">
+                    <a asp-area="" asp-action="Car_Tracking" asp-route-culture="@culture">
+                        <i class="fa fa-search fa-2x service-icon-home"></i><h3>@Localizer["Car_Tracking"]</h3>
+                        <p>Наши системы трекинга автотранспорта применяют самые высокоточные системы.</p>
                     </a>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
-                    <a class="services_item" href="javascript:void(0);">
-                        <p><b>@Localizer["SMS_Dispatching"]</b></p>
-                        <span>Мы предлагаем надежный и быстрый сервис SMS рассылок по самым выгодным условиям</span>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat justo in porta auctor. Pellentesque egestas odio et ipsum imperdiet, vitae convallis mauris rhoncus.</span>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat justo in porta auctor.</span>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30" style="text-align: center;">
+                    <a asp-area="" asp-action="SMS_Dispatching" asp-route-culture="@culture">
+                        <i class="fa fa-envelope fa-2x service-icon-home"></i><h3>@Localizer["SMS_Dispatching"]</h3>
+                        <p>Мы предлагаем надежный и быстрый сервис SMS рассылок по самым выгодным условиям</p>
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
@@ -106,11 +119,11 @@
                 </div>
             </div>
             <ul id="myTab" class="nav nav-tabs">
-                <li class="active"><a class="i1" href="#tab1" data-toggle="tab"><i></i><span>Скорость внедрения</span></a></li>
-                <li><a class="i2" href="#tab2" data-toggle="tab"><i></i><span>Постоянная поддержка</span></a></li>
-                <li><a class="i3" href="#tab3" data-toggle="tab"><i></i><span>Любые устройства</span></a></li>
-                <li><a class="i4" href="#tab4" data-toggle="tab"><i></i><span>Документация</span></a></li>
-                <li><a class="i5" href="#tab5" data-toggle="tab"><i></i><span>Качество</span></a></li>
+                <li class="active"><a  href="#tab1" data-toggle="tab"><i class="fa fa-cog fa-3x service-icon-tabs"></i><span>Скорость внедрения</span></a></li>
+                <li><a  href="#tab2" data-toggle="tab"><i class="fa fa-wrench fa-3x service-icon-tabs"></i><span>Постоянная поддержка</span></a></li>
+                <li><a  href="#tab3" data-toggle="tab"><i class="fa fa-desktop fa-3x service-icon-tabs"></i><span>Любые устройства</span></a></li>
+                <li><a  href="#tab4" data-toggle="tab"><i class="fa fa-file fa-3x service-icon-tabs"></i><span>Документация</span></a></li>
+                <li><a  href="#tab5" data-toggle="tab"><i class="fa fa-star fa-3x service-icon-tabs"></i><span>Качество</span></a></li>
             </ul><!-- CASTOM TAB -->
         </div><!-- //CONTAINER -->
     </div><!-- //CLEAN CODE -->
@@ -137,131 +150,132 @@
     *@
 </section><!-- //ABOUT -->
 @*
-<!-- ABOUT -->
-<section id="about">
-  *@  
-        <!-- PROJECTS -->
-        <section id="projects" class="padbot20">
-            <!-- CONTAINER -->
-            <div class="container">
-                <h2><b>@Localizer["Our_projects"]</b></h2>
-            </div><!-- //CONTAINER -->
+    <!-- ABOUT -->
+    <section id="about">
+*@
+<!-- PROJECTS -->
+<section id="projects" class="padbot20">
+    <!-- CONTAINER -->
+    <div class="container">
+        <h2><b>@Localizer["Our_projects"]</b></h2>
+    </div><!-- //CONTAINER -->
 
-            <div class="projects-wrapper" data-appear-top-offset="-200" data-animated="fadeInUp">
-                <!-- PROJECTS SLIDER -->
-                <div class="owl-demo owl-carousel projects_slider">
-                    <!-- work1 -->
-                    <div class="item">
-                        <div class="work_item">
-                            <div class="work_img">
-                                <img src="~/images/works/1.jpg" alt="" />
-                                <a class="zoom" href="~/images/works/1.jpg" rel="prettyPhoto[portfolio1]"></a>
-                            </div>
-                            <div class="work_description">
-                                <div class="work_descr_cont">
-                                    <a href="portfolio-post.html">Ginger Beast</a>
-                                    <span>17 March, 2041</span>
-                                </div>
-                            </div>
+    <div class="projects-wrapper" data-appear-top-offset="-200" data-animated="fadeInUp">
+        <!-- PROJECTS SLIDER -->
+        <div class="owl-demo owl-carousel projects_slider">
+            <!-- work1 -->
+            <div class="item">
+                <div class="work_item">
+                    <div class="work_img">
+                        <img src="~/images/works/1.jpg" alt="" />
+                        <a class="zoom" href="~/images/works/1.jpg" rel="prettyPhoto[portfolio1]"></a>
+                    </div>
+                    <div class="work_description">
+                        <div class="work_descr_cont">
+                            <a href="portfolio-post.html">Ginger Beast</a>
+                            <span>17 March, 2041</span>
                         </div>
-                    </div><!-- //work1 -->
-                    <!-- work2 -->
-                    <div class="item">
-                        <div class="work_item">
-                            <div class="work_img">
-                                <img src="~/images/works/2.jpg" alt="" />
-                                <a class="zoom" href="~/images/works/2.jpg" rel="prettyPhoto[portfolio1]"></a>
-                            </div>
-                            <div class="work_description">
-                                <div class="work_descr_cont">
-                                    <a href="portfolio-post.html">Ginger Beast</a>
-                                    <span>17 March, 2041</span>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+            </div><!-- //work1 -->
+            <!-- work2 -->
+            <div class="item">
+                <div class="work_item">
+                    <div class="work_img">
+                        <img src="~/images/works/2.jpg" alt="" />
+                        <a class="zoom" href="~/images/works/2.jpg" rel="prettyPhoto[portfolio1]"></a>
+                    </div>
+                    <div class="work_description">
+                        <div class="work_descr_cont">
+                            <a href="portfolio-post.html">Ginger Beast</a>
+                            <span>17 March, 2041</span>
                         </div>
-                    </div><!-- //work2 -->
-                    <!-- work3 -->
-                    <div class="item">
-                        <div class="work_item">
-                            <div class="work_img">
-                                <img src="~/images/works/3.jpg" alt="" />
-                                <a class="zoom" href="~/images/works/3.jpg" rel="prettyPhoto[portfolio1]"></a>
-                            </div>
-                            <div class="work_description">
-                                <div class="work_descr_cont">
-                                    <a href="portfolio-post.html">Ginger Beast</a>
-                                    <span>17 March, 2041</span>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+            </div><!-- //work2 -->
+            <!-- work3 -->
+            <div class="item">
+                <div class="work_item">
+                    <div class="work_img">
+                        <img src="~/images/works/3.jpg" alt="" />
+                        <a class="zoom" href="~/images/works/3.jpg" rel="prettyPhoto[portfolio1]"></a>
+                    </div>
+                    <div class="work_description">
+                        <div class="work_descr_cont">
+                            <a href="portfolio-post.html">Ginger Beast</a>
+                            <span>17 March, 2041</span>
                         </div>
-                    </div><!-- //work3 -->
-                    <!-- work4 -->
-                    <div class="item">
-                        <div class="work_item">
-                            <div class="work_img">
-                                <img src="~/images/works/4.jpg" alt="" />
-                                <a class="zoom" href="~/images/works/4.jpg" rel="prettyPhoto[portfolio1]"></a>
-                            </div>
-                            <div class="work_description">
-                                <div class="work_descr_cont">
-                                    <a href="portfolio-post.html">Ginger Beast</a>
-                                    <span>17 March, 2041</span>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+            </div><!-- //work3 -->
+            <!-- work4 -->
+            <div class="item">
+                <div class="work_item">
+                    <div class="work_img">
+                        <img src="~/images/works/4.jpg" alt="" />
+                        <a class="zoom" href="~/images/works/4.jpg" rel="prettyPhoto[portfolio1]"></a>
+                    </div>
+                    <div class="work_description">
+                        <div class="work_descr_cont">
+                            <a href="portfolio-post.html">Ginger Beast</a>
+                            <span>17 March, 2041</span>
                         </div>
-                    </div><!-- //work4 -->
-                    <!-- work5 -->
-                    <div class="item">
-                        <div class="work_item">
-                            <div class="work_img">
-                                <img src="~/images/works/5.jpg" alt="" />
-                                <a class="zoom" href="~/images/works/5.jpg" rel="prettyPhoto[portfolio1]"></a>
-                            </div>
-                            <div class="work_description">
-                                <div class="work_descr_cont">
-                                    <a href="portfolio-post.html">Ginger Beast</a>
-                                    <span>17 March, 2041</span>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+            </div><!-- //work4 -->
+            <!-- work5 -->
+            <div class="item">
+                <div class="work_item">
+                    <div class="work_img">
+                        <img src="~/images/works/5.jpg" alt="" />
+                        <a class="zoom" href="~/images/works/5.jpg" rel="prettyPhoto[portfolio1]"></a>
+                    </div>
+                    <div class="work_description">
+                        <div class="work_descr_cont">
+                            <a href="portfolio-post.html">Ginger Beast</a>
+                            <span>17 March, 2041</span>
                         </div>
-                    </div><!-- //work5 -->
-                    <!-- work6 -->
-                    <div class="item">
-                        <div class="work_item">
-                            <div class="work_img">
-                                <img src="~/images/works/6.jpg" alt="" />
-                                <a class="zoom" href="~/images/works/6.jpg" rel="prettyPhoto[portfolio1]"></a>
-                            </div>
-                            <div class="work_description">
-                                <div class="work_descr_cont">
-                                    <a href="portfolio-post.html">Ginger Beast</a>
-                                    <span>17 March, 2041</span>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+            </div><!-- //work5 -->
+            <!-- work6 -->
+            <div class="item">
+                <div class="work_item">
+                    <div class="work_img">
+                        <img src="~/images/works/6.jpg" alt="" />
+                        <a class="zoom" href="~/images/works/6.jpg" rel="prettyPhoto[portfolio1]"></a>
+                    </div>
+                    <div class="work_description">
+                        <div class="work_descr_cont">
+                            <a href="portfolio-post.html">Ginger Beast</a>
+                            <span>17 March, 2041</span>
                         </div>
-                    </div><!-- //work6 -->
-                    <!-- work7 -->
-                    <div class="item">
-                        <div class="work_item">
-                            <div class="work_img">
-                                <img src="~/images/works/7.jpg" alt="" />
-                                <a class="zoom" href="~/images/works/7.jpg" rel="prettyPhoto[portfolio1]"></a>
-                            </div>
-                            <div class="work_description">
-                                <div class="work_descr_cont">
-                                    <a href="portfolio-post.html">Ginger Beast</a>
-                                    <span>17 March, 2041</span>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+            </div><!-- //work6 -->
+            <!-- work7 -->
+            <div class="item">
+                <div class="work_item">
+                    <div class="work_img">
+                        <img src="~/images/works/7.jpg" alt="" />
+                        <a class="zoom" href="~/images/works/7.jpg" rel="prettyPhoto[portfolio1]"></a>
+                    </div>
+                    <div class="work_description">
+                        <div class="work_descr_cont">
+                            <a href="portfolio-post.html">Ginger Beast</a>
+                            <span>17 March, 2041</span>
                         </div>
-                    </div><!-- //work7 -->
-                </div><!-- //PROJECTS SLIDER -->
-            </div>
-    
+                    </div>
+                </div>
+            </div><!-- //work7 -->
+        </div><!-- //PROJECTS SLIDER -->
+    </div>
+
     <!-- OUR CLIENTS -->
     <div class="our_clients">
         <!-- CONTAINER -->
         <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+            <h2><b>@Localizer["Our_partners"]</b></h2>
             <!-- ROW -->
             <div class="row">
                 <div class="col-lg-2 col-md-2 col-sm-2 client_img">
@@ -285,7 +299,7 @@
             </div><!-- //ROW -->
         </div><!-- CONTAINER -->
     </div><!-- //OUR CLIENTS -->
-    </section><!-- //PROJECTS -->
+</section><!-- //PROJECTS -->
 @*
-</section><!-- //ABOUT -->
+    </section><!-- //ABOUT -->
 *@

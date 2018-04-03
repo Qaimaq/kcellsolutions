@@ -120,4 +120,7 @@
   <data name="Car_Tracking" xml:space="preserve">
     <value>Көлік мониторингі</value>
   </data>
+  <data name="Our_partners" xml:space="preserve">
+    <value>Біздің партнерлер</value>
+  </data>
 </root>

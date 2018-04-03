@@ -147,4 +147,7 @@
   <data name="Software" xml:space="preserve">
     <value>Программное обеспечение</value>
   </data>
+  <data name="Our_partners" xml:space="preserve">
+    <value>Наши партнеры</value>
+  </data>
 </root>

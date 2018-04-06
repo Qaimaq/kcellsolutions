@@ -8,6 +8,8 @@
   <ItemGroup>
     <None Remove="Properties\PublishProfiles\kcell - FTP.pubxml" />
     <None Remove="Properties\PublishProfiles\kcell - Web Deploy.pubxml" />
+    <None Remove="Properties\PublishProfiles\kcellsolutions - FTP.pubxml" />
+    <None Remove="Properties\PublishProfiles\kcellsolutions - Web Deploy.pubxml" />
   </ItemGroup>
 
   <ItemGroup>

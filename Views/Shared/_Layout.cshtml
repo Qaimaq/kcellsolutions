@@ -292,18 +292,18 @@
 
         <script>
             $('.counter-count').each(function () {
-        $(this).prop('Counter',0).animate({
-            Counter: $(this).text()
-        }, {
-            duration: 5000,
-            easing: 'swing',
-            step: function (now) {
-                $(this).text(Math.ceil(now));
-            }
-        });
-    });
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                        duration: 7000,
+                        easing: 'swing',
+                        step: function (now) {
+                            $(this).text(Math.ceil(now));
+                        }
+                    });
+            });
         </script>
-       
+
         <script>
 
             //PrettyPhoto
@@ -346,13 +346,25 @@
             });
         </script>
 
+        <!-- Google Map js -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAV-beQ5SMsk8Mk66Zkf1CLP4HtvJJFmsA"></script>
         <script>
-            jQuery(document).ready(function ($) {
-                $('.counter').counterUp({
-                    delay: 10,
-                    time: 1000
+            function initialize() {
+                var mapOptions = {
+                    zoom: 14,
+                    scrollwheel: false,
+                    center: new google.maps.LatLng(43.2258339, 76.9347231)
+                };
+                var map = new google.maps.Map(document.getElementById('googleMap'),
+                    mapOptions);
+                var marker = new google.maps.Marker({
+                    position: map.getCenter(),
+                    animation: google.maps.Animation.BOUNCE,
+                    icon: '..//images/map-marker.png',
+                    map: map
                 });
-            });
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
         </script>
 
 

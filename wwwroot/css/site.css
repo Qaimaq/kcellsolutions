@@ -538,6 +538,7 @@ button.close {
 .team-member {
     padding: 3px;
     position: relative;
+    margin-top: 23px;
 }
     .team-member.modern .member-photo {
         position: relative;
@@ -646,6 +647,7 @@ a {
     .item_car_tracking:hover {
         box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.25);
     }
+<<<<<<< HEAD
 
     /* Toremurat changes*/
 
@@ -664,3 +666,25 @@ i.fa.fa-5x.service-icon-home {
     height: 100px;
     padding: 9px 0;
 }
+=======
+.modal-backdrop {
+display:none!important;
+}
+.modal {
+    z-index: 9999!important;
+}
+.fade.in {
+    background: rgba(0, 0, 0, 0.55);
+}
+.modal-header {
+    display: none;
+}
+.member-name {
+    margin-top: 20px;
+    
+}
+
+.member-info {
+    margin-top: 20px;
+}
+>>>>>>> b25c3c0a20951a150e49a7284cc6899666e3fd13

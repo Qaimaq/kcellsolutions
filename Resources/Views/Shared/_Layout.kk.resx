@@ -153,4 +153,10 @@
   <data name="Search" xml:space="preserve">
     <value>Іздеу</value>
   </data>
+  <data name="Our_contacts" xml:space="preserve">
+    <value>Бізбен Байланыс</value>
+  </data>
+  <data name="Subscribe" xml:space="preserve">
+    <value>Жазылым</value>
+  </data>
 </root>

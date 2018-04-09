@@ -153,4 +153,10 @@
   <data name="Search" xml:space="preserve">
     <value>Search</value>
   </data>
+  <data name="Our_contacts" xml:space="preserve">
+    <value>Our Contacts</value>
+  </data>
+  <data name="Subscribe" xml:space="preserve">
+    <value>Subscribe</value>
+  </data>
 </root>

@@ -159,4 +159,13 @@
   <data name="Subscribe" xml:space="preserve">
     <value>Подписка</value>
   </data>
+  <data name="Briefly_about_us" xml:space="preserve">
+    <value>Вкратце о нас</value>
+  </data>
+  <data name="Developed" xml:space="preserve">
+    <value>Разработано</value>
+  </data>
+  <data name="Footer_text" xml:space="preserve">
+    <value>Мы ценим людей больше, чем прибыль. Стремимся качеством, а не количеством достигать результатов. Таким образом, мы обеспечиваем устойчивые рабочие отношения с нашими клиентами.</value>
+  </data>
 </root>

@@ -159,4 +159,13 @@
   <data name="Subscribe" xml:space="preserve">
     <value>Жазылым</value>
   </data>
+  <data name="Briefly_about_us" xml:space="preserve">
+    <value>Қысқаша біз туралы</value>
+  </data>
+  <data name="Developed" xml:space="preserve">
+    <value>Жасаған</value>
+  </data>
+  <data name="Footer_text" xml:space="preserve">
+    <value>Біз адамдарды пайдаға қарағанда көбірек сыйлаймыз. Нәтижеге санымен емес сапамен жетуге тырысамыз. Осылай біз клиенттермен тұрақты қарым-қатынас орнатамыз.</value>
+  </data>
 </root>

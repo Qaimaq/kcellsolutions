@@ -159,4 +159,13 @@
   <data name="Subscribe" xml:space="preserve">
     <value>Subscribe</value>
   </data>
+  <data name="Briefly_about_us" xml:space="preserve">
+    <value>Briefly about us</value>
+  </data>
+  <data name="Developed" xml:space="preserve">
+    <value>Developed</value>
+  </data>
+  <data name="Footer_text" xml:space="preserve">
+    <value>We value people more than profit. We strive for quality, not quantity to achieve results. Thus, we provide a stable working relationship with our customers.</value>
+  </data>
 </root>

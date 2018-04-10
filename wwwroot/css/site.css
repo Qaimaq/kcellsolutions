@@ -426,7 +426,7 @@ button.close {
     margin-top: 20px;
 }
 .btn-theme-sm {
-    min-width: 120px;
+    min-width: 170px;
     height: 55px;
     width: 150px;
 }
@@ -456,7 +456,8 @@ button.close {
     padding: 17px 19px;
     margin: 5px;
     margin-top: 45px;
-    border-radius: 4px;
+    border-radius: 30px;
+    border: 2px solid #ffffff;
 }
 
 .btn-red-brd.focus, .btn-red-brd:focus, .btn-red-brd:hover {

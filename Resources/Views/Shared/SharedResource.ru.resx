@@ -141,7 +141,7 @@
   <data name="Software" xml:space="preserve">
     <value>Программное Обеспечение</value>
   </data>
-  <data name="Message" xml:space="preserve">
-    <value>Тест</value>
+  <data name="Welcome" xml:space="preserve">
+    <value>Добро пожаловать в Kcell Solutions</value>
   </data>
 </root>

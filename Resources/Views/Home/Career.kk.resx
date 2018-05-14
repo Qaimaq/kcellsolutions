@@ -117,7 +117,61 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Career" xml:space="preserve">
+    <value>Мансап</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>Байланыс</value>
+  </data>
+  <data name="Contact_us" xml:space="preserve">
+    <value>Бізбен хабарласыңыз</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Хабарлама</value>
+  </data>
   <data name="Our_partners" xml:space="preserve">
     <value>Біздің партнерлер</value>
+  </data>
+  <data name="Our_projects" xml:space="preserve">
+    <value>Біздің проекттер</value>
+  </data>
+  <data name="Our_vacancies" xml:space="preserve">
+    <value>Біздің вакансиялар</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Жіберу</value>
+  </data>
+  <data name="Slogan" xml:space="preserve">
+    <value>Бизнесіңіздің прагматикалық IТ шешімдері</value>
+  </data>
+  <data name="Text1" xml:space="preserve">
+    <value>Білікті және тәжірибелі жергілікті кадрларды белсенді тарту</value>
+  </data>
+  <data name="Text2" xml:space="preserve">
+    <value>Үздіксіз оқыту және тәлімгерлік арқылы өз қызметкерлеріңізді тәрбиелеңіз және қажет болған жағдайда арнайы оқыту курстарын ұйымдастырыңыз.</value>
+  </data>
+  <data name="Text3" xml:space="preserve">
+    <value>Білікті түлектерді жалдауға жергілікті білім беру мекемелерімен ынтымақтастық.</value>
+  </data>
+  <data name="Text4" xml:space="preserve">
+    <value>Клиенттермен бірлесіп, біздің мамандар даярлауды ұйымдастыру үшін жұмыс істеңіз.</value>
+  </data>
+  <data name="Text5" xml:space="preserve">
+    <value>Жергілікті қызметкерлерді оқыту және оқыту үшін ресурстарды қамтамасыз ету</value>
+  </data>
+  <data name="Text6" xml:space="preserve">
+    <value>Біз өз күштеріне сенетін, өмірдегі өз орнын таңдаған құзыретті, кәсіпкерлік, өршіл қызметкерлерге қызығушылық танытамыз!</value>
+  </data>
+  <data name="Title1" xml:space="preserve">
+    <value>Біздің командаға сіздің дағдыларыңыз қажет</value>
+  </data>
+  <data name="Title2" xml:space="preserve">
+    <value>Біз адамдарды пайдадан артық бағалаймыз. Біз нәтижеге жету үшін cанға емес, сапаға ұмтыламыз.</value>
+  </data>
+  <data name="Title3" xml:space="preserve">
+    <value>Біздің командамыздың мүшесі болыңыз</value>
+  </data>
+  <data name="Your_name" xml:space="preserve">
+    <value>Сіздің атыңыз</value>
   </data>
 </root>

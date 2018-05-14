@@ -29,16 +29,16 @@
                 <div class="flex_caption1">
                     <p class="title1 captionDelay2 FromTop">Kcell </p>
                     <p class="title2 captionDelay4 FromTop">Solutions </p>
-                    <p class="title4 captionDelay8 FromBottom">Прагматичные IT решения для вашего бизнеса.</p>
+                    <p class="title4 captionDelay8 FromBottom">@Localizer["Slogan"]</p>
                 </div>
-                <a class="slide_btn FromRight" asp-area="" asp-action="About" asp-route-culture="@culture">Подробнее</a>
+                <a class="slide_btn FromRight" asp-area="" asp-action="About" asp-route-culture="@culture">@Localizer["More"]</a>
             <li class="slide2">
                 <div class="flex_caption1">
                     <p class="title1 captionDelay2 FromTop">Kcell </p>
                     <p class="title2 captionDelay4 FromTop">Solutions </p>
-                    <p class="title4 captionDelay8 FromLeft">Мы поставляем программное обеспечение от мировых производителей и лидеров в своей сфере</p>
+                    <p class="title4 captionDelay8 FromLeft">@Localizer["Slogan2"]</p>
                 </div>
-                <a class="slide_btn FromRight" asp-area="" asp-action="Contacts" asp-route-culture="@culture">Контакты</a>
+                <a class="slide_btn FromRight" asp-area="" asp-action="Contacts" asp-route-culture="@culture">@Localizer["Contacts"]</a>
             </li>
         </ul>
         <!-- VIDEO BACKGROUND -->
@@ -49,13 +49,13 @@
 <!-- ABOUT -->
 <section id="about">
     <div class="row row-space-1 margin-b-2 wow fadeInDown animated" style="visibility:visible; animation-name: fadeInDown;">
-        <h3 class="color-red" style="text-align: center;">Добро пожаловать в Kcell Solutions</h3>
+        <h3 class="color-red" style="text-align: center;">@Localizer["Welcome"]</h3>
         <hr style="margin-top:0;" />
         <div class="col-sm-10 col-sm-offset-1">
             <p class="margin-b-40 text-center wow fadeInDown animated fweight-400" style="visibility:visible; animation-name: fadeInDown;text-align:center;font-size:16px;">
-                Kcell Solutions предлагает прагматичные  IT решения для вашего бизнеса в сфере поставок программного обеспечения, управления транспортными парками, и организации массовых sms рассылкок.
+                @Localizer["Text1"]
                 <br><br>
-                Kcell Solutions основана в 2017 году и базируется в Алматы.
+                @Localizer["Text2"]
             </p>
         </div>
     </div>
@@ -71,39 +71,39 @@
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30" style="text-align: center;">
                     <a asp-area="" asp-action="Software" asp-route-culture="@culture">
                         <h3>@Localizer["Software"]</h3><i class="fa fa-laptop fa-3x service-icon-home"></i>
-                        <h5 style="margin: 0;padding: 0;padding-bottom: 10px!important;">Официальные поставки программного обеспечения от ведущих мировых компаний разработчиков софта.</h5>
+                        <h5 style="margin: 0;padding: 0;padding-bottom: 10px!important;">@Localizer["Software_text"]</h5>
                         <p style="text-align:justify;margin-bottom:10px">
-                            Поставка облачных программ и годовых лицензий. Все цены включают НДС 12%. Программы от Microsoft, Mcafee, Autodesk, Adobe, Google, Acronis и др.
+                            @Localizer["Software_text2"]
                             <br>
                         </p>
                         <p style="text-align:center;font-weight:500">
-                            <span class="text-center">Лучшие цены и гибкая система скидок</span>
+                            <span class="text-center">@Localizer["Software_text3"]</span>
                         </p>
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30" style="text-align: center;">
                     <a asp-area="" asp-action="Car_Tracking" asp-route-culture="@culture">
                         <h3>@Localizer["Car_Tracking"]</h3><i class="fa fa-search fa-3x service-icon-home"></i>
-                        <h5 style="margin: 0;padding: 0;padding-bottom: 10px!important;">Современные и эффективные системы спутникового мониторинга транспорта.</h5>
+                        <h5 style="margin: 0;padding: 0;padding-bottom: 10px!important;">@Localizer["Car_Tracking_text"]</h5>
                         <p style="text-align:justify;margin-bottom:10px">
-                            Оптимизация расходов на автотранспорт, эффективное управление автопарком, сохранность транспорта, контроль расхода топлива и дистанционное управление.
+                            @Localizer["Car_Tracking_text2"]
                             <br>
                         </p>
                         <p style="text-align:center;font-weight:500">
-                            <span class="text-center">Все это вам поможет реализовать Kcell Solutions.</span>
+                            <span class="text-center">@Localizer["Car_Tracking_text3"]</span>
                         </p>
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30" style="text-align: center;">
                     <a asp-area="" asp-action="SMS_Dispatching" asp-route-culture="@culture">
                         <h3>@Localizer["SMS_Dispatching"]</h3><i class="fa fa-envelope fa-3x service-icon-home"></i>
-                        <h5 style="margin: 0;padding: 0;padding-bottom: 10px!important;">Kcell Solutions предлагает надежный и быстрый сервис SMS рассылок по самым выгодным условиям.</h5>
+                        <h5 style="margin: 0;padding: 0;padding-bottom: 10px!important;">@Localizer["SMS_Dispatching_text"]</h5>
                         <p style="text-align:justify;margin-bottom:10px">
-                            Мы можем предложить все виды рассылок - информирование об акциях, новостях, мероприятиях, приглашения, поздравления, отчетностьо готовности работ.
+                            @Localizer["SMS_Dispatching_text2"]
                             <br>
                         </p>
                         <p style="text-align:center;font-weight:500">
-                            Продвигайте свой бизнес с нами!
+                            @Localizer["SMS_Dispatching_text3"]
                         </p>
                     </a>
                 </div>
@@ -119,32 +119,32 @@
             <!-- CASTOM TAB -->
             <div id="myTabContent" class="tab-content">
                 <div class="tab-pane fade in active clearfix" id="tab1">
-                    <p class="title"><b>Скорость</b> Внедрения</p>
-                    <span>Мы стараемся сделать очень качественный продукт, поэтому наш сервис очень аккуратный и чистый. Независимо от выбора Вы можете дополнить или изменить план по своему вкусу..</span>
+                    <p class="title"><b>@Localizer["Tab1_text1"]</b> @Localizer["Tab1_text2"]</p>
+                    <span>@Localizer["Tab1_text3"]</span>
                 </div>
                 <div class="tab-pane fade clearfix" id="tab2">
-                    <p class="title"><b>Постоянная</b> Поддержка</p>
-                    <span>Мы работаем постоянно и безотказно помогаем нашим клиентам решать сложности возникающие в ходе их работы</span>
+                    <p class="title"><b>@Localizer["Tab2_text1"]</b> @Localizer["Tab2_text2"]</p>
+                    <span>@Localizer["Tab2_text3"]</span>
                 </div>
                 <div class="tab-pane fade clearfix" id="tab3">
-                    <p class="title"><b>Любые платформы</b></p>
-                    <span>Наши системы работают на любых устройствах и на любой операционной системе. Вам не придется подстраиваться под IT продукты</span>
+                    <p class="title"><b>@Localizer["Tab3_text1"]</b> @Localizer["Tab3_text2"]</p>
+                    <span>@Localizer["Tab3_text3"]</span>
                 </div>
                 <div class="tab-pane fade clearfix" id="tab4">
-                    <p class="title"><b>Четкая документация</b></p>
-                    <span>Мы имеем четкую описанную документацию по любому продукту программного или аппаратному, так что любой заказчик легко поймет принципы работы наших систем</span>
+                    <p class="title"><b>@Localizer["Tab4_text1"]</b> @Localizer["Tab4_text2"]</p>
+                    <span>@Localizer["Tab4_text3"]</span>
                 </div>
                 <div class="tab-pane fade clearfix" id="tab5">
-                    <p class="title"><b>Качество</b></p>
-                    <span>Мы выполняем свою работу в сроки и качественно, мы стремимся максимально быстро решать Ваши бизнес проблемы.</span>
+                    <p class="title"><b>@Localizer["Tab5_text1"]</b> @Localizer["Tab5_text2"]</p>
+                    <span>@Localizer["Tab5_text3"]</span>
                 </div>
             </div>
             <ul id="myTab" class="nav nav-tabs">
-                <li class="active"><a  href="#tab1" data-toggle="tab"><i class="fa fa-cog fa-3x service-icon-tabs"></i><span>Скорость внедрения</span></a></li>
-                <li><a  href="#tab2" data-toggle="tab"><i class="fa fa-wrench fa-3x service-icon-tabs"></i><span>Постоянная поддержка</span></a></li>
-                <li><a  href="#tab3" data-toggle="tab"><i class="fa fa-desktop fa-3x service-icon-tabs"></i><span>Любые устройства</span></a></li>
-                <li><a  href="#tab4" data-toggle="tab"><i class="fa fa-file fa-3x service-icon-tabs"></i><span>Документация</span></a></li>
-                <li><a  href="#tab5" data-toggle="tab"><i class="fa fa-star fa-3x service-icon-tabs"></i><span>Качество</span></a></li>
+                <li class="active"><a  href="#tab1" data-toggle="tab"><i class="fa fa-cog fa-3x service-icon-tabs"></i><span>@Localizer["Tab1_text4"]</span></a></li>
+                <li><a  href="#tab2" data-toggle="tab"><i class="fa fa-wrench fa-3x service-icon-tabs"></i><span>@Localizer["Tab2_text4"]</span></a></li>
+                <li><a  href="#tab3" data-toggle="tab"><i class="fa fa-desktop fa-3x service-icon-tabs"></i><span>@Localizer["Tab3_text4"]</span></a></li>
+                <li><a  href="#tab4" data-toggle="tab"><i class="fa fa-file fa-3x service-icon-tabs"></i><span>@Localizer["Tab4_text4"]</span></a></li>
+                <li><a  href="#tab5" data-toggle="tab"><i class="fa fa-star fa-3x service-icon-tabs"></i><span>@Localizer["Tab5_text4"]</span></a></li>
             </ul><!-- CASTOM TAB -->
         </div><!-- //CONTAINER -->
     </div><!-- //CLEAN CODE -->

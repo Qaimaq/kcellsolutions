@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Address" xml:space="preserve">
+  <data name="AddressInfo" xml:space="preserve">
     <value>Қазақстан Республикасы, Алматы</value>
   </data>
   <data name="Contacts" xml:space="preserve">
@@ -139,6 +139,36 @@
     <value>Email</value>
   </data>
   <data name="Your_name" xml:space="preserve">
-    <value>Атауы</value>
+    <value>Сіздің атыңыз</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Адрес</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>Дүйсенбі - Жұма</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>Факс</value>
+  </data>
+  <data name="Opening_hours" xml:space="preserve">
+    <value>Жұмыс уақыты</value>
+  </data>
+  <data name="Our_location" xml:space="preserve">
+    <value>Біз орналасқан жер</value>
+  </data>
+  <data name="Telephone" xml:space="preserve">
+    <value>Телефон</value>
+  </data>
+  <data name="Text1" xml:space="preserve">
+    <value>Біздің командамыз халықаралық тәжірибеге ие және біздің клиенттеріміздің жобаның бастапқы сатысынан бастап іске қосу және іске қосудың соңғы кезеңіне дейін өндірістің барлық кезеңдерінде жұмыс істеуге мүмкіндік береді. Сіз түйіндемеңізді немесе кез келген басқа сұрауларды жібере аласыз. Біз әріптестік пен ынтымақтастыққа дайынбыз.</value>
+  </data>
+  <data name="Title1" xml:space="preserve">
+    <value>Біз әрқашан ынтымақтастық пен әріптестік үшін жаңа мүмкіндіктер іздейтін заманауи және жылдам дамып келе жатқан компаниямыз.</value>
+  </data>
+  <data name="Weekends" xml:space="preserve">
+    <value>демалыс</value>
+  </data>
+  <data name="Weekends_days" xml:space="preserve">
+    <value>Сенбі және Жексенбі</value>
   </data>
 </root>

@@ -117,7 +117,61 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Career" xml:space="preserve">
+    <value>Карьера</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>Контакты</value>
+  </data>
+  <data name="Contact_us" xml:space="preserve">
+    <value>Свяжитесь с нами</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Сообщение</value>
+  </data>
   <data name="Our_partners" xml:space="preserve">
     <value>Наши партнеры</value>
+  </data>
+  <data name="Our_projects" xml:space="preserve">
+    <value>Наши проекты</value>
+  </data>
+  <data name="Our_vacancies" xml:space="preserve">
+    <value>Наши вакансии</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Отправить</value>
+  </data>
+  <data name="Slogan" xml:space="preserve">
+    <value>Прагматичные IT решения для вашего бизнеса</value>
+  </data>
+  <data name="Text1" xml:space="preserve">
+    <value>Активное вовлечение квалифицированных и опытных локальных сотрудников</value>
+  </data>
+  <data name="Text2" xml:space="preserve">
+    <value>Взращивать собственный персонал посредством непрерывного обучения и наставничества, а также, при необходимости, организуя специальные курсы обучения.</value>
+  </data>
+  <data name="Text3" xml:space="preserve">
+    <value>Сотрудничество с местными учебными заведениями, чтобы нанимать квалифицированных выпускников.</value>
+  </data>
+  <data name="Text4" xml:space="preserve">
+    <value>Совместно работать с нашими Клиентами, чтобы организовать обучение своих специалистов, уже задействованных на объектах клиентов.</value>
+  </data>
+  <data name="Text5" xml:space="preserve">
+    <value>Предоставлять средства и ресурсы для обучения и обучения местных кадров</value>
+  </data>
+  <data name="Text6" xml:space="preserve">
+    <value>Мы заинтересованы в компетентных, инициативных, амбициозных сотрудниках, верящих в свои силы, которые сами выбирают свое место в жизни!</value>
+  </data>
+  <data name="Title1" xml:space="preserve">
+    <value>Нашей команде нужны Ваши навыки</value>
+  </data>
+  <data name="Title2" xml:space="preserve">
+    <value>Мы ценим людей больше, чем прибыль. Стремимся качеством, а не количеством достигать результатов.</value>
+  </data>
+  <data name="Title3" xml:space="preserve">
+    <value>Станьте частью нашей команды</value>
+  </data>
+  <data name="Your_name" xml:space="preserve">
+    <value>Ваше имя</value>
   </data>
 </root>

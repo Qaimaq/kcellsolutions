@@ -120,7 +120,124 @@
   <data name="Our_partners" xml:space="preserve">
     <value>Біздің партнерлер</value>
   </data>
+  <data name="Our_projects" xml:space="preserve">
+    <value>Біздің проекттер</value>
+  </data>
+  <data name="Services_text1" xml:space="preserve">
+    <value>Әрекеттер, жаңалықтар, оқиғалар, шақырулар, жұмысқа дайындық туралы есептер туралы хабардар ету</value>
+  </data>
+  <data name="Services_text2" xml:space="preserve">
+    <value>Арнайы бағдарламалық жасақтама хаттамалары API көмегімен сіздің бағдарламаларыңыздан, сайттарыңыздан және қызметтеріңізден автоматтандырылған тарату</value>
+  </data>
+  <data name="Services_text3" xml:space="preserve">
+    <value>Тізімдерді және бірыңғай нөмірлерді абоненттердің қолжетімділігіне тексеру және қолданылмайтын нөмірлерді базадан тазарту</value>
+  </data>
+  <data name="Services_text4" xml:space="preserve">
+    <value>Арнайы веб-интерфейсті пайдаланып серіктестерге, клиенттерге және қызметкерлерге кіріс қоңыраулар түрінде дауыстық хабарлар жіберу</value>
+  </data>
+  <data name="Services_text5" xml:space="preserve">
+    <value>Кіріс қоңырауларында телефон нөмірімен белгілі бір операцияларды растау үшін сандық кодтарды жіберу</value>
+  </data>
+  <data name="Services_text6" xml:space="preserve">
+    <value>Абоненттік базаны оңай жинау және толықтыру. Клиенттер жаңалықтар бюллетенінен жазылуға және жазылудан бас тарта алады</value>
+  </data>
+  <data name="Services_text7" xml:space="preserve">
+    <value>SMS және абоненттерден федералдық нөмірлерге қоңырау қабылдау және өңдеу</value>
+  </data>
+  <data name="Services_text8" xml:space="preserve">
+    <value>SMS алу үшін федералдық виртуалды нөмірді қосыңыз. Мұндай нөмірлер SIM-карталарды пайдаланбай жұмыс істейді және біздің операторларымызға Интернетте тікелей қызмет көрсетеді</value>
+  </data>
+  <data name="Services_text9" xml:space="preserve">
+    <value>Виртуалды нөмірлерден айырмашылығы, сіз интернет-сервистерден, банктерден және жіберу үшін алфавиттік атауларды пайдаланатын төлем жүйелерінен хабар ала аласыз</value>
+  </data>
+  <data name="Slogan" xml:space="preserve">
+    <value>Бизнесіңіздің прагматикалық IТ шешімдері</value>
+  </data>
   <data name="SMS_Dispatching" xml:space="preserve">
     <value>СМС Тарату</value>
+  </data>
+  <data name="SMS_text1" xml:space="preserve">
+    <value>Бүгінгі таңда SMS-таратылым ең тиімді құралдардың бірі болып табылады</value>
+  </data>
+  <data name="SMS_text2" xml:space="preserve">
+    <value>SMS жарнамасы жоғары жиілікті оқуды қамтамасыз етеді</value>
+  </data>
+  <data name="SMS_text3" xml:space="preserve">
+    <value>Қолжетімді баға, тікелей маркетингтен бірнеше есе төмен</value>
+  </data>
+  <data name="SMS_text4" xml:space="preserve">
+    <value>Маркетингтің онлайн және басқа дәстүрлі нысандарымен салыстырғанда жауаптардың көп пайызы</value>
+  </data>
+  <data name="SMS_Title" xml:space="preserve">
+    <value>Неге сіз бүгін SMS-жарнамаға тапсырыс беруіңіз керек?</value>
+  </data>
+  <data name="Tab1_text" xml:space="preserve">
+    <value>Сіз және тұтынушылар арасында байланыс орнатудың ең қолайлы және жылдам әдістерінің бірі. Жылдамдық, бағдарлау, қуат.</value>
+  </data>
+  <data name="Tab1_Title" xml:space="preserve">
+    <value>Хабарлау</value>
+  </data>
+  <data name="Tab2_text" xml:space="preserve">
+    <value>Сіз ескі клиенттердің базасына SMS жібергіңіз келмесе, яғни жаңа клиенттерге жібергіңіз келсе, онда бұл қызмет өте ыңғайлы</value>
+  </data>
+  <data name="Tab2_Title" xml:space="preserve">
+    <value>Жарнама</value>
+  </data>
+  <data name="Tab3_text" xml:space="preserve">
+    <value>Әр түрлі іс-шараларды өткізу (өнімнің кодын тауып, SMS арқылы жіберу және жүлде алу). Тұтынушылардың сұранысын ынталандыру.</value>
+  </data>
+  <data name="Tab3_Title" xml:space="preserve">
+    <value>Акциялар</value>
+  </data>
+  <data name="Tab4_text" xml:space="preserve">
+    <value>Сіздің клиенттеріңізден SMS хабарлама алуға мүмкіндік беретін қызмет. Клиенттеріңізбен екі жақты байланыс арнасы.</value>
+  </data>
+  <data name="Tab4_Title" xml:space="preserve">
+    <value>Қабылдау</value>
+  </data>
+  <data name="Tab5_text" xml:space="preserve">
+    <value>SMS қосымшасына файл, брошюра, сурет, бейне, купон немесе сайтқа сілтеме ретінде қосыңыз. Электрондық поштаның артықшылығын қосымша ақысыз алыңыз.</value>
+  </data>
+  <data name="Tab5_Title" xml:space="preserve">
+    <value>Қосымшалар</value>
+  </data>
+  <data name="Text1" xml:space="preserve">
+    <value>Әрине, мобильді маркетинг клиенттермен қарым-қатынастың ең тиімді арналарының бірі болып табылады.</value>
+  </data>
+  <data name="Text2" xml:space="preserve">
+    <value>Атап айтқанда, оның жолдарының бірі - SMS жолдау. Алушының пайдалы ақпаратты беретін SMS хабарлар - тітіркенуді тудырмайды және мақсатты аудиториямен тұрақты байланысын қамтамасыз ету және арнайы науқандар, іс-шаралар және басқа да компания туралы жаңалықтарды клиенттерге хабарлауға мүмкіндік береді.</value>
+  </data>
+  <data name="Text3" xml:space="preserve">
+    <value>Бірақ байланыстар негізінде SMS тарату басқа жарнамалық құралдарға қарағанда бір ірі кемшілігі бар. SMS жіберу тұрақты клиенттер / келушілермен байланыс үшін қолданылады, бірақ жаңа клиенттерді тарту үшін емес!</value>
+  </data>
+  <data name="Text4" xml:space="preserve">
+    <value>Бұл әдіс теледидарлық және радиоарналардың эфирінде жарнама орналастыруына толығымен ұқсас және бұқаралық сипатты және заңдылықты дәл үйлестіреді.</value>
+  </data>
+  <data name="Title1" xml:space="preserve">
+    <value>Жаппай тарату</value>
+  </data>
+  <data name="Title2" xml:space="preserve">
+    <value>Бағдарламалар &amp; API шлюзі</value>
+  </data>
+  <data name="Title3" xml:space="preserve">
+    <value>Нөмірлерді тексеру</value>
+  </data>
+  <data name="Title4" xml:space="preserve">
+    <value>Дауыстық хабарлар</value>
+  </data>
+  <data name="Title5" xml:space="preserve">
+    <value>Кодтарды жіберу</value>
+  </data>
+  <data name="Title6" xml:space="preserve">
+    <value>Жіберулерге өзімен-өзі жазылу</value>
+  </data>
+  <data name="Title7" xml:space="preserve">
+    <value>SMS қабылдау</value>
+  </data>
+  <data name="Title8" xml:space="preserve">
+    <value>Виртуалды нөмірлер</value>
+  </data>
+  <data name="Title9" xml:space="preserve">
+    <value>SIM-хостинг</value>
   </data>
 </root>

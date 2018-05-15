@@ -150,4 +150,43 @@
   <data name="Our_partners" xml:space="preserve">
     <value>Біздің партнерлер</value>
   </data>
+  <data name="Cloud_programs_text1" xml:space="preserve">
+    <value>Шығындарды азайту және компьютерлердің шығындарын төмендету үшін, біз бұлтта уақытша лицензияларды сатып алуды ұсынамыз.</value>
+  </data>
+  <data name="Cloud_programs_text2" xml:space="preserve">
+    <value>Бұлт технологиялар ресурстарды үнемдейді және артықшылықтарды барынша арттырады. Серверлік операциялық жүйелер, резервтік көшіру, IТ өнімдерін басқару тұрақты және қымбат лицензиялардың орнына бұлтта сатып алуға болады.</value>
+  </data>
+  <data name="Free_consultation_text1" xml:space="preserve">
+    <value>Бағдарламалық өнімдерді корпоративтік лицензиялау туралы тегін кеңес береміз</value>
+  </data>
+  <data name="Free_consultation_text2" xml:space="preserve">
+    <value>Біз коммерциялық, мемлекеттік және білім беру мекемелеріне лицензияланған бағдарламалық қамтаманы ұсынамыз.</value>
+  </data>
+  <data name="Free_consultation_text3" xml:space="preserve">
+    <value>Ұйым үшін ең қолайлы бағдарламаларды таңдау туралы шешімдерге IT консультациялары. Autocad, Revit, 3ds Max, Nanocad, Photoshop, Indesign, Windows Server және антивирустық бағдарламалардың уақытша және тұрақты лицензиялары.</value>
+  </data>
+  <data name="Ours_advantages_text1" xml:space="preserve">
+    <value>Бағдарламаны сатып алу өнімнің бастапқы техникалық қолдауын және лицензиялау бойынша консультацияны қамтиды. Барлық бағалар ҚҚС 12% құрайды.</value>
+  </data>
+  <data name="Ours_advantages_text2" xml:space="preserve">
+    <value>Лицензияланған бағдарламалық жасақтаманы үлкен таңдауы. Біз тек заңды тұлғалармен жұмыс істейміз. Барлық құжаттармен банктік аударым бойынша төлеу.</value>
+  </data>
+  <data name="Our_office_text1" xml:space="preserve">
+    <value>Лицензияланған бағдарламалық қамтаманы сатуға арналған дүкен. Бұлтты бағдарламалар мен жыл сайынғы лицензияларды жеткізу. Өкілетті дилер.</value>
+  </data>
+  <data name="Our_office_text2" xml:space="preserve">
+    <value>Барлық бағалар ҚҚС 12% құрайды. Microsoft, VMware, Red Hat, Symantec, McAfee, Autodesk, Adobe, Google, Acronis бағдарламалары</value>
+  </data>
+  <data name="Slogan" xml:space="preserve">
+    <value>Бизнесіңіздің прагматикалық IТ шешімдері</value>
+  </data>
+  <data name="Text1" xml:space="preserve">
+    <value>Бағдарламалық қамтама орталығы (Бағдарламалық қамтама) - Қызметтер, Көтерме сатушы, Дистрибьютор, Дилер, Интернет-дүкен</value>
+  </data>
+  <data name="Text2" xml:space="preserve">
+    <value>Бағдарламалық қамтама орталығы (Бағдарламалық қамтама) 2010 жылы құрылды.</value>
+  </data>
+  <data name="Text3" xml:space="preserve">
+    <value>Компанияда 10 адам жұмыс істейді.</value>
+  </data>
 </root>

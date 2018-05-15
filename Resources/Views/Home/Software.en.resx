@@ -150,4 +150,43 @@
   <data name="Our_partners" xml:space="preserve">
     <value>Our partners</value>
   </data>
+  <data name="Cloud_programs_text1" xml:space="preserve">
+    <value>To reduce costs and the appropriateness of computer and IT costs, we recommend buying temporary licenses in the cloud.</value>
+  </data>
+  <data name="Cloud_programs_text2" xml:space="preserve">
+    <value>Cloud technologies save resources and maximize benefits. Server operating systems, backup, management of IT products can be purchased in the cloud instead of permanent and expensive licenses.</value>
+  </data>
+  <data name="Free_consultation_text1" xml:space="preserve">
+    <value>Free of charge we advise on corporate licensing of software products</value>
+  </data>
+  <data name="Free_consultation_text2" xml:space="preserve">
+    <value>We supply licensed software for commercial, state and educational institutions.</value>
+  </data>
+  <data name="Free_consultation_text3" xml:space="preserve">
+    <value>IT consultations with the decision of the choice of the most suitable programs for the organization. Temporary and permanent licenses of the programs Autocad, Revit, 3ds Max, Nanocad, Photoshop, Indesign, Windows Server and antiviruses, etc.</value>
+  </data>
+  <data name="Ours_advantages_text1" xml:space="preserve">
+    <value>Purchase of programs includes primary technical support of the product and consultation on licensing. All prices include VAT of 12%.</value>
+  </data>
+  <data name="Ours_advantages_text2" xml:space="preserve">
+    <value>Large selection of licensed software. We work only with legal entities. Payment by bank transfer with all documents.</value>
+  </data>
+  <data name="Our_office_text1" xml:space="preserve">
+    <value>Shop-office for the sale of licensed software. Delivery of cloud programs and annual licenses. Authorized dealer.</value>
+  </data>
+  <data name="Our_office_text2" xml:space="preserve">
+    <value>All prices include VAT of 12%. Programs from Microsoft, VMware, Red Hat, Symantec, Mcafee, Autodesk, Adobe, Google, Acronis</value>
+  </data>
+  <data name="Slogan" xml:space="preserve">
+    <value>Pragmatic IT solutions for your business</value>
+  </data>
+  <data name="Text1" xml:space="preserve">
+    <value>Software Center (Software) - Services, Wholesaler, Distributor, Dealer, Internet store</value>
+  </data>
+  <data name="Text2" xml:space="preserve">
+    <value>Software Center (Software) was founded in 2010.</value>
+  </data>
+  <data name="Text3" xml:space="preserve">
+    <value>The company employs up to 10 people.</value>
+  </data>
 </root>

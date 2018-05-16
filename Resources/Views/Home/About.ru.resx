@@ -123,61 +123,13 @@
   <data name="Car_Tracking" xml:space="preserve">
     <value>Авто Мониторинг</value>
   </data>
-  <data name="Contacts" xml:space="preserve">
-    <value>Контакты</value>
-  </data>
-  <data name="Contact_us" xml:space="preserve">
-    <value>Связаться с нами</value>
-  </data>
-  <data name="Counter1" xml:space="preserve">
-    <value>Счастливых Клиентов</value>
-  </data>
-  <data name="Counter2" xml:space="preserve">
-    <value>Завершенных Проектов</value>
-  </data>
-  <data name="Counter3" xml:space="preserve">
-    <value>Отвеченных билетов</value>
-  </data>
-  <data name="Counter4" xml:space="preserve">
-    <value>Часов Разработки</value>
-  </data>
   <data name="Our_partners" xml:space="preserve">
     <value>Наши партнеры</value>
-  </data>
-  <data name="Slogan" xml:space="preserve">
-    <value>Прагматичные IT решения для вашего бизнеса</value>
   </data>
   <data name="SMS_Dispatching" xml:space="preserve">
     <value>СМС рассылка</value>
   </data>
   <data name="Software" xml:space="preserve">
     <value>Программное Обеспечение</value>
-  </data>
-  <data name="Text1" xml:space="preserve">
-    <value>Компания «Kcell Solutions» была основана в 2017 году.</value>
-  </data>
-  <data name="Text2" xml:space="preserve">
-    <value>Kcell Solutions предлагает прагматичные  IT решения для вашего бизнеса в сфере поставок программного обеспечения, управления транспортными парками, и организации массовых sms рассылкок.</value>
-  </data>
-  <data name="Text3" xml:space="preserve">
-    <value>Kcell Solutions является авторизованным поставщиком многих производителей программного обеспечения таких как Microsoft, Adobe, Autodesk, VMware, Symantec, Казахтелеком, Dr.WEB, ESET , «Лаборатории Касперского» и т.д</value>
-  </data>
-  <data name="Text4" xml:space="preserve">
-    <value>Kcell Solutions предлагает широкий ассортимент продукции по управлению автопарком, предназначенной для профессиональных приложений. Мы постоянно совершенствуем свою продукцию, разрабатываем и вводим в производство новую продукцию с целью удовлетворения потребностей клиентов.</value>
-  </data>
-  <data name="Text5" xml:space="preserve">
-    <value>В рамках услуг по лицензированию программного обеспечения Kcell Solutions предлагает своим клиентам широкий спектр решений.</value>
-  </data>
-  <data name="Text6" xml:space="preserve">
-    <value>Мы поможем Вам организовать любой сервис или услугу на коротких СМС номерах.</value>
-  </data>
-  <data name="Text7" xml:space="preserve">
-    <value>Kcell Solutions — это клиентоориентированная компания: мы всегда находимся на стороне клиента и предлагаем решения, наилучшим образом решающие его задачи, вне зависимости от бренда.</value>
-  </data>
-  <data name="Title1" xml:space="preserve">
-    <value>Наши достоинства</value>
-  </data>
-  <data name="Welcome" xml:space="preserve">
-    <value>Добро пожаловать в Kcell Solutions</value>
   </data>
 </root>

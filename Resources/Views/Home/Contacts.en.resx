@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AddressInfo" xml:space="preserve">
+  <data name="Address" xml:space="preserve">
     <value>Almaty, Republic of Kazakhstan</value>
   </data>
   <data name="Contacts" xml:space="preserve">
@@ -140,35 +140,5 @@
   </data>
   <data name="Your_name" xml:space="preserve">
     <value>Your Name</value>
-  </data>
-  <data name="Address" xml:space="preserve">
-    <value>Address</value>
-  </data>
-  <data name="Days" xml:space="preserve">
-    <value>Monday - Friday</value>
-  </data>
-  <data name="Fax" xml:space="preserve">
-    <value>Fax</value>
-  </data>
-  <data name="Opening_hours" xml:space="preserve">
-    <value>Opening hours</value>
-  </data>
-  <data name="Our_location" xml:space="preserve">
-    <value>Our location</value>
-  </data>
-  <data name="Telephone" xml:space="preserve">
-    <value>Telephone</value>
-  </data>
-  <data name="Text1" xml:space="preserve">
-    <value>Our team has international experience and allows us to offer our customers work at all stages of production, from the early stages of the project to the final stage of commissioning and start-up. You can send your resume or any other requests. We are open for partnership and cooperation.</value>
-  </data>
-  <data name="Title1" xml:space="preserve">
-    <value>We are a modern and rapidly developing company, which is always looking for new opportunities for cooperation and partnership.</value>
-  </data>
-  <data name="Weekends" xml:space="preserve">
-    <value>weekends</value>
-  </data>
-  <data name="Weekends_days" xml:space="preserve">
-    <value>Sunday and Saturday</value>
   </data>
 </root>

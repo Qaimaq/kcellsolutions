@@ -150,43 +150,4 @@
   <data name="Our_partners" xml:space="preserve">
     <value>Наши партнеры</value>
   </data>
-  <data name="Cloud_programs_text1" xml:space="preserve">
-    <value>Для сокращения расходов и целосообразности затрат на парк компьютеров и IТ рекомендуем покупать временные лицензии в облаке.</value>
-  </data>
-  <data name="Cloud_programs_text2" xml:space="preserve">
-    <value>Облачные технологии позволяют сэкономить ресурсы и получить максимум выгоды. Серверные операционные системы, резервное копирование, управление IT продуктами можно купить в облаке вместо постоянных и дорогих лицензии.</value>
-  </data>
-  <data name="Free_consultation_text1" xml:space="preserve">
-    <value>Бесплатно консультируем по корпоративному лицензированию программных продуктов</value>
-  </data>
-  <data name="Free_consultation_text2" xml:space="preserve">
-    <value>Поставляем лицензионное ПО для коммерческих, государственнх и для образовательных учреждении.</value>
-  </data>
-  <data name="Free_consultation_text3" xml:space="preserve">
-    <value>IT консультации с решением выбора наиболее подходящих программ для организации. Временные и постоянные лицензии программ Autocad, Revit, 3ds Max, Nanocad, Photoshop, Indesign, Windows Server и антивирусы и т.д.</value>
-  </data>
-  <data name="Ours_advantages_text1" xml:space="preserve">
-    <value>Покупка программ включает первичную техподдержку продукта и консультацию по лицензированию. Все цены включают НДС 12%.</value>
-  </data>
-  <data name="Ours_advantages_text2" xml:space="preserve">
-    <value>Большой выбор лицензионного программного обеспечения. Работаем только с юридическими лицами. Оплата по безналичному расчету со всеми документами.</value>
-  </data>
-  <data name="Our_office_text1" xml:space="preserve">
-    <value>Магазин-офис по продаже лицензионного программного обеспечения. Поставка облачных программ и годовых лицензии. Авторизованный дилер.</value>
-  </data>
-  <data name="Our_office_text2" xml:space="preserve">
-    <value>Все цены включают НДС 12%. Программы от Microsoft, VMware, Red Hat, Symantec, Mcafee, Autodesk, Adobe, Google, Acronis</value>
-  </data>
-  <data name="Slogan" xml:space="preserve">
-    <value>Прагматичные IT решения для вашего бизнеса</value>
-  </data>
-  <data name="Text1" xml:space="preserve">
-    <value>Компания Центр Программного Обеспечения (Софт) - Услуги и сервис, Оптовый продавец, Дистрибьютор, Дилер, Интернет-магазин</value>
-  </data>
-  <data name="Text2" xml:space="preserve">
-    <value>Компания Центр Программного Обеспечения (Софт) основана в 2010 году.</value>
-  </data>
-  <data name="Text3" xml:space="preserve">
-    <value>В компании работает до 10 человек.</value>
-  </data>
 </root>

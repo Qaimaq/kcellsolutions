@@ -123,61 +123,13 @@
   <data name="Car_Tracking" xml:space="preserve">
     <value>Көлік мониторингі</value>
   </data>
-  <data name="Contacts" xml:space="preserve">
-    <value>Байланыс</value>
-  </data>
-  <data name="Contact_us" xml:space="preserve">
-    <value>Бізбен хабарласыңыз</value>
-  </data>
-  <data name="Counter1" xml:space="preserve">
-    <value>Бақытты Клиенттер</value>
-  </data>
-  <data name="Counter2" xml:space="preserve">
-    <value>Бітірілген Проекттер</value>
-  </data>
-  <data name="Counter3" xml:space="preserve">
-    <value>Жауабы бар билеттер</value>
-  </data>
-  <data name="Counter4" xml:space="preserve">
-    <value>Жұмыс Уақыты</value>
-  </data>
   <data name="Our_partners" xml:space="preserve">
     <value>Біздің партнерлер</value>
-  </data>
-  <data name="Slogan" xml:space="preserve">
-    <value>Бизнесіңіздің прагматикалық IТ шешімдері</value>
   </data>
   <data name="SMS_Dispatching" xml:space="preserve">
     <value>СМС Тарату</value>
   </data>
   <data name="Software" xml:space="preserve">
     <value>Программалық қамтама</value>
-  </data>
-  <data name="Text1" xml:space="preserve">
-    <value>Компания «Kcell Solutions» была основана в 2017 году.</value>
-  </data>
-  <data name="Text2" xml:space="preserve">
-    <value>Kcell Solutions cіздің бизнесіңіздің бағдарламалық қамтамасыз етуді, транспорттық жүйені басқаруды және SMS хабарларын таратуды ұйымдастыруда прагматикалық IТ шешімдерін ұсынады.</value>
-  </data>
-  <data name="Text3" xml:space="preserve">
-    <value>Kcell Solutions - Microsoft, Adobe, Autodesk, VMware, Symantec, Қазақтелеком, Dr.Web, ESET, Kaspersky Lab және т.б. сияқты көптеген бағдарламалық өнімдерді шығарушылардың өкілетті жеткізушісі.</value>
-  </data>
-  <data name="Text4" xml:space="preserve">
-    <value>Kcell Solutions кәсiби қосымшаларға арналған автопаркті басқарудың кең ауқымын ұсынады. Біз өз өнімдерімізді үнемі жетілдіріп, тұтынушыларымыздың қажеттіліктерін қанағаттандыру үшін өндіріске жаңа өнімдерді әзірлеп, енгіземіз.</value>
-  </data>
-  <data name="Text5" xml:space="preserve">
-    <value>Kcell Solutions бағдарламалық қамтаманы лицензиялау қызметтері бөлігі ретінде шешімдердің кең ауқымын ұсынады.</value>
-  </data>
-  <data name="Text6" xml:space="preserve">
-    <value>Сізге қысқа SMS-нөмірлерге кез-келген қызметті немесе қызметті ұйымдастыруға көмектесеміз.</value>
-  </data>
-  <data name="Text7" xml:space="preserve">
-    <value>Kcell Solutions - клиентке бағдарланған компания: біз әрқашан клиенттің жағындамыз және брендке қарамастан, өз міндеттерін ең жақсы шешетін шешімдерді ұсынамыз.</value>
-  </data>
-  <data name="Title1" xml:space="preserve">
-    <value>Біздің жақсы жақтарымыз</value>
-  </data>
-  <data name="Welcome" xml:space="preserve">
-    <value>Kcell Solutions-қа қош келдіңіздер</value>
   </data>
 </root>

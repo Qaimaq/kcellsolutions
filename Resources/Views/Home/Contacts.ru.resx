@@ -117,14 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AddressInfo" xml:space="preserve">
+  <data name="Address" xml:space="preserve">
     <value>Республика Казахстан, Алматы</value>
   </data>
   <data name="Contacts" xml:space="preserve">
     <value>Контакты</value>
   </data>
   <data name="Contact_us" xml:space="preserve">
-    <value>Свяжитесь с нами</value>
+    <value>Связаться с нами</value>
   </data>
   <data name="Located_the_map" xml:space="preserve">
     <value>Расположение на карте</value>
@@ -140,35 +140,5 @@
   </data>
   <data name="Your_name" xml:space="preserve">
     <value>Ваше имя</value>
-  </data>
-  <data name="Address" xml:space="preserve">
-    <value>Адрес</value>
-  </data>
-  <data name="Days" xml:space="preserve">
-    <value>Понедельник - Пятница</value>
-  </data>
-  <data name="Fax" xml:space="preserve">
-    <value>Факс</value>
-  </data>
-  <data name="Opening_hours" xml:space="preserve">
-    <value>Часы работы</value>
-  </data>
-  <data name="Our_location" xml:space="preserve">
-    <value>Наше местоположение</value>
-  </data>
-  <data name="Telephone" xml:space="preserve">
-    <value>Телефон</value>
-  </data>
-  <data name="Text1" xml:space="preserve">
-    <value>Наша команда имеет международный опыт и позволяет  предлагать заказчикам выполнение работ на всех этапах производства, начиная с ранних этапов проекта до завершающей стадии ввода в эксплуатацию и пуска. Вы можете отправить свое резюме или любые другие запросы. Мы открыты для партнерства и сотрудничества.</value>
-  </data>
-  <data name="Title1" xml:space="preserve">
-    <value>Мы являемся современной и быстро развивающейся компанией, которая всегда ищет новые возможности сотрудничества и партнерства.</value>
-  </data>
-  <data name="Weekends" xml:space="preserve">
-    <value>выходные</value>
-  </data>
-  <data name="Weekends_days" xml:space="preserve">
-    <value>Суббота и Воскресенье</value>
   </data>
 </root>

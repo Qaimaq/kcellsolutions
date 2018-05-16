@@ -117,85 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="About" xml:space="preserve">
-    <value>About</value>
-  </data>
   <data name="Car_Tracking" xml:space="preserve">
     <value>Car Tracking</value>
   </data>
-  <data name="Line1_text1" xml:space="preserve">
-    <value>The possibility of connecting different sensors. A real tool to reduce operating costs</value>
-  </data>
-  <data name="Line1_text2" xml:space="preserve">
-    <value>Informs about the routes passing through it and about the time of arrival of the transport. In contrast to the usual printed traffic schedules, the published data is updated promptly.</value>
-  </data>
-  <data name="Line1_text3" xml:space="preserve">
-    <value>Counting the number of incoming and outgoing passengers using special sensors mounted above the entrance to the transport. Data is reported in reports linked to transport, route and stopping</value>
-  </data>
-  <data name="Line1_text4" xml:space="preserve">
-    <value>Modern technology that allows not only to store video recordings in the DVR, but also to get remote access remote access to cameras and archives through a smartphone or tablet</value>
-  </data>
-  <data name="Line1_Title1" xml:space="preserve">
-    <value>Satellite</value>
-  </data>
-  <data name="Line1_Title2" xml:space="preserve">
-    <value>monitoring</value>
-  </data>
-  <data name="Line1_Title3" xml:space="preserve">
-    <value>Smart</value>
-  </data>
-  <data name="Line1_Title4" xml:space="preserve">
-    <value>stop</value>
-  </data>
-  <data name="Line1_Title5" xml:space="preserve">
-    <value>Passenger</value>
-  </data>
-  <data name="Line1_Title6" xml:space="preserve">
-    <value>flow</value>
-  </data>
-  <data name="Line1_Title7" xml:space="preserve">
-    <value>Cloudy</value>
-  </data>
-  <data name="Line1_Title8" xml:space="preserve">
-    <value>CCTV</value>
-  </data>
-  <data name="Line2_text1" xml:space="preserve">
-    <value>Centralized monitoring of tire pressure. All data from the sensors are accumulated on a single server. Control of the whole park on one monitor.</value>
-  </data>
-  <data name="Line2_text2" xml:space="preserve">
-    <value>A simple and convenient logistics tool for receiving, distributing and controlling the execution of orders for transport services. Optimizing routes and loading vehicles. Reducing operating costs.</value>
-  </data>
-  <data name="Line2_text3" xml:space="preserve">
-    <value>Branch solution for the dispatching of passenger transport. Automatically generates many specialized reports</value>
-  </data>
-  <data name="Line2_text4" xml:space="preserve">
-    <value>Online service for public transport passengers. Data on the movement of transport, stops, routes. Searching for routes to travel from one point of the city to another</value>
-  </data>
-  <data name="List1" xml:space="preserve">
-    <value>Where is this or that transport at the moment?</value>
-  </data>
-  <data name="List2" xml:space="preserve">
-    <value>Do drivers violate operating modes?</value>
-  </data>
-  <data name="List3" xml:space="preserve">
-    <value>Do they leave certain geographical boundaries?</value>
-  </data>
-  <data name="List4" xml:space="preserve">
-    <value>Do they "merge" fuel?</value>
-  </data>
-  <data name="More_about_us" xml:space="preserve">
-    <value>More about us</value>
-  </data>
   <data name="Our_partners" xml:space="preserve">
     <value>Our partners</value>
-  </data>
-  <data name="Our_projects" xml:space="preserve">
-    <value>Our projects</value>
-  </data>
-  <data name="Slogan" xml:space="preserve">
-    <value>Pragmatic IT solutions for your business</value>
-  </data>
-  <data name="Text1" xml:space="preserve">
-    <value>Managing a transport fleet is a complex process. Here are just some of the issues that need to be addressed:</value>
   </data>
 </root>

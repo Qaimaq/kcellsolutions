@@ -123,61 +123,13 @@
   <data name="Car_Tracking" xml:space="preserve">
     <value>Car Tracking</value>
   </data>
-  <data name="Contacts" xml:space="preserve">
-    <value>Contacts</value>
-  </data>
-  <data name="Contact_us" xml:space="preserve">
-    <value>Contact us</value>
-  </data>
-  <data name="Counter1" xml:space="preserve">
-    <value>Happy Clients</value>
-  </data>
-  <data name="Counter2" xml:space="preserve">
-    <value>Complete Projects</value>
-  </data>
-  <data name="Counter3" xml:space="preserve">
-    <value>Answered Tickets</value>
-  </data>
-  <data name="Counter4" xml:space="preserve">
-    <value>Development Hours</value>
-  </data>
   <data name="Our_partners" xml:space="preserve">
     <value>Our partners</value>
-  </data>
-  <data name="Slogan" xml:space="preserve">
-    <value>Pragmatic IT solutions for your business</value>
   </data>
   <data name="SMS_Dispatching" xml:space="preserve">
     <value>SMS Dispatching</value>
   </data>
   <data name="Software" xml:space="preserve">
     <value>Software</value>
-  </data>
-  <data name="Text1" xml:space="preserve">
-    <value>«Kcell Solutions» was founded in 2017.</value>
-  </data>
-  <data name="Text2" xml:space="preserve">
-    <value>Kcell Solutions offers pragmatic IT solutions for your business in the delivery of software, fleet management, and the organization of mass sms mailings.</value>
-  </data>
-  <data name="Text3" xml:space="preserve">
-    <value>Kcell Solutions is an authorized supplier of many software vendors such as Microsoft, Adobe, Autodesk, VMware, Symantec, Kazakhtelecom, Dr.Web, ESET, Kaspersky Lab, etc.</value>
-  </data>
-  <data name="Text4" xml:space="preserve">
-    <value>Kcell Solutions offers a wide range of fleet management products for professional applications. We constantly improve our products, develop and introduce new products in production in order to meet the needs of our customers.</value>
-  </data>
-  <data name="Text5" xml:space="preserve">
-    <value>As part of software licensing services, Kcell Solutions offers its customers a wide range of solutions.</value>
-  </data>
-  <data name="Text6" xml:space="preserve">
-    <value>We will help you organize any service or service on short SMS numbers.</value>
-  </data>
-  <data name="Text7" xml:space="preserve">
-    <value>Kcell Solutions is a client-oriented company: we are always on the client's side and offer solutions that best solve its tasks, regardless of the brand.</value>
-  </data>
-  <data name="Title1" xml:space="preserve">
-    <value>Our strengths</value>
-  </data>
-  <data name="Welcome" xml:space="preserve">
-    <value>Welcome to Kcell Solutions</value>
   </data>
 </root>

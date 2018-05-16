@@ -117,61 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Career" xml:space="preserve">
-    <value>Career</value>
-  </data>
-  <data name="Contacts" xml:space="preserve">
-    <value>Contacts</value>
-  </data>
-  <data name="Contact_us" xml:space="preserve">
-    <value>Contact us</value>
-  </data>
-  <data name="Message" xml:space="preserve">
-    <value>Message</value>
-  </data>
   <data name="Our_partners" xml:space="preserve">
     <value>Our partners</value>
-  </data>
-  <data name="Our_projects" xml:space="preserve">
-    <value>Our projects</value>
-  </data>
-  <data name="Our_vacancies" xml:space="preserve">
-    <value>Our vacancies</value>
-  </data>
-  <data name="Send" xml:space="preserve">
-    <value>Send</value>
-  </data>
-  <data name="Slogan" xml:space="preserve">
-    <value>Pragmatic IT solutions for your business</value>
-  </data>
-  <data name="Text1" xml:space="preserve">
-    <value>Active involvement of qualified and experienced local staff</value>
-  </data>
-  <data name="Text2" xml:space="preserve">
-    <value>Educate your own staff through continuous training and mentoring, and, if necessary, organizing special training courses.</value>
-  </data>
-  <data name="Text3" xml:space="preserve">
-    <value>Cooperation with local educational institutions to hire qualified graduates.</value>
-  </data>
-  <data name="Text4" xml:space="preserve">
-    <value>Work together with our clients to organize the training of our specialists, already involved in customer sites.</value>
-  </data>
-  <data name="Text5" xml:space="preserve">
-    <value>Provide resources and resources for training and training local staff</value>
-  </data>
-  <data name="Text6" xml:space="preserve">
-    <value>We are interested in competent, enterprising, ambitious employees who believe in their strength, who choose their own place in life!</value>
-  </data>
-  <data name="Title1" xml:space="preserve">
-    <value>Our team needs your skills</value>
-  </data>
-  <data name="Title2" xml:space="preserve">
-    <value>We value people more than profit. We strive for quality, not quantity to achieve results.</value>
-  </data>
-  <data name="Title3" xml:space="preserve">
-    <value>Become part of our team</value>
-  </data>
-  <data name="Your_name" xml:space="preserve">
-    <value>Your name</value>
   </data>
 </root>
